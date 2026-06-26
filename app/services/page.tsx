@@ -26,7 +26,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="bg-off-white px-6 py-20 border-t border-dark/20">
         <div className="max-w-7xl mx-auto">
-          <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-8">— READY?</p>
+          <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-8">READY?</p>
           <h2 className="font-heading text-4xl md:text-5xl text-dark mb-6 max-w-2xl">
             Let&apos;s build the growth your brand deserves.
           </h2>

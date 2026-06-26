@@ -45,7 +45,7 @@ export default function Clients() {
           {/* Social media partners */}
           <div className="flex flex-col md:flex-row md:items-center gap-4 py-4 border-t border-white/10">
             <p className="font-mono text-xs text-white/40 uppercase tracking-widest w-48 shrink-0">
-              — SOCIAL MEDIA PARTNERS
+              SOCIAL MEDIA PARTNERS
             </p>
             <div className="flex flex-wrap gap-2">
               {socialPartners.map((p) => (
@@ -61,7 +61,7 @@ export default function Clients() {
           {/* AI partners */}
           <div className="flex flex-col md:flex-row md:items-center gap-4 py-4 border-t border-white/10">
             <p className="font-mono text-xs text-white/40 uppercase tracking-widest w-48 shrink-0">
-              — AI PARTNERS
+              AI PARTNERS
             </p>
             <div className="flex flex-wrap gap-2">
               {aiPartners.map((p) => (

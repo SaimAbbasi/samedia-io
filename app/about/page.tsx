@@ -65,7 +65,7 @@ export default function AboutPage() {
       {/* Stats */}
       <section className="bg-off-white px-6 py-16 border-t border-dark/20">
         <div className="max-w-7xl mx-auto">
-          <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-10">— THE NUMBERS</p>
+          <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-10">THE NUMBERS</p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {stats.map((s) => (
               <div key={s.label}>

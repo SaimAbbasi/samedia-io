@@ -5,6 +5,7 @@ import WhatsOnTheTable from '@/components/WhatsOnTheTable'
 import Clients from '@/components/Clients'
 import WhySAMedia from '@/components/WhySAMedia'
 import FAQ from '@/components/FAQ'
+import BlogTeaser from '@/components/BlogTeaser'
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <WhatsOnTheTable />
       <Clients />
       <WhySAMedia />
+      <BlogTeaser />
       <FAQ />
     </>
   )

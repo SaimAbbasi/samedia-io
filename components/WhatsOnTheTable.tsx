@@ -68,7 +68,7 @@ export default function WhatsOnTheTable() {
               <ul className="flex flex-col gap-2">
                 {col.items.map((item) => (
                   <li key={item} className="font-body text-sm text-dark/70">
-                    — {item}
+                    {item}
                   </li>
                 ))}
               </ul>

@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const service = getService(params.slug)
   if (!service) return {}
   return {
-    title: `${service.name} — SA Media`,
+    title: `${service.name} | SA Media`,
     description: service.description,
   }
 }
@@ -25,7 +25,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="bg-dark pt-36 pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6">
-            {service.eyebrow} — {service.n}
+            {service.eyebrow} · {service.n}
           </p>
           <h1 className="font-heading text-6xl md:text-8xl text-white leading-none mb-8">
             {service.name}
@@ -55,19 +55,19 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-6">
-                — WHAT&apos;S INCLUDED
+                WHAT&apos;S INCLUDED
               </p>
               <ul className="flex flex-col gap-3">
                 {service.includes.map((item) => (
                   <li key={item} className="font-body text-base text-dark/80 border-b border-dark/10 pb-3">
-                    — {item}
+                    {item}
                   </li>
                 ))}
               </ul>
             </div>
             <div>
               <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-6">
-                — OUTCOMES
+                OUTCOMES
               </p>
               <div className="flex flex-col gap-8">
                 {service.outcomes.map((o) => (
@@ -89,7 +89,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             {/* Partnership header */}
             <div className="mb-16 pb-8 border-b border-white/10">
               <p className="font-mono text-xs text-teal uppercase tracking-widest mb-4">
-                — SA MEDIA × ZUNE LAB PARTNERSHIP
+                SA MEDIA × ZUNE LAB PARTNERSHIP
               </p>
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <h2 className="font-heading text-4xl md:text-5xl text-white leading-tight max-w-2xl">
@@ -122,7 +122,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
             {/* Systems */}
             <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-10 text-white/30">
-              — THE SIX SYSTEMS WE BUILD
+              THE SIX SYSTEMS WE BUILD
             </p>
             <div className="flex flex-col divide-y divide-white/10">
               {service.zunelabSystems.map((sys) => (
@@ -135,7 +135,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                   <ul className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-2">
                     {sys.items.map((item) => (
                       <li key={item} className="font-body text-sm text-white/60">
-                        — {item}
+                        {item}
                       </li>
                     ))}
                   </ul>
@@ -151,7 +151,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <section className="bg-dark px-6 py-24">
           <div className="max-w-7xl mx-auto">
             <p className="font-mono text-xs text-teal uppercase tracking-widest mb-4">
-              — SA MEDIA × ZUNE LAB PARTNERSHIP
+              SA MEDIA × ZUNE LAB PARTNERSHIP
             </p>
             <h2 className="font-heading text-4xl md:text-5xl text-white leading-tight mb-6">
               AI strategy meets<br /><span className="text-lime">AI engineering.</span>
@@ -183,7 +183,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       <section className="bg-off-white px-6 py-24 border-t border-dark">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">— READY?</p>
+            <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">READY?</p>
             <h2 className="font-heading text-4xl md:text-6xl text-dark leading-tight">
               Let&apos;s put {service.name}<br />to work for your brand.
             </h2>
