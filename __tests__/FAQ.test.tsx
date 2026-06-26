@@ -14,13 +14,13 @@ describe('FAQ', () => {
 
   it('answer is hidden by default', () => {
     render(<FAQ />)
-    expect(screen.queryByText(/establish thought leadership/i)).not.toBeVisible()
+    expect(screen.queryByText(/establish thought leadership/i)).not.toBeInTheDocument()
   })
 
   it('answer becomes visible on question click', async () => {
     render(<FAQ />)
     const firstQ = screen.getByText(/social media marketing benefit/i)
     await userEvent.click(firstQ)
-    expect(screen.getByText(/establish thought leadership/i)).toBeVisible()
+    expect(screen.getByText(/establish thought leadership/i)).toBeInTheDocument()
   })
 })
