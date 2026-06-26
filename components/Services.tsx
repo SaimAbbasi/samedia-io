@@ -16,6 +16,7 @@ const services = [
   { n: '12', name: 'AI Development & Automation', desc: 'Custom AI tools, workflows, and integrations built for your business' },
   { n: '13', name: 'AI Agent Building', desc: 'Agentic systems and autonomous agents that handle real business tasks' },
   { n: '14', name: 'AIEO & GEO Optimization', desc: 'Optimize your brand for AI search engines, ChatGPT, Gemini, and beyond' },
+  { n: '15', name: 'Event Planning & Production', desc: 'Corporate events, brand activations, launches, and hybrid experiences' },
 ]
 
 export default function Services() {
@@ -25,7 +26,7 @@ export default function Services() {
         {/* Header row */}
         <div className="flex justify-between items-baseline mb-10">
           <p className="font-mono text-xs text-dark/50 uppercase tracking-widest">OUR SERVICES</p>
-          <p className="font-mono text-xs text-dark/30">01 — 14</p>
+          <p className="font-mono text-xs text-dark/30">01 — 15</p>
         </div>
 
         {/* Intro */}
