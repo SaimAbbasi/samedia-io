@@ -1,67 +1,67 @@
 'use client'
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import SectionLabel from './SectionLabel'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const faqs = [
   {
-    q: 'How can social media marketing benefit real estate agents, coaches, doctors, lawyers, and financial consultants?',
-    a: 'Our social media marketing services empower professionals across numerous industries to establish thought leadership, build trust with their audience, and attract new clients. By leveraging platforms like Facebook, Instagram, TikTok, and LinkedIn, we help our clients increase brand visibility, drive website traffic, and generate high-quality leads, ultimately scaling the business and reputation.',
+    q: 'What services does SA Media offer?',
+    a: 'We offer social media management, content creation, media buying & ads, influencer marketing, SEO & content strategy, email & CRM automation, and web design & development.',
   },
   {
-    q: 'What content marketing services do you offer?',
-    a: 'Our content marketing agency provides strategic content creation, distribution across social media platforms, email marketing, blogs, and other relevant channels, as well as analysis and optimization to ensure maximum impact and help our clients achieve their goals.',
+    q: 'How does SA Media measure campaign success?',
+    a: 'We track measurable KPIs including reach, engagement rate, conversion rates, cost per acquisition, and revenue attribution — all reported transparently.',
   },
   {
-    q: 'What are the different types of digital media services?',
-    a: 'Our digital marketing agency offers a range of services, including social media management, website development, search engine optimization (SEO), social media advertising, lead generation, email marketing, content marketing, influencer marketing, and data-driven digital strategy development.',
+    q: 'What industries do you specialize in?',
+    a: 'We work across e-commerce, fashion, lifestyle, tech, hospitality, and professional services. Our playbook adapts to your industry, audience, and goals.',
   },
   {
-    q: 'How does your company approach brand development?',
-    a: "Our agency takes a holistic approach to brand development, combining data-driven strategies with creative vision. We understand our clients' goals, audience, and value proposition to craft a compelling brand narrative, ensuring consistency across all touchpoints.",
+    q: 'How long does it take to see results?',
+    a: 'Paid campaigns typically show measurable results within 30 days. Organic growth through SEO and content compounds over 3–6 months. We set honest expectations upfront.',
   },
   {
-    q: 'How are your services priced?',
-    a: 'Our social media marketing costs vary based on your business goals and scope of services. We offer flexible pricing options, including monthly retainers, project-based fees, and performance-based pricing. We work with our onboarding clients to create a customized proposal that meets their budget and objectives.',
+    q: 'Do you work with businesses of all sizes?',
+    a: 'Yes. We work with bootstrapped startups and established brands alike. Our approach scales to your stage — from launch campaigns to full-funnel growth systems.',
   },
 ]
 
 export default function FAQ() {
-  const [open, setOpen] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section className="bg-cream py-24 px-6">
-      <div className="max-w-3xl mx-auto">
-        <SectionLabel number="07" label="FAQ" light />
-        <h2 className="font-heading font-black uppercase text-dark text-5xl md:text-7xl leading-none mt-4 mb-16">
-          FREQUENTLY<br />ASKED<br />QUESTIONS
+    <section className="bg-dark px-6 py-24">
+      <div className="max-w-7xl mx-auto">
+        {/* Label */}
+        <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6">FAQ</p>
+
+        {/* Heading */}
+        <h2 className="font-heading text-4xl md:text-5xl text-white mb-16">
+          Frequently Asked Questions
         </h2>
 
-        <div className="divide-y divide-dark/20">
+        {/* Accordion */}
+        <div className="border-t border-white/10">
           {faqs.map((faq, i) => (
-            <div key={i}>
+            <div key={i} className="border-b border-white/10">
               <button
-                className="w-full flex justify-between items-start gap-4 py-6 text-left"
-                onClick={() => setOpen(open === i ? null : i)}
+                className="w-full flex justify-between items-center py-6 text-left gap-4"
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="font-heading font-bold text-dark text-base md:text-lg leading-snug">
-                  {faq.q}
-                </span>
-                <span className="font-heading font-bold text-lime text-2xl flex-shrink-0 mt-0.5">
-                  {open === i ? '×' : '+'}
+                <span className="font-heading text-lg text-white">{faq.q}</span>
+                <span className="font-mono text-xl text-lime shrink-0">
+                  {openIndex === i ? '×' : '+'}
                 </span>
               </button>
-
               <AnimatePresence>
-                {open === i && (
+                {openIndex === i && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.25 }}
                     className="overflow-hidden"
                   >
-                    <p className="font-body text-dark/70 text-base leading-relaxed pb-6">
+                    <p className="font-body text-base text-white/60 pb-6 max-w-2xl leading-relaxed">
                       {faq.a}
                     </p>
                   </motion.div>
