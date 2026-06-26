@@ -1,27 +1,21 @@
 import Hero from '@/components/Hero'
-import WhoWeAre from '@/components/WhoWeAre'
-import StatsStrip from '@/components/StatsStrip'
+import WhatWeDo from '@/components/WhatWeDo'
 import Services from '@/components/Services'
-import WhatWeOffer from '@/components/WhatWeOffer'
-import WhyChooseUs from '@/components/WhyChooseUs'
-import Brands from '@/components/Brands'
-import Testimonials from '@/components/Testimonials'
+import WhatsOnTheTable from '@/components/WhatsOnTheTable'
+import Clients from '@/components/Clients'
+import WhySAMedia from '@/components/WhySAMedia'
 import FAQ from '@/components/FAQ'
-import CTABanner from '@/components/CTABanner'
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <WhoWeAre />
-      <StatsStrip />
+      <WhatWeDo />
       <Services />
-      <WhatWeOffer />
-      <WhyChooseUs />
-      <Brands />
-      <Testimonials />
+      <WhatsOnTheTable />
+      <Clients />
+      <WhySAMedia />
       <FAQ />
-      <CTABanner />
     </>
   )
 }
