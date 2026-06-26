@@ -1,97 +1,55 @@
 'use client'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
-import SectionLabel from './SectionLabel'
-import Orb from './Orb'
 
 const services = [
-  {
-    id: '01',
-    name: 'Brand Development',
-    description: 'Bespoke brand identity crafted from strategy to execution.',
-  },
-  {
-    id: '02',
-    name: 'Social Media Management',
-    description: 'Full-service social presence management across all platforms.',
-  },
-  {
-    id: '03',
-    name: 'Web Development & SEO',
-    description: 'High-performance websites optimized for search and conversion.',
-  },
-  {
-    id: '04',
-    name: 'Digital Community Architects',
-    description: 'Building and nurturing engaged digital communities.',
-  },
-  {
-    id: '05',
-    name: 'Marketing',
-    description: 'Data-driven campaigns that generate measurable results.',
-  },
-  {
-    id: '06',
-    name: 'Photography & Videography',
-    description: 'Premium visual content that elevates your brand story.',
-  },
-  {
-    id: '07',
-    name: 'Graphic & 3D Design',
-    description: 'Distinctive visuals from print to immersive 3D experiences.',
-  },
+  { n: '01', name: 'Social Media Management', desc: 'Full-channel presence, content calendars, community growth' },
+  { n: '02', name: 'Content Creation', desc: 'Photo, video, UGC, and written content at scale' },
+  { n: '03', name: 'Media Buying & Ads', desc: 'Google, Meta, and TikTok campaigns that convert' },
+  { n: '04', name: 'Influencer Marketing', desc: 'Creator partnerships matched to your audience' },
+  { n: '05', name: 'SEO & Content Strategy', desc: 'Organic growth through search and authority content' },
+  { n: '06', name: 'Email & CRM Automation', desc: 'Sequences and flows that nurture and retain' },
+  { n: '07', name: 'Web Design & Development', desc: 'Sites and landing pages built for conversion' },
 ]
 
 export default function Services() {
   return (
-    <section className="bg-cream py-24 px-6">
+    <section className="bg-off-white px-6 py-24 border-t border-dark/10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-start justify-between mb-16">
-          <div>
-            <SectionLabel number="02" label="Our Services" light />
-            <h2 className="font-heading font-black uppercase text-dark text-6xl md:text-8xl leading-none mt-4">
-              OUR<br />SERVICES
-            </h2>
-          </div>
-          <Orb src="/images/orb-teal.png" alt="teal orb" size="md" className="hidden md:block" />
+        {/* Header row */}
+        <div className="flex justify-between items-baseline mb-10">
+          <p className="font-mono text-xs text-dark/50 uppercase tracking-widest">OUR SERVICES</p>
+          <p className="font-mono text-xs text-dark/30">01 — 07</p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-dark/10">
-          {services.map((service, i) => (
+        {/* Intro */}
+        <p className="font-body text-lg text-dark/70 max-w-xl mb-12 leading-relaxed">
+          We run social media, content, media buying, and digital growth as one operating system.
+          One team, one heartbeat.
+        </p>
+
+        {/* Service rows */}
+        <div className="border-t border-dark/20">
+          {services.map((s, i) => (
             <motion.div
-              key={service.id}
+              key={s.n}
+              className="group relative flex items-center gap-6 py-5 border-b border-dark/20 pl-0 hover:pl-2 transition-all duration-200 cursor-default overflow-hidden"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.07, duration: 0.4 }}
-              className="group bg-cream p-8 hover:bg-dark transition-colors cursor-default"
+              transition={{ duration: 0.4, delay: i * 0.05 }}
             >
-              <span className="font-heading font-bold text-lime text-5xl leading-none block mb-4">
-                {service.id}
+              {/* Lime left border on hover */}
+              <span className="absolute left-0 top-0 bottom-0 w-0 group-hover:w-1 bg-lime transition-all duration-200" />
+              {/* Number */}
+              <span className="font-mono text-sm text-lime w-10 shrink-0">{s.n}</span>
+              {/* Name */}
+              <span className="font-heading text-xl text-dark flex-1">{s.name}</span>
+              {/* Description */}
+              <span className="font-body text-sm text-dark/50 text-right hidden md:block max-w-xs">
+                {s.desc}
               </span>
-              <h3 className="font-heading font-black text-dark group-hover:text-white text-xl uppercase mb-3 transition-colors">
-                {service.name}
-              </h3>
-              <p className="font-body text-dark/60 group-hover:text-cream/70 text-sm leading-relaxed transition-colors">
-                {service.description}
-              </p>
-              <div className="mt-6 h-0.5 w-0 bg-lime group-hover:w-full transition-all duration-300" />
             </motion.div>
           ))}
-        </div>
-
-        {/* CTA bar */}
-        <div className="mt-px bg-dark flex flex-col md:flex-row items-center justify-between gap-4 px-8 py-6">
-          <p className="font-body text-white text-lg">
-            Ready to skyrocket your business potential?
-          </p>
-          <Link
-            href="/contact-us"
-            className="font-heading text-sm uppercase tracking-wider px-8 py-3 bg-lime text-dark font-bold hover:bg-lime/90 transition-colors whitespace-nowrap"
-          >
-            Contact Us
-          </Link>
         </div>
       </div>
     </section>
