@@ -86,7 +86,7 @@ export default function WhySAMedia() {
         {/* — WHAT WE DON'T DO */}
         <div className="py-12 border-t border-dark/20">
           <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-10">
-            — WHAT WE DON'T DO
+            — WHAT WE DON&apos;T DO
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-xl">
             {dontDo.map((item) => (
@@ -101,7 +101,7 @@ export default function WhySAMedia() {
         <div className="py-12 border-t border-dark/20">
           <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-8">— READY?</p>
           <h2 className="font-heading text-4xl md:text-5xl text-dark mb-6 max-w-2xl">
-            Let's build the growth your brand deserves.
+            Let&apos;s build the growth your brand deserves.
           </h2>
           <Link
             href="/contact-us"

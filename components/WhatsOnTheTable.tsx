@@ -31,7 +31,7 @@ export default function WhatsOnTheTable() {
         {/* Header */}
         <div className="mb-12">
           <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">
-            WHAT'S ON THE TABLE
+            WHAT&apos;S ON THE TABLE
           </p>
           <h2 className="font-heading text-3xl md:text-4xl text-dark">
             Everything you need, under one roof.

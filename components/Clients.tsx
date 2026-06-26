@@ -18,7 +18,7 @@ export default function Clients() {
 
         {/* Headline */}
         <h2 className="font-heading text-3xl md:text-5xl text-white mb-4">
-          We've worked with brands that ship.
+          We&apos;ve worked with brands that ship.
         </h2>
         <p className="font-body text-lg text-white/50 max-w-xl mb-16 leading-relaxed">
           From bootstrapped startups to established names. Different industries, same playbook.
