@@ -32,7 +32,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-dark pb-24 px-6">
+    <section className="bg-dark py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <SectionLabel number="04" label="Why Choose SA Media" />
 

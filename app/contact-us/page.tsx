@@ -14,20 +14,22 @@ export default function ContactPage() {
         <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
-              <label className="font-heading text-xs uppercase tracking-widest text-cream/60">
+              <label htmlFor="name" className="font-heading text-xs uppercase tracking-widest text-cream/60">
                 Name
               </label>
               <input
+                id="name"
                 type="text"
                 className="bg-transparent border border-white/20 text-white font-body px-4 py-3 focus:outline-none focus:border-lime transition-colors"
                 placeholder="Your name"
               />
             </div>
             <div className="flex flex-col gap-2">
-              <label className="font-heading text-xs uppercase tracking-widest text-cream/60">
+              <label htmlFor="email" className="font-heading text-xs uppercase tracking-widest text-cream/60">
                 Email
               </label>
               <input
+                id="email"
                 type="email"
                 className="bg-transparent border border-white/20 text-white font-body px-4 py-3 focus:outline-none focus:border-lime transition-colors"
                 placeholder="your@email.com"
@@ -36,10 +38,11 @@ export default function ContactPage() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="font-heading text-xs uppercase tracking-widest text-cream/60">
+            <label htmlFor="company" className="font-heading text-xs uppercase tracking-widest text-cream/60">
               Company
             </label>
             <input
+              id="company"
               type="text"
               className="bg-transparent border border-white/20 text-white font-body px-4 py-3 focus:outline-none focus:border-lime transition-colors"
               placeholder="Your company"
@@ -47,10 +50,11 @@ export default function ContactPage() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="font-heading text-xs uppercase tracking-widest text-cream/60">
+            <label htmlFor="message" className="font-heading text-xs uppercase tracking-widest text-cream/60">
               Message
             </label>
             <textarea
+              id="message"
               rows={6}
               className="bg-transparent border border-white/20 text-white font-body px-4 py-3 focus:outline-none focus:border-lime transition-colors resize-none"
               placeholder="Tell us about your project..."
