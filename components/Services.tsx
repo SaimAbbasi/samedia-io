@@ -13,6 +13,9 @@ const services = [
   { n: '09', name: 'Web & E-commerce Development', desc: 'Sites, stores, and landing pages built for conversion' },
   { n: '10', name: 'App Development', desc: 'Custom web and mobile applications, end to end' },
   { n: '11', name: 'Analytics & Attribution', desc: 'GA4, GTM, and data pipelines that prove ROI' },
+  { n: '12', name: 'AI Development & Automation', desc: 'Custom AI tools, workflows, and integrations built for your business' },
+  { n: '13', name: 'AI Agent Building', desc: 'Agentic systems and autonomous agents that handle real business tasks' },
+  { n: '14', name: 'AIEO & GEO Optimization', desc: 'Optimize your brand for AI search engines, ChatGPT, Gemini, and beyond' },
 ]
 
 export default function Services() {
@@ -22,7 +25,7 @@ export default function Services() {
         {/* Header row */}
         <div className="flex justify-between items-baseline mb-10">
           <p className="font-mono text-xs text-dark/50 uppercase tracking-widest">OUR SERVICES</p>
-          <p className="font-mono text-xs text-dark/30">01 — 11</p>
+          <p className="font-mono text-xs text-dark/30">01 — 14</p>
         </div>
 
         {/* Intro */}

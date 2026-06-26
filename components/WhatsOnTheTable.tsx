@@ -22,6 +22,11 @@ const columns = [
     name: 'Market',
     items: ['Social Media & UGC', 'Google, Meta & TikTok Ads', 'SEO & Content Strategy', 'Email & SMS Automations', 'Influencer Campaigns', 'Affiliate Marketing', 'Landing Pages & CRO', 'Local SEO'],
   },
+  {
+    n: '05',
+    name: 'AI',
+    items: ['AI Development & Automation', 'AI Agent Building', 'AIEO Optimization', 'GEO Optimization', 'ChatGPT & Gemini Visibility', 'AI Workflow Integration', 'Prompt Engineering', 'AI Opportunity Audit'],
+  },
 ]
 
 export default function WhatsOnTheTable() {
@@ -39,7 +44,7 @@ export default function WhatsOnTheTable() {
         </div>
 
         {/* 4-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-dark/20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-dark/20">
           {columns.map((col, i) => (
             <motion.div
               key={col.n}
