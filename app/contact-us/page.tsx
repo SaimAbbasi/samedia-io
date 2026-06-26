@@ -74,7 +74,7 @@ export default function ContactPage() {
               <div>
                 <button
                   type="submit"
-                  className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
+                  className="font-heading text-xl text-lime hover:opacity-80 transition-opacity bg-transparent border-0 cursor-pointer p-0"
                 >
                   Send it →
                 </button>

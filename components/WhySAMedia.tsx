@@ -47,10 +47,10 @@ export default function WhySAMedia() {
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }}
               >
                 <p className="font-mono font-bold text-5xl md:text-6xl text-dark leading-none mb-2">
                   {s.value}

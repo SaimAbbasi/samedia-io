@@ -44,7 +44,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact-us"
-            className="font-body text-xs uppercase tracking-wider text-lime border border-lime px-4 py-2 hover:bg-lime hover:text-dark transition-colors"
+            className="font-body text-xs uppercase tracking-wider text-lime border border-lime px-4 py-2 hover:opacity-80 transition-opacity"
           >
             Start a project
           </Link>
