@@ -1,52 +1,60 @@
-import WhoWeAre from '@/components/WhoWeAre'
-import StatsStrip from '@/components/StatsStrip'
-import CTABanner from '@/components/CTABanner'
-import SectionLabel from '@/components/SectionLabel'
+import Link from 'next/link'
 
 const team = [
-  { name: 'Saim Abbasi', role: 'CEO & Co-Founder' },
-  { name: 'Anastasiia Krasnova', role: 'CMO & Co-Founder' },
-  { name: 'Aly Mandviya', role: 'CFO & Co-Founder' },
+  { name: 'Saim Abbasi', role: 'Founder & CEO', initial: 'S' },
+  { name: 'Creative Director', role: 'Brand & Design', initial: 'C' },
+  { name: 'Growth Lead', role: 'Strategy & Media', initial: 'G' },
+]
+
+const stats = [
+  { value: '1B+', label: 'Social Media Reach' },
+  { value: '50M+', label: 'Likes Generated' },
+  { value: '$1M+', label: 'Sales Generated' },
+  { value: '100+', label: 'Creatives' },
+  { value: '50+', label: 'Clients' },
 ]
 
 export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-dark pt-32 pb-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <p className="font-heading text-lime text-xs uppercase tracking-widest mb-6">
-            — Who We Are
-          </p>
-          <h1 className="font-heading font-black uppercase text-white leading-none text-7xl md:text-9xl">
-            ABOUT<br /><span className="text-lime">SA MEDIA</span>
+      <section className="min-h-[60vh] bg-dark px-6 pt-32 pb-24 flex flex-col justify-end">
+        <div className="max-w-7xl mx-auto w-full">
+          <p className="font-mono text-xs text-teal uppercase tracking-widest mb-8">ABOUT SA MEDIA</p>
+          <h1 className="font-heading text-6xl md:text-8xl leading-none text-white mb-0">
+            <span className="block">BY THE CREATIVES</span>
+            <span className="block">FOR THE CREATORS.</span>
           </h1>
         </div>
       </section>
 
-      <WhoWeAre />
-      <StatsStrip />
+      {/* Story + Team */}
+      <section className="bg-off-white px-6 py-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* Story */}
+          <div>
+            <p className="font-body text-lg text-dark/70 leading-relaxed mb-6">
+              SA Media is a digital marketing agency built by creatives, for creators. We combine
+              data-driven strategy with authentic storytelling to help brands grow across every
+              digital channel.
+            </p>
+            <p className="font-body text-lg text-dark/70 leading-relaxed">
+              Based in Toronto with reach across New York and Dubai, we've helped brands from
+              startups to global names achieve measurable results through social media, content,
+              paid media, and growth strategy.
+            </p>
+          </div>
 
-      {/* Team */}
-      <section className="bg-dark py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <SectionLabel number="01" label="Our Team" />
-          <h2 className="font-heading font-black uppercase text-white text-5xl md:text-7xl leading-none mt-4 mb-16">
-            MEET OUR<br />TEAM
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Team */}
+          <div className="flex flex-col gap-8">
             {team.map((member) => (
-              <div key={member.name} className="flex flex-col items-center gap-4">
-                <div className="w-40 h-40 rounded-full bg-teal flex items-center justify-center">
-                  <span className="font-heading font-black text-dark text-4xl">
-                    {member.name.split(' ').map((n) => n[0]).join('')}
-                  </span>
+              <div key={member.name} className="flex items-center gap-6 pb-8 border-b border-dark/10 last:border-b-0 last:pb-0">
+                <div className="w-16 h-16 bg-teal flex items-center justify-center shrink-0">
+                  <span className="font-heading text-2xl text-dark">{member.initial}</span>
                 </div>
-                <div className="text-center">
-                  <p className="font-heading font-bold text-white text-lg uppercase tracking-wider">
-                    {member.name}
-                  </p>
-                  <p className="font-body text-teal text-sm mt-1">{member.role}</p>
+                <div>
+                  <p className="font-heading text-xl text-dark">{member.name}</p>
+                  <p className="font-body text-sm text-dark/50">{member.role}</p>
                 </div>
               </div>
             ))}
@@ -54,7 +62,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTABanner />
+      {/* Stats */}
+      <section className="bg-off-white px-6 py-16 border-t border-dark/20">
+        <div className="max-w-7xl mx-auto">
+          <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-10">— THE NUMBERS</p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            {stats.map((s) => (
+              <div key={s.label}>
+                <p className="font-mono font-bold text-5xl text-dark leading-none mb-2">{s.value}</p>
+                <p className="font-body text-sm text-dark/50">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-off-white px-6 py-20 border-t border-dark/20">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-heading text-4xl md:text-5xl text-dark mb-6">
+            Ready to work together?
+          </h2>
+          <Link
+            href="/contact-us"
+            className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
+          >
+            Start a project →
+          </Link>
+        </div>
+      </section>
     </>
   )
 }
