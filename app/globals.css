@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  * {
+    border-radius: 0 !important;
+    box-sizing: border-box;
+  }
 
-body {
-  @apply bg-dark text-white;
+  html {
+    scroll-behavior: smooth;
+  }
 }

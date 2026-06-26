@@ -9,15 +9,14 @@ const config: Config = {
     extend: {
       colors: {
         dark: '#26292E',
+        'off-white': '#F5F5F0',
         lime: '#EAF13A',
         teal: '#98C6BF',
-        cream: '#E9E5CC',
-        'deep-teal': '#009294',
-        'soft-yellow': '#F5DF82',
       },
       fontFamily: {
-        heading: ['var(--font-montserrat)', 'sans-serif'],
-        body: ['var(--font-nunito)', 'sans-serif'],
+        heading: ['var(--font-syne)', 'sans-serif'],
+        body: ['var(--font-dm-sans)', 'sans-serif'],
+        mono: ['var(--font-jetbrains)', 'monospace'],
       },
       letterSpacing: {
         wider: '0.15em',
