@@ -1,67 +1,104 @@
 import Link from 'next/link'
 
-const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Contact Us', href: '/contact-us' },
+const serviceLinks = [
+  'Social Media Management',
+  'Content Creation',
+  'Media Buying & Ads',
+  'Influencer Marketing',
+  'SEO & Content Strategy',
+  'Email & CRM Automation',
+  'Web Design & Development',
 ]
 
-const socialLinks = [
-  { label: 'Instagram', href: 'https://www.instagram.com/samedia.io/' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/sa-mediaio/about/' },
-  { label: 'TikTok', href: 'https://www.tiktok.com/@samedia.io' },
+const exploreLinks = [
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Contact', href: '/contact-us' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="bg-dark border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Left: Logo + copyright */}
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="font-heading font-black text-white text-lg tracking-wider">SA</span>
-              <span className="w-0.5 h-5 bg-lime" />
-              <span className="font-heading font-light text-white text-lg tracking-wider">MEDIA</span>
-            </div>
-            <p className="font-body text-sm text-cream/50">SA Media©</p>
+    <footer>
+      {/* Main body — off-white */}
+      <div className="bg-off-white px-6 py-20">
+        <div className="max-w-7xl mx-auto">
+          {/* CTA block */}
+          <div className="mb-16 pb-16 border-b border-dark">
+            <h2 className="font-heading text-5xl md:text-7xl text-dark mb-4">
+              READY TO GROW?
+            </h2>
+            <Link
+              href="/contact-us"
+              className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
+            >
+              Start a project →
+            </Link>
           </div>
 
-          {/* Center: Nav */}
-          <nav className="flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-body text-sm text-cream/70 hover:text-lime transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          {/* 4 columns */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {/* Agency */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">AGENCY</p>
+              <p className="font-body text-sm text-dark/70 leading-relaxed">
+                Toronto, ON<br />
+                Canada
+              </p>
+            </div>
 
-          {/* Right: Socials */}
-          <div className="flex flex-col gap-3">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                className="font-body text-sm text-cream/70 hover:text-lime transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+            {/* Contact */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">CONTACT</p>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="mailto:hello@samedia.io"
+                  className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+                >
+                  hello@samedia.io
+                </a>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">SERVICES</p>
+              <div className="flex flex-col gap-1.5">
+                {serviceLinks.map((s) => (
+                  <Link
+                    key={s}
+                    href="/services"
+                    className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+                  >
+                    {s}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Explore */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">EXPLORE</p>
+              <div className="flex flex-col gap-1.5">
+                {exploreLinks.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+                  >
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom strip */}
-        <div className="border-t border-white/10 pt-6">
-          <p className="font-body text-xs uppercase tracking-widest text-lime text-center">
-            BY THE CREATIVES FOR THE CREATORS
+      {/* Bottom strip — dark */}
+      <div className="bg-dark px-6 py-4">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+          <p className="font-mono text-xs text-white/40 uppercase tracking-widest">
+            © SA MEDIA · TORONTO · NEW YORK · DUBAI · ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

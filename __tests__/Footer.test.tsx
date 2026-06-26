@@ -2,26 +2,31 @@ import { render, screen } from '@testing-library/react'
 import Footer from '@/components/Footer'
 
 describe('Footer', () => {
-  it('renders tagline', () => {
+  it('renders READY TO GROW headline', () => {
     render(<Footer />)
-    expect(screen.getByText(/BY THE CREATIVES FOR THE CREATORS/i)).toBeInTheDocument()
+    expect(screen.getByText(/READY TO GROW/i)).toBeInTheDocument()
   })
 
-  it('renders copyright', () => {
+  it('renders Start a project CTA', () => {
     render(<Footer />)
-    expect(screen.getByText(/SA Media©/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /start a project/i })).toHaveAttribute('href', '/contact-us')
   })
 
-  it('renders social links', () => {
+  it('renders 4 column headings', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: /instagram/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /linkedin/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /tiktok/i })).toBeInTheDocument()
+    expect(screen.getByText('AGENCY')).toBeInTheDocument()
+    expect(screen.getByText('CONTACT')).toBeInTheDocument()
+    expect(screen.getByText('SERVICES')).toBeInTheDocument()
+    expect(screen.getByText('EXPLORE')).toBeInTheDocument()
   })
 
-  it('renders nav links', () => {
+  it('renders SA MEDIA logotype in bottom strip', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '/about')
-    expect(screen.getByRole('link', { name: 'Services' })).toHaveAttribute('href', '/services')
+    expect(screen.getByText(/SA MEDIA/i)).toBeInTheDocument()
+  })
+
+  it('renders location cities in bottom strip', () => {
+    render(<Footer />)
+    expect(screen.getByText(/TORONTO.*NEW YORK.*DUBAI/i)).toBeInTheDocument()
   })
 })
