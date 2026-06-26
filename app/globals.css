@@ -7,6 +7,5 @@ html {
 }
 
 body {
-  background-color: #26292E;
-  color: #ffffff;
+  @apply bg-dark text-white;
 }
