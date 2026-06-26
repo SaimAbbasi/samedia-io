@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { posts } from '@/lib/blog-data'
 
-const locations = ['All', 'Toronto', 'Dubai', 'New York', 'AI / GEO / AIEO']
+const locations = ['All', 'Toronto', 'Dubai', 'New York']
 
 export default function BlogPage() {
   const [activeLocation, setActiveLocation] = useState('All')
