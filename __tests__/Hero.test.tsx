@@ -1,26 +1,32 @@
-// __tests__/Hero.test.tsx
 import { render, screen } from '@testing-library/react'
 import Hero from '@/components/Hero'
 
 describe('Hero', () => {
-  it('renders headline words', () => {
+  it('renders eyebrow label', () => {
+    render(<Hero />)
+    expect(screen.getByText(/DIGITAL MARKETING AGENCY/i)).toBeInTheDocument()
+  })
+
+  it('renders stacked headline words', () => {
     render(<Hero />)
     expect(screen.getByText('DIGITAL')).toBeInTheDocument()
     expect(screen.getByText('GROWTH')).toBeInTheDocument()
-    expect(screen.getByText('SOLUTIONS')).toBeInTheDocument()
+    expect(screen.getByText('SOLUTIONS.')).toBeInTheDocument()
   })
 
-  it('renders subheading copy', () => {
+  it('renders subhead copy', () => {
     render(<Hero />)
-    expect(
-      screen.getByText(/impactful digital media strategies/i)
-    ).toBeInTheDocument()
+    expect(screen.getByText(/impactful digital strategies/i)).toBeInTheDocument()
   })
 
-  it('renders CTA links', () => {
+  it('renders Our services CTA linking to /services', () => {
     render(<Hero />)
-    expect(screen.getByRole('link', { name: /OUR SERVICES/i })).toHaveAttribute('href', '/services')
-    expect(screen.getByRole('link', { name: /FREE CONSULTATION/i })).toHaveAttribute('href', '/contact-us')
+    expect(screen.getByRole('link', { name: /our services/i })).toHaveAttribute('href', '/services')
+  })
+
+  it('renders Free consultation CTA linking to /contact-us', () => {
+    render(<Hero />)
+    expect(screen.getByRole('link', { name: /free consultation/i })).toHaveAttribute('href', '/contact-us')
   })
 
   it('renders location line', () => {

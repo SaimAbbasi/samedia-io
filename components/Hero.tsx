@@ -1,87 +1,69 @@
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import Orb from './Orb'
+
+const words = ['DIGITAL', 'GROWTH', 'SOLUTIONS.']
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-dark flex items-center overflow-hidden">
-      {/* Faint S letterform background */}
-      <span
-        aria-hidden="true"
-        className="absolute right-0 top-1/2 -translate-y-1/2 font-heading font-black text-[32rem] text-white/5 select-none pointer-events-none leading-none"
-      >
-        S
-      </span>
+    <section className="relative min-h-screen bg-dark flex flex-col justify-center overflow-hidden px-6 pt-16">
+      <div className="max-w-7xl mx-auto w-full py-24">
+        {/* Eyebrow */}
+        <p className="font-mono text-xs text-lime tracking-widest uppercase mb-8">
+          DIGITAL MARKETING AGENCY
+        </p>
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-5 gap-12 py-20">
-        {/* Left content — 60% */}
-        <div className="lg:col-span-3 flex flex-col justify-center gap-8">
-          {/* Label */}
-          <p className="font-heading text-lime text-xs uppercase tracking-widest">
-            — Digital Marketing Agency
-          </p>
+        {/* Stacked headline */}
+        <h1 className="font-heading text-7xl md:text-9xl leading-none text-white mb-10">
+          {words.map((word, i) => (
+            <motion.span
+              key={word}
+              className="block"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: i * 0.08 }}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </h1>
 
-          {/* Headline */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, staggerChildren: 0.1 }}
-            className="font-heading font-black uppercase leading-none"
+        {/* Subhead */}
+        <p className="font-body text-lg text-white/60 max-w-lg leading-relaxed mb-10">
+          Impactful digital strategies that connect brands with their audiences
+          and deliver measurable results.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-wrap items-center gap-8">
+          <Link
+            href="/services"
+            className="font-body text-sm text-white border-b border-white/40 hover:border-white pb-0.5 transition-colors"
           >
-            <span className="block text-7xl md:text-9xl lg:text-[10rem] text-white">DIGITAL</span>
-            <span className="block text-7xl md:text-9xl lg:text-[10rem] text-lime">GROWTH</span>
-            <span className="block text-7xl md:text-9xl lg:text-[10rem] text-white">SOLUTIONS</span>
-          </motion.h1>
-
-          {/* Subheading */}
-          <p className="font-body text-cream/80 text-lg max-w-lg leading-relaxed">
-            Striving to create impactful digital media strategies that connect
-            our clients with their target audiences and deliver exceptional results.
-          </p>
-
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/services"
-              className="font-heading text-sm uppercase tracking-wider px-8 py-4 bg-lime text-dark font-bold hover:bg-lime/90 transition-colors"
-            >
-              Our Services
-            </Link>
-            <Link
-              href="/contact-us"
-              className="font-heading text-sm uppercase tracking-wider px-8 py-4 border border-white text-white hover:border-lime hover:text-lime transition-colors"
-            >
-              Free Consultation Call
-            </Link>
-          </div>
-
-          {/* Locations */}
-          <p className="font-body text-xs uppercase tracking-widest text-teal">
-            Toronto · New York · Dubai
-          </p>
-        </div>
-
-        {/* Right orb — 40% */}
-        <div className="hidden lg:flex lg:col-span-2 items-center justify-end">
-          <Orb
-            src="/images/orb-lime.png"
-            alt="SA Media lime orb"
-            size="xl"
-            animate
-            className="translate-x-24"
-          />
+            Our services
+          </Link>
+          <Link
+            href="/contact-us"
+            className="font-body text-sm text-lime hover:opacity-80 transition-opacity"
+          >
+            Free consultation →
+          </Link>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 1.5, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 font-heading text-lime text-xs uppercase tracking-widest"
-      >
-        ↓ Scroll
-      </motion.div>
+      {/* Bottom bar */}
+      <div className="absolute bottom-8 left-6 right-6 max-w-7xl mx-auto flex justify-between items-end">
+        <p className="font-mono text-xs text-teal tracking-widest uppercase">
+          TORONTO · NEW YORK · DUBAI
+        </p>
+        <motion.p
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="font-mono text-xs text-white/30 uppercase tracking-widest"
+        >
+          SCROLL ↓
+        </motion.p>
+      </div>
     </section>
   )
 }
