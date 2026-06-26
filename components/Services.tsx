@@ -2,13 +2,17 @@
 import { motion } from 'framer-motion'
 
 const services = [
-  { n: '01', name: 'Social Media Management', desc: 'Full-channel presence, content calendars, community growth' },
-  { n: '02', name: 'Content Creation', desc: 'Photo, video, UGC, and written content at scale' },
-  { n: '03', name: 'Media Buying & Ads', desc: 'Google, Meta, and TikTok campaigns that convert' },
-  { n: '04', name: 'Influencer Marketing', desc: 'Creator partnerships matched to your audience' },
-  { n: '05', name: 'SEO & Content Strategy', desc: 'Organic growth through search and authority content' },
-  { n: '06', name: 'Email & CRM Automation', desc: 'Sequences and flows that nurture and retain' },
-  { n: '07', name: 'Web Design & Development', desc: 'Sites and landing pages built for conversion' },
+  { n: '01', name: 'Brand Strategy & Positioning', desc: 'Market research, ICP mapping, and digital marketing planning' },
+  { n: '02', name: 'Brand Identity & Design', desc: 'Logos, UX/UI, motion design, and print collateral' },
+  { n: '03', name: 'Social Media Management', desc: 'Full-channel presence, content calendars, community growth' },
+  { n: '04', name: 'Content Creation', desc: 'Photo, video, UGC, and written content at scale' },
+  { n: '05', name: 'Media Buying & Ads', desc: 'Google, Meta, and TikTok campaigns that convert' },
+  { n: '06', name: 'Influencer Marketing', desc: 'Creator partnerships matched to your audience' },
+  { n: '07', name: 'SEO & Content Strategy', desc: 'Organic growth through search and authority content' },
+  { n: '08', name: 'Email & CRM Automation', desc: 'Sequences and flows that nurture and retain' },
+  { n: '09', name: 'Web & E-commerce Development', desc: 'Sites, stores, and landing pages built for conversion' },
+  { n: '10', name: 'App Development', desc: 'Custom web and mobile applications, end to end' },
+  { n: '11', name: 'Analytics & Attribution', desc: 'GA4, GTM, and data pipelines that prove ROI' },
 ]
 
 export default function Services() {
@@ -18,12 +22,12 @@ export default function Services() {
         {/* Header row */}
         <div className="flex justify-between items-baseline mb-10">
           <p className="font-mono text-xs text-dark/50 uppercase tracking-widest">OUR SERVICES</p>
-          <p className="font-mono text-xs text-dark/30">01 — 07</p>
+          <p className="font-mono text-xs text-dark/30">01 — 11</p>
         </div>
 
         {/* Intro */}
         <p className="font-body text-lg text-dark/70 max-w-xl mb-12 leading-relaxed">
-          We run social media, content, media buying, and digital growth as one operating system.
+          We run strategy, design, development, and marketing as one operating system.
           One team, one heartbeat.
         </p>
 

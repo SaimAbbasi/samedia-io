@@ -5,22 +5,22 @@ const columns = [
   {
     n: '01',
     name: 'Strategy',
-    items: ['Digital Marketing Plan', 'Positioning & Audience', 'AI Tools & Automation', 'Analytics & Attribution'],
+    items: ['Digital Marketing Plan', 'Positioning & ICP', 'AI Opportunity Scan', 'Analytics & Attribution (GA4, GTM)'],
   },
   {
     n: '02',
-    name: 'Content',
-    items: ['Social Media Management', 'Photo & Video Production', 'UGC & Creator Content', 'Copywriting & Blogs'],
+    name: 'Design',
+    items: ['Brand Identity & Logos', 'UX Flows & Wireframes', 'High-Fidelity UI', 'Motion & Micro-interactions', 'Print & Collateral'],
   },
   {
     n: '03',
-    name: 'Media',
-    items: ['Google Ads', 'Meta Ads', 'TikTok Ads', 'Influencer Campaigns', 'Affiliate Marketing'],
+    name: 'Build',
+    items: ['Web Development', 'E-commerce Development', 'App Development', 'API Integrations', 'Performance & Core Web Vitals', 'Security & Accessibility'],
   },
   {
     n: '04',
-    name: 'Growth',
-    items: ['SEO & Link Building', 'Email & SMS Flows', 'Landing Pages & CRO', 'Web Development'],
+    name: 'Market',
+    items: ['Social Media & UGC', 'Google, Meta & TikTok Ads', 'SEO & Content Strategy', 'Email & SMS Automations', 'Influencer Campaigns', 'Affiliate Marketing', 'Landing Pages & CRO', 'Local SEO'],
   },
 ]
 
