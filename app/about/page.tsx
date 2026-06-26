@@ -39,7 +39,7 @@ export default function AboutPage() {
               digital channel.
             </p>
             <p className="font-body text-lg text-dark/70 leading-relaxed">
-              Based in Toronto with reach across New York and Dubai, we've helped brands from
+              Based in Toronto with reach across New York and Dubai, we&apos;ve helped brands from
               startups to global names achieve measurable results through social media, content,
               paid media, and growth strategy.
             </p>
