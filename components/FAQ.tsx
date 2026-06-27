@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'How does SA Media measure campaign success?',
-    a: 'We track measurable KPIs including reach, engagement rate, conversion rates, cost per acquisition, and revenue attribution — all reported transparently.',
+    a: 'We track measurable KPIs including reach, engagement rate, conversion rates, cost per acquisition, and revenue attribution - all reported transparently.',
   },
   {
     q: 'What industries do you specialize in?',
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: 'Do you work with businesses of all sizes?',
-    a: 'Yes. We work with bootstrapped startups and established brands alike. Our approach scales to your stage — from launch campaigns to full-funnel growth systems.',
+    a: 'Yes. We work with bootstrapped startups and established brands alike. Our approach scales to your stage - from launch campaigns to full-funnel growth systems.',
   },
 ]
 

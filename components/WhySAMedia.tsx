@@ -38,7 +38,15 @@ export default function WhySAMedia() {
   return (
     <section className="bg-off-white px-6 py-24">
       <div className="max-w-7xl mx-auto">
-        <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-16">WHY SA MEDIA</p>
+        <motion.p
+          className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-16"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+        >
+          WHY SA MEDIA
+        </motion.p>
 
         {/* THE NUMBERS */}
         <div className="py-12 border-t border-dark/20">
@@ -47,14 +55,20 @@ export default function WhySAMedia() {
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               >
-                <p className="font-mono font-bold text-5xl md:text-6xl text-dark leading-none mb-2">
+                <motion.p
+                  className="font-mono font-bold text-5xl md:text-6xl text-dark leading-none mb-2"
+                  initial={{ opacity: 0, scale: 0.7 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                >
                   {s.value}
-                </p>
+                </motion.p>
                 <p className="font-body text-sm text-dark/50">{s.label}</p>
               </motion.div>
             ))}
@@ -69,10 +83,10 @@ export default function WhySAMedia() {
               <motion.div
                 key={i}
                 className="py-8"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.12 }}
               >
                 <p className="font-heading text-xl md:text-2xl text-dark italic max-w-2xl mb-3">
                   {t.quote}
@@ -89,10 +103,17 @@ export default function WhySAMedia() {
             WHAT WE DON&apos;T DO
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-xl">
-            {dontDo.map((item) => (
-              <p key={item} className="font-body text-base text-dark/60">
+            {dontDo.map((item, i) => (
+              <motion.p
+                key={item}
+                className="font-body text-base text-dark/60"
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: i * 0.06 }}
+              >
                 {item}
-              </p>
+              </motion.p>
             ))}
           </div>
         </div>
@@ -100,9 +121,15 @@ export default function WhySAMedia() {
         {/* READY? */}
         <div className="py-12 border-t border-dark/20">
           <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-8">READY?</p>
-          <h2 className="font-heading text-4xl md:text-5xl text-dark mb-6 max-w-2xl">
+          <motion.h2
+            className="font-heading text-4xl md:text-5xl text-dark mb-6 max-w-2xl"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             Let&apos;s build the growth your brand deserves.
-          </h2>
+          </motion.h2>
           <Link
             href="/contact-us"
             className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"

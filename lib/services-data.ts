@@ -44,7 +44,7 @@ export const services: ServiceData[] = [
     eyebrow: 'DESIGN',
     tagline: 'Every pixel has a job.',
     description:
-      'We build brand identities that communicate before you say a word — logos, visual systems, UX/UI, motion design, and print collateral that make your brand impossible to ignore.',
+      'We build brand identities that communicate before you say a word - logos, visual systems, UX/UI, motion design, and print collateral that make your brand impossible to ignore.',
     includes: [
       'Logo Design & Brand Mark System',
       'Color, Typography & Visual Language',
@@ -68,7 +68,7 @@ export const services: ServiceData[] = [
     eyebrow: 'SOCIAL',
     tagline: 'Always on. Always sharp.',
     description:
-      'We run your social media channels as a full-stack operation — strategy, content calendar, creative production, posting, community management, and monthly reporting. You show up every day without lifting a finger.',
+      'We run your social media channels as a full-stack operation - strategy, content calendar, creative production, posting, community management, and monthly reporting. You show up every day without lifting a finger.',
     includes: [
       'Multi-Channel Strategy (Instagram, TikTok, LinkedIn, X)',
       'Monthly Content Calendar',
@@ -92,7 +92,7 @@ export const services: ServiceData[] = [
     eyebrow: 'CONTENT',
     tagline: 'Content that earns attention.',
     description:
-      'We produce photo, video, UGC, and written content at the scale modern brands need — from short-form social clips to long-form editorial, shot to your brand standards and optimized for every platform.',
+      'We produce photo, video, UGC, and written content at the scale modern brands need - from short-form social clips to long-form editorial, shot to your brand standards and optimized for every platform.',
     includes: [
       'Photography (Product, Lifestyle, Editorial)',
       'Video Production (Short-form, Long-form, Reels)',
@@ -116,7 +116,7 @@ export const services: ServiceData[] = [
     eyebrow: 'PERFORMANCE',
     tagline: 'Spend less. Convert more.',
     description:
-      'We manage paid media campaigns on Google, Meta, and TikTok — from audience research and creative strategy through to daily optimization and transparent reporting. Every dollar is tracked to a result.',
+      'We manage paid media campaigns on Google, Meta, and TikTok - from audience research and creative strategy through to daily optimization and transparent reporting. Every dollar is tracked to a result.',
     includes: [
       'Google Ads (Search, Display, Shopping, YouTube)',
       'Meta Ads (Facebook & Instagram)',
@@ -140,7 +140,7 @@ export const services: ServiceData[] = [
     eyebrow: 'CREATORS',
     tagline: 'The right creator. The right audience.',
     description:
-      'We source, vet, brief, and manage creator partnerships that actually convert — from nano-influencers driving niche community trust to macro campaigns with massive reach, all matched to your audience.',
+      'We source, vet, brief, and manage creator partnerships that actually convert - from nano-influencers driving niche community trust to macro campaigns with massive reach, all matched to your audience.',
     includes: [
       'Creator Research & Vetting',
       'Audience Fit & Authenticity Analysis',
@@ -164,7 +164,7 @@ export const services: ServiceData[] = [
     eyebrow: 'SEO',
     tagline: 'Organic growth you own forever.',
     description:
-      'We build long-term organic visibility through technical SEO, authority content, and link building — so your brand earns traffic that compounds over time, not traffic you stop paying for the moment your budget runs out.',
+      'We build long-term organic visibility through technical SEO, authority content, and link building - so your brand earns traffic that compounds over time, not traffic you stop paying for the moment your budget runs out.',
     includes: [
       'Technical SEO Audit & Fixes',
       'Keyword Research & Mapping',
@@ -188,7 +188,7 @@ export const services: ServiceData[] = [
     eyebrow: 'EMAIL & CRM',
     tagline: 'Nurture while you sleep.',
     description:
-      'We build email sequences, automation flows, and CRM pipelines that nurture leads and retain customers on autopilot — from welcome series and abandoned cart flows to full lifecycle marketing programs.',
+      'We build email sequences, automation flows, and CRM pipelines that nurture leads and retain customers on autopilot - from welcome series and abandoned cart flows to full lifecycle marketing programs.',
     includes: [
       'Email Platform Setup & Migration',
       'CRM Configuration (HubSpot, Klaviyo, Mailchimp)',
@@ -212,7 +212,7 @@ export const services: ServiceData[] = [
     eyebrow: 'WEB & E-COMM',
     tagline: 'Built to convert. Built to scale.',
     description:
-      'We design and develop websites, landing pages, and e-commerce stores that are fast, beautiful, and optimized for conversion — from custom Next.js builds to Shopify storefronts built for seven-figure brands.',
+      'We design and develop websites, landing pages, and e-commerce stores that are fast, beautiful, and optimized for conversion - from custom Next.js builds to Shopify storefronts built for seven-figure brands.',
     includes: [
       'Custom Website Development (Next.js, React)',
       'Shopify & WooCommerce E-commerce',
@@ -237,7 +237,7 @@ export const services: ServiceData[] = [
     eyebrow: 'APP DEV',
     tagline: 'Custom software. Real-world outcomes.',
     description:
-      'We build custom web and mobile applications end-to-end — from initial architecture and design through to deployment and ongoing maintenance. If your business needs software that doesn\'t exist off the shelf, we build it.',
+      'We build custom web and mobile applications end-to-end - from initial architecture and design through to deployment and ongoing maintenance. If your business needs software that doesn\'t exist off the shelf, we build it.',
     includes: [
       'Web Application Development (React, Next.js)',
       'Mobile App Development (React Native)',
@@ -261,7 +261,7 @@ export const services: ServiceData[] = [
     eyebrow: 'ANALYTICS',
     tagline: 'Know what\'s working. Prove it.',
     description:
-      'We install and configure GA4, GTM, and multi-touch attribution pipelines so you can see exactly which channels, campaigns, and creatives are driving revenue — and cut spend on everything that isn\'t.',
+      'We install and configure GA4, GTM, and multi-touch attribution pipelines so you can see exactly which channels, campaigns, and creatives are driving revenue - and cut spend on everything that isn\'t.',
     includes: [
       'GA4 Setup & Migration',
       'Google Tag Manager Configuration',
@@ -285,7 +285,7 @@ export const services: ServiceData[] = [
     eyebrow: 'AI SYSTEMS',
     tagline: 'Your operation, automated.',
     description:
-      'We build custom AI tools, workflow automations, and infrastructure that plug directly into your existing operations — eliminating the repetitive work that drains your team and budget every single week.',
+      'We build custom AI tools, workflow automations, and infrastructure that plug directly into your existing operations - eliminating the repetitive work that drains your team and budget every single week.',
     includes: [
       'AI Workflow Design & Architecture',
       'Custom AI Tool Development',
@@ -389,7 +389,7 @@ export const services: ServiceData[] = [
     eyebrow: 'AI AGENTS',
     tagline: 'Agents that work while you don\'t.',
     description:
-      'We design and build autonomous AI agents that handle real business tasks end-to-end — from researching prospects and drafting outreach to managing tickets and executing multi-step workflows without human oversight.',
+      'We design and build autonomous AI agents that handle real business tasks end-to-end - from researching prospects and drafting outreach to managing tickets and executing multi-step workflows without human oversight.',
     includes: [
       'Agentic System Architecture & Design',
       'Multi-Step Workflow Agents',
@@ -419,7 +419,7 @@ export const services: ServiceData[] = [
     eyebrow: 'AIEO & GEO',
     tagline: 'Be the answer AI gives.',
     description:
-      'AI search engines — ChatGPT, Perplexity, Gemini, Claude — are becoming the first touch for millions of buying decisions. We optimize your brand\'s presence across these platforms so you\'re cited, recommended, and found when it matters most.',
+      'AI search engines - ChatGPT, Perplexity, Gemini, Claude - are becoming the first touch for millions of buying decisions. We optimize your brand\'s presence across these platforms so you\'re cited, recommended, and found when it matters most.',
     includes: [
       'AI Engine Optimization (AIEO) Audit',
       'Generative Engine Optimization (GEO) Strategy',
@@ -433,7 +433,7 @@ export const services: ServiceData[] = [
     outcomes: [
       { stat: '3–6 mos', label: 'To measurable AI search visibility improvement' },
       { stat: '40%', label: 'Of Google searches now show AI overviews' },
-      { stat: '1st', label: 'Mover advantage — most brands haven\'t started yet' },
+      { stat: '1st', label: 'Mover advantage - most brands haven\'t started yet' },
     ],
     zunelabPartner: true,
     zunelabStats: [
@@ -449,7 +449,7 @@ export const services: ServiceData[] = [
     eyebrow: 'EVENTS',
     tagline: 'Moments that move people.',
     description:
-      'We plan and produce corporate events, brand activations, product launches, and hybrid experiences from concept to close — with full event branding, logistics, live production, and post-event marketing baked in.',
+      'We plan and produce corporate events, brand activations, product launches, and hybrid experiences from concept to close - with full event branding, logistics, live production, and post-event marketing baked in.',
     includes: [
       'Event Strategy & Concept Development',
       'Corporate Events & Conferences',

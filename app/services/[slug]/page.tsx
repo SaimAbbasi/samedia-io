@@ -106,7 +106,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 </a>
               </div>
               <p className="font-body text-base text-white/50 max-w-2xl mt-6 leading-relaxed">
-                Zune Lab is our sister AI systems company. Built by engineers from Aerospace, Finance, and Big Tech, they install working AI infrastructure inside operations — not chatbot gimmicks. When you engage SA Media for AI services, you get both teams.
+                Zune Lab is our sister AI systems company. Built by engineers from Aerospace, Finance, and Big Tech, they install working AI infrastructure inside operations - not chatbot gimmicks. When you engage SA Media for AI services, you get both teams.
               </p>
               {service.zunelabStats && (
                 <div className="flex flex-wrap gap-12 mt-10">
@@ -157,7 +157,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               AI strategy meets<br /><span className="text-lime">AI engineering.</span>
             </h2>
             <p className="font-body text-base text-white/50 max-w-2xl leading-relaxed mb-10">
-              Zune Lab is our sister AI systems company. When you work with SA Media on AI services, you benefit from both teams — SA Media&apos;s marketing and growth expertise, and Zune Lab&apos;s engineering depth.
+              Zune Lab is our sister AI systems company. When you work with SA Media on AI services, you benefit from both teams - SA Media&apos;s marketing and growth expertise, and Zune Lab&apos;s engineering depth.
             </p>
             <div className="flex flex-wrap gap-12 mb-8">
               {service.zunelabStats.map((stat) => (
