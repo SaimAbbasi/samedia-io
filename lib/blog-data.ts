@@ -13,7 +13,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'best-digital-marketing-agency-toronto',
     title: 'Best Digital Marketing Agency in Toronto: What to Look For in 2026',
-    date: '2026-06-20',
+    date: '2026-06-19',
     category: 'Marketing',
     location: 'Toronto',
     readTime: '7 min',
@@ -34,7 +34,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'social-media-marketing-toronto-businesses',
     title: 'Social Media Marketing for Toronto Businesses: A 2026 Playbook',
-    date: '2026-06-18',
+    date: '2026-06-02',
     category: 'Social Media',
     location: 'Toronto',
     readTime: '8 min',
@@ -53,7 +53,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-marketing-toronto-brands',
     title: 'How Toronto Brands Are Using AI to Scale Their Marketing in 2026',
-    date: '2026-06-15',
+    date: '2026-05-17',
     category: 'AI',
     location: 'Toronto',
     readTime: '9 min',
@@ -71,7 +71,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'seo-toronto-businesses-guide',
     title: 'SEO for Toronto Businesses: A Local Guide to Ranking Higher in 2026',
-    date: '2026-06-12',
+    date: '2026-04-28',
     category: 'SEO',
     location: 'Toronto',
     readTime: '10 min',
@@ -89,7 +89,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'influencer-marketing-toronto-2026',
     title: 'Influencer Marketing in Toronto: How to Run Campaigns That Actually Convert',
-    date: '2026-06-10',
+    date: '2026-04-08',
     category: 'Influencer',
     location: 'Toronto',
     readTime: '7 min',
@@ -106,7 +106,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'google-ads-toronto-businesses',
     title: 'Google Ads for Toronto Businesses: Getting ROI in a Competitive Market',
-    date: '2026-06-08',
+    date: '2026-03-22',
     category: 'Paid Media',
     location: 'Toronto',
     readTime: '8 min',
@@ -123,7 +123,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'content-marketing-toronto-brands',
     title: 'Content Marketing Strategies for Toronto Brands That Drive Real Growth',
-    date: '2026-06-05',
+    date: '2026-02-28',
     category: 'Content',
     location: 'Toronto',
     readTime: '8 min',
@@ -140,7 +140,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-automation-toronto-small-businesses',
     title: 'AI Automation for Toronto Small Businesses: What\'s Actually Worth It',
-    date: '2026-06-02',
+    date: '2026-02-10',
     category: 'AI',
     location: 'Toronto',
     readTime: '9 min',
@@ -158,7 +158,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'email-marketing-toronto-ecommerce',
     title: 'Email Marketing for Toronto E-commerce Brands: Flows That Print Revenue',
-    date: '2026-05-28',
+    date: '2026-01-28',
     category: 'Email',
     location: 'Toronto',
     readTime: '7 min',
@@ -175,7 +175,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'tiktok-marketing-toronto-businesses',
     title: 'TikTok Marketing for Toronto Businesses: A Practical 2026 Guide',
-    date: '2026-05-25',
+    date: '2026-01-04',
     category: 'Social Media',
     location: 'Toronto',
     readTime: '7 min',
@@ -191,7 +191,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'event-marketing-toronto',
     title: 'Event Marketing in Toronto: How to Stand Out in a Crowded Market',
-    date: '2026-05-22',
+    date: '2025-12-21',
     category: 'Events',
     location: 'Toronto',
     readTime: '6 min',
@@ -208,7 +208,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'aieo-optimization-toronto',
     title: 'AIEO Optimization for Toronto Businesses: Be the Answer AI Gives',
-    date: '2026-05-20',
+    date: '2025-12-02',
     category: 'AIEO',
     location: 'Toronto',
     readTime: '8 min',
@@ -225,7 +225,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'performance-marketing-toronto-startups',
     title: 'How Toronto Startups Are Using Performance Marketing to Scale in 2026',
-    date: '2026-05-18',
+    date: '2025-11-11',
     category: 'Paid Media',
     location: 'Toronto',
     readTime: '8 min',
@@ -242,7 +242,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'web-development-toronto-businesses',
     title: 'Web Development for Toronto Businesses: What a High-Converting Site Looks Like',
-    date: '2026-05-15',
+    date: '2025-10-23',
     category: 'Development',
     location: 'Toronto',
     readTime: '7 min',
@@ -258,7 +258,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'brand-strategy-toronto-startups',
     title: 'Brand Strategy for Toronto Startups: Why You Need It Before You Need Marketing',
-    date: '2026-05-12',
+    date: '2025-10-10',
     category: 'Strategy',
     location: 'Toronto',
     readTime: '7 min',
@@ -275,7 +275,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-marketing-dubai-guide',
     title: 'Digital Marketing in Dubai: What Every Brand Needs to Know in 2026',
-    date: '2026-06-19',
+    date: '2025-09-20',
     category: 'Marketing',
     location: 'Dubai',
     readTime: '9 min',
@@ -292,7 +292,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'social-media-marketing-uae',
     title: 'Social Media Marketing in the UAE: Platforms, Trends, and Strategies for 2026',
-    date: '2026-06-17',
+    date: '2025-09-03',
     category: 'Social Media',
     location: 'Dubai',
     readTime: '8 min',
@@ -309,7 +309,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'influencer-marketing-dubai',
     title: 'Influencer Marketing in Dubai: How to Run Campaigns That Work in the UAE',
-    date: '2026-06-14',
+    date: '2025-08-14',
     category: 'Influencer',
     location: 'Dubai',
     readTime: '7 min',
@@ -326,7 +326,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'seo-dubai-guide',
     title: 'SEO in Dubai: Ranking in a Bilingual, High-Competition Market',
-    date: '2026-06-11',
+    date: '2025-07-26',
     category: 'SEO',
     location: 'Dubai',
     readTime: '9 min',
@@ -343,7 +343,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'performance-marketing-dubai-ecommerce',
     title: 'Performance Marketing for Dubai E-commerce: Meta, Google, and TikTok That Convert',
-    date: '2026-06-09',
+    date: '2025-07-11',
     category: 'Paid Media',
     location: 'Dubai',
     readTime: '8 min',
@@ -360,7 +360,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-automation-dubai-businesses',
     title: 'AI Automation for Dubai Businesses: The Competitive Edge You\'re Missing',
-    date: '2026-06-07',
+    date: '2025-06-20',
     category: 'AI',
     location: 'Dubai',
     readTime: '8 min',
@@ -377,7 +377,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'brand-building-dubai',
     title: 'Building a Brand in Dubai: Strategy Before Spend',
-    date: '2026-06-04',
+    date: '2025-05-30',
     category: 'Strategy',
     location: 'Dubai',
     readTime: '7 min',
@@ -394,7 +394,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'content-marketing-uae',
     title: 'Content Marketing in the UAE: What Works and What Doesn\'t in 2026',
-    date: '2026-06-01',
+    date: '2025-05-18',
     category: 'Content',
     location: 'Dubai',
     readTime: '8 min',
@@ -411,7 +411,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'dubai-real-estate-digital-marketing',
     title: 'Dubai Real Estate Marketing: How AI and Digital Are Changing the Game',
-    date: '2026-05-29',
+    date: '2025-04-23',
     category: 'Marketing',
     location: 'Dubai',
     readTime: '9 min',
@@ -427,7 +427,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'email-marketing-dubai-b2b',
     title: 'Email Marketing for Dubai B2B Brands: Sequences That Convert in the UAE Market',
-    date: '2026-05-26',
+    date: '2025-04-10',
     category: 'Email',
     location: 'Dubai',
     readTime: '7 min',
@@ -444,7 +444,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'geo-optimization-dubai-brands',
     title: 'GEO Optimization for Dubai Brands: Getting Found in AI Search',
-    date: '2026-05-23',
+    date: '2025-03-22',
     category: 'GEO',
     location: 'Dubai',
     readTime: '8 min',
@@ -461,7 +461,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'tiktok-dubai-businesses',
     title: 'TikTok for Dubai Businesses: How Brands Are Growing Organically in 2026',
-    date: '2026-05-21',
+    date: '2025-03-05',
     category: 'Social Media',
     location: 'Dubai',
     readTime: '7 min',
@@ -478,7 +478,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'event-marketing-dubai',
     title: 'Event Marketing in Dubai: Standing Out in the World\'s Most Competitive Events Market',
-    date: '2026-05-18',
+    date: '2025-02-15',
     category: 'Events',
     location: 'Dubai',
     readTime: '7 min',
@@ -495,7 +495,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'web-development-dubai-businesses',
     title: 'Web Development for Dubai Businesses: What a High-Converting Site Looks Like',
-    date: '2026-05-15',
+    date: '2025-01-26',
     category: 'Development',
     location: 'Dubai',
     readTime: '7 min',
@@ -512,7 +512,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'future-digital-marketing-uae',
     title: 'The Future of Digital Marketing in the UAE: AI, Automation, and What\'s Next',
-    date: '2026-05-12',
+    date: '2025-01-09',
     category: 'Marketing',
     location: 'Dubai',
     readTime: '8 min',
@@ -528,7 +528,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'digital-marketing-agency-new-york',
     title: 'Digital Marketing Agency in New York: What the Best Ones Actually Do',
-    date: '2026-06-21',
+    date: '2024-12-19',
     category: 'Marketing',
     location: 'New York',
     readTime: '8 min',
@@ -544,7 +544,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'social-media-marketing-new-york',
     title: 'Social Media Marketing for New York Brands: Cutting Through the Noise in 2026',
-    date: '2026-06-16',
+    date: '2024-11-28',
     category: 'Social Media',
     location: 'New York',
     readTime: '7 min',
@@ -560,7 +560,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'performance-marketing-new-york',
     title: 'Performance Marketing in New York: How to Win in the Most Competitive Ad Market',
-    date: '2026-06-13',
+    date: '2024-11-16',
     category: 'Paid Media',
     location: 'New York',
     readTime: '8 min',
@@ -577,7 +577,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'seo-new-york-businesses',
     title: 'SEO for New York Businesses: Local and National Ranking Strategies That Work',
-    date: '2026-06-10',
+    date: '2024-10-24',
     category: 'SEO',
     location: 'New York',
     readTime: '9 min',
@@ -594,7 +594,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'content-strategy-new-york-agencies',
     title: 'Content Strategy for New York Agencies and Brands: What Actually Works',
-    date: '2026-06-07',
+    date: '2024-10-05',
     category: 'Content',
     location: 'New York',
     readTime: '7 min',
@@ -611,7 +611,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-marketing-automation-new-york',
     title: 'AI Marketing Automation in New York: The Advantage Early Movers Are Capturing',
-    date: '2026-06-04',
+    date: '2024-09-18',
     category: 'AI',
     location: 'New York',
     readTime: '8 min',
@@ -627,7 +627,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'influencer-marketing-new-york',
     title: 'Influencer Marketing in New York: Finding Creators Who Actually Convert',
-    date: '2026-06-01',
+    date: '2024-08-29',
     category: 'Influencer',
     location: 'New York',
     readTime: '7 min',
@@ -644,7 +644,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'email-marketing-new-york-dtc',
     title: 'Email Marketing for New York DTC Brands: Flows That Print Revenue',
-    date: '2026-05-29',
+    date: '2024-08-12',
     category: 'Email',
     location: 'New York',
     readTime: '7 min',
@@ -661,7 +661,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'geo-aieo-new-york-businesses',
     title: 'GEO and AIEO for New York Businesses: The New SEO Nobody\'s Talking About',
-    date: '2026-05-26',
+    date: '2024-07-24',
     category: 'AIEO',
     location: 'New York',
     readTime: '8 min',
@@ -678,7 +678,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'web-development-new-york-startups',
     title: 'Web Development for New York Startups: Build Fast, Build to Convert',
-    date: '2026-05-23',
+    date: '2024-07-11',
     category: 'Development',
     location: 'New York',
     readTime: '7 min',
@@ -694,7 +694,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'what-is-aieo-complete-guide',
     title: 'What is AIEO? The Complete Guide to AI Engine Optimization',
-    date: '2026-06-22',
+    date: '2024-06-21',
     category: 'AIEO',
     location: 'General',
     readTime: '12 min',
@@ -715,7 +715,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'what-is-geo-optimization',
     title: 'What is GEO Optimization? The Future of Search, Explained',
-    date: '2026-06-20',
+    date: '2024-06-04',
     category: 'GEO',
     location: 'General',
     readTime: '10 min',
@@ -734,7 +734,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'get-cited-chatgpt-gemini-perplexity',
     title: 'How to Get Your Brand Cited by ChatGPT, Gemini, and Perplexity in 2026',
-    date: '2026-06-18',
+    date: '2024-05-16',
     category: 'AIEO',
     location: 'General',
     readTime: '11 min',
@@ -754,7 +754,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'death-of-traditional-seo-geo-taking-over',
     title: 'The Death of Traditional SEO: Why GEO Is Taking Over Search',
-    date: '2026-06-15',
+    date: '2024-04-27',
     category: 'GEO',
     location: 'General',
     readTime: '9 min',
@@ -772,7 +772,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-agents-for-marketing',
     title: 'AI Agents for Marketing: What They Are and How to Use Them Effectively',
-    date: '2026-06-12',
+    date: '2024-04-08',
     category: 'AI',
     location: 'General',
     readTime: '10 min',
@@ -789,7 +789,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-powered-marketing-stack-2026',
     title: 'How to Build an AI-Powered Marketing Stack in 2026',
-    date: '2026-06-09',
+    date: '2024-03-21',
     category: 'AI',
     location: 'General',
     readTime: '11 min',
@@ -807,7 +807,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'future-of-search-ai-changing-discovery',
     title: 'The Future of Search: How AI Is Changing How Customers Find Businesses',
-    date: '2026-06-06',
+    date: '2024-02-29',
     category: 'GEO',
     location: 'General',
     readTime: '9 min',
@@ -823,7 +823,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'ai-automation-marketing-agencies',
     title: 'AI Automation for Marketing Agencies: The Tools and Systems That Actually Save Time',
-    date: '2026-06-03',
+    date: '2024-02-10',
     category: 'AI',
     location: 'General',
     readTime: '10 min',
@@ -840,7 +840,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'optimize-content-for-ai-search-engines',
     title: 'How to Optimize Your Content for AI Search Engines in 2026',
-    date: '2026-05-31',
+    date: '2024-01-24',
     category: 'AIEO',
     location: 'General',
     readTime: '10 min',
@@ -859,7 +859,7 @@ export const posts: BlogPost[] = [
   {
     slug: 'aieo-vs-seo-differences-priorities',
     title: 'AIEO vs SEO: What\'s the Difference and Which Should You Prioritize?',
-    date: '2026-05-28',
+    date: '2024-01-10',
     category: 'AIEO',
     location: 'General',
     readTime: '9 min',

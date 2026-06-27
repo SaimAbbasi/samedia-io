@@ -1,25 +1,17 @@
 import Link from 'next/link'
-
-const serviceLinks = [
-  'Social Media Management',
-  'Content Creation',
-  'Media Buying & Ads',
-  'Influencer Marketing',
-  'SEO & Content Strategy',
-  'Email & CRM Automation',
-  'Web Design & Development',
-]
+import { services } from '@/lib/services-data'
 
 const exploreLinks = [
+  { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact-us' },
 ]
 
 export default function Footer() {
   return (
     <footer>
-      {/* Main body — off-white */}
+      {/* Main body */}
       <div className="bg-off-white px-6 py-20">
         <div className="max-w-7xl mx-auto">
           {/* CTA block */}
@@ -35,44 +27,21 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* 4 columns */}
+          {/* Columns */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {/* Agency */}
             <div>
               <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">AGENCY</p>
-              <p className="font-body text-sm text-dark/70 leading-relaxed">
+              <p className="font-body text-sm text-dark/70 leading-relaxed mb-4">
                 Toronto, ON<br />
                 Canada
               </p>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">CONTACT</p>
-              <div className="flex flex-col gap-2">
-                <a
-                  href="mailto:hello@samedia.io"
-                  className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
-                >
-                  hello@samedia.io
-                </a>
-              </div>
-            </div>
-
-            {/* Services */}
-            <div>
-              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">SERVICES</p>
-              <div className="flex flex-col gap-1.5">
-                {serviceLinks.map((s) => (
-                  <Link
-                    key={s}
-                    href="/services"
-                    className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
-                  >
-                    {s}
-                  </Link>
-                ))}
-              </div>
+              <a
+                href="mailto:hello@samedia.io"
+                className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+              >
+                hello@samedia.io
+              </a>
             </div>
 
             {/* Explore */}
@@ -90,11 +59,45 @@ export default function Footer() {
                 ))}
               </div>
             </div>
+
+            {/* Services col 1 */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">SERVICES</p>
+              <div className="flex flex-col gap-1.5">
+                {services.slice(0, 8).map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/services/${s.slug}`}
+                    className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Services col 2 */}
+            <div>
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4 opacity-0 pointer-events-none select-none">
+                &nbsp;
+              </p>
+              <div className="flex flex-col gap-1.5">
+                {services.slice(8).map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/services/${s.slug}`}
+                    className="font-body text-sm text-dark/70 hover:text-dark transition-colors"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom strip — dark */}
+      {/* Bottom strip */}
       <div className="bg-dark px-6 py-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="font-mono text-xs text-white/40 uppercase tracking-widest">
