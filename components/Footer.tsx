@@ -4,6 +4,7 @@ import { services } from '@/lib/services-data'
 const exploreLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
+  { label: 'Team', href: '/team' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact-us' },
 ]

@@ -11,7 +11,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!service) return {}
   return {
     title: `${service.name} | SA Media`,
-    description: service.description,
+    description: service.philosophy?.body.slice(0, 160) ?? service.description,
+    openGraph: {
+      title: `${service.name} | SA Media`,
+      description: service.philosophy?.body.slice(0, 160) ?? service.description,
+    },
   }
 }
 
@@ -81,6 +85,33 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      {/* Philosophy */}
+      {service.philosophy && (
+        <section className="bg-dark px-6 py-24">
+          <div className="max-w-7xl mx-auto">
+            <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6">
+              HOW WE THINK ABOUT IT
+            </p>
+            <h2 className="font-heading text-3xl md:text-5xl text-white leading-tight mb-10 max-w-3xl">
+              {service.philosophy.title}
+            </h2>
+            <p className="font-body text-lg text-white/50 max-w-3xl leading-relaxed mb-20">
+              {service.philosophy.body}
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10">
+              {service.philosophy.principles.map((p, i) => (
+                <div key={i} className="bg-dark p-10 flex flex-col gap-4">
+                  <p className="font-mono text-xs text-lime">0{i + 1}</p>
+                  <h3 className="font-heading text-xl text-white leading-snug">{p.heading}</h3>
+                  <p className="font-body text-sm text-white/50 leading-relaxed">{p.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Zune Lab partnership section */}
       {service.zunelabPartner && service.zunelabSystems && (

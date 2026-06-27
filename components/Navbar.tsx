@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services', hasDropdown: true },
   { label: 'Blog', href: '/blog' },
+  { label: 'Team', href: '/team' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact-us' },
 ]
@@ -191,7 +192,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {['Blog', 'About', 'Contact'].map((label) => (
+            {['Blog', 'Team', 'About', 'Contact'].map((label) => (
               <Link
                 key={label}
                 href={label === 'Contact' ? '/contact-us' : `/${label.toLowerCase()}`}
