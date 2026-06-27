@@ -198,7 +198,7 @@ export const posts: BlogPost[] = [
     excerpt: 'Toronto events are competitive. The brands that cut through aren\'t spending more - they\'re executing better.',
     content: `<p>Toronto has one of the most active event scenes in North America. TIFF, Nuit Blanche, the CNE, Collision, and hundreds of smaller brand events throughout the year create both enormous opportunity and significant noise. The brands that make events work as a marketing channel have a fundamentally different approach from the ones that set up a booth and hope for the best.</p>
 <h2>Events as Brand Experiences, Not Sales Floors</h2>
-<p>The most effective Toronto event marketing in 2026 is built around creating an experience worth talking about - not a product demonstration worth ignoring. Brands that create photo opportunities, interactive installations, exclusive moments, or genuinely useful content at their events get organic amplification that multiplies their investment. Brands that show up with a banner and a roll-up display get forgotten before attendees reach the parking lot.</p>
+<p>The most effective Toronto event marketing in 2025 is built around creating an experience worth talking about - not a product demonstration worth ignoring. Brands that create photo opportunities, interactive installations, exclusive moments, or genuinely useful content at their events get organic amplification that multiplies their investment. Brands that show up with a banner and a roll-up display get forgotten before attendees reach the parking lot.</p>
 <h2>The Digital Amplification Layer</h2>
 <p>Every Toronto event a brand attends or hosts should generate content that lives beyond the event itself. Pre-event anticipation content, live coverage on social, behind-the-scenes production, post-event recap, and attendee-generated content form the digital amplification layer that determines whether an event investment reaches 500 people or 50,000.</p>
 <h2>Measuring Event ROI</h2>
@@ -224,13 +224,13 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'performance-marketing-toronto-startups',
-    title: 'How Toronto Startups Are Using Performance Marketing to Scale in 2026',
+    title: 'How Toronto Startups Are Using Performance Marketing to Scale in 2025',
     date: '2025-11-11',
     category: 'Paid Media',
     location: 'Toronto',
     readTime: '8 min',
     excerpt: 'The Toronto startups growing fastest aren\'t spending the most on ads. They\'re building the tightest feedback loops.',
-    content: `<p>Toronto has one of the most active startup ecosystems in North America - from MaRS to the DMZ to Waterloo corridor companies landing in the city. The startups that are scaling most efficiently in 2026 have one thing in common: they've built performance marketing operations that generate reliable data on what's working before they scale spend.</p>
+    content: `<p>Toronto has one of the most active startup ecosystems in North America - from MaRS to the DMZ to Waterloo corridor companies landing in the city. The startups that are scaling most efficiently in 2025 have one thing in common: they've built performance marketing operations that generate reliable data on what's working before they scale spend.</p>
 <h2>The Startup Performance Marketing Stack</h2>
 <p>For early-stage Toronto startups, the right performance marketing approach is methodical rather than aggressive. Start with Google Search Ads targeting high-intent keywords in your category - this captures demand that already exists rather than creating it. Add Meta for remarketing once you have visitor traffic worth targeting. Layer in TikTok only after you have creative that's proven to convert in other channels.</p>
 <h2>The Attribution Problem Most Toronto Startups Ignore</h2>
@@ -274,13 +274,13 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'digital-marketing-dubai-guide',
-    title: 'Digital Marketing in Dubai: What Every Brand Needs to Know in 2026',
+    title: 'Digital Marketing in Dubai: What Every Brand Needs to Know in 2025',
     date: '2025-09-20',
     category: 'Marketing',
     location: 'Dubai',
     readTime: '9 min',
     excerpt: 'Dubai\'s digital market has exploded. The brands winning here understand it\'s not like any other market in the world.',
-    content: `<p>Dubai's digital marketing landscape in 2026 is unlike any other market. It combines first-world infrastructure and purchasing power with a uniquely multicultural audience - over 85% of Dubai's population are expatriates representing more than 200 nationalities. A marketing strategy built for a European or North American audience and transplanted to Dubai will fail. The market demands local understanding at a level most global agencies don't have.</p>
+    content: `<p>Dubai's digital marketing landscape in 2025 is unlike any other market. It combines first-world infrastructure and purchasing power with a uniquely multicultural audience - over 85% of Dubai's population are expatriates representing more than 200 nationalities. A marketing strategy built for a European or North American audience and transplanted to Dubai will fail. The market demands local understanding at a level most global agencies don't have.</p>
 <h2>Platform Dynamics in the UAE</h2>
 <p>Instagram is king in Dubai across both consumer and B2B categories. The platform's visual format fits Dubai's premium, aspirational culture - and Emirati and regional audiences engage at rates significantly above global averages. TikTok has grown aggressively in the UAE, particularly among the 18-35 demographic that makes up a large share of Dubai's expatriate population. LinkedIn is the dominant B2B channel for decision-makers in the DIFC and Dubai's corporate sector.</p>
 <h2>Arabic vs. English Content Strategy</h2>
@@ -291,12 +291,12 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'social-media-marketing-uae',
-    title: 'Social Media Marketing in the UAE: Platforms, Trends, and Strategies for 2026',
+    title: 'Social Media Marketing in the UAE: Platforms, Trends, and Strategies for 2025',
     date: '2025-09-03',
     category: 'Social Media',
     location: 'Dubai',
     readTime: '8 min',
-    excerpt: 'The UAE\'s social media landscape is uniquely complex. Here\'s how to navigate it in 2026.',
+    excerpt: 'The UAE\'s social media landscape is uniquely complex. Here\'s how to navigate it in 2025.',
     content: `<p>The UAE has one of the highest social media penetration rates in the world. With over 99% internet penetration and average daily social media usage well above the global average, the UAE market represents an extraordinary opportunity for brands that know how to use it. The challenge is navigating a landscape that's simultaneously Arabic and English, local and expatriate, traditional and relentlessly modern.</p>
 <h2>Platform Performance in the UAE</h2>
 <p>Instagram consistently outperforms other platforms for brand discovery and purchase intent in the UAE. The platform's visual emphasis aligns perfectly with Dubai's premium, lifestyle-driven culture - and shopping features have made it a genuine e-commerce channel for UAE brands. Snapchat has unusually high penetration among younger Emirati audiences and should not be overlooked for brands targeting that demographic. X (formerly Twitter) maintains relevance for news-adjacent categories and sports.</p>
@@ -350,7 +350,7 @@ export const posts: BlogPost[] = [
     excerpt: 'Dubai e-commerce brands have access to one of the highest-purchasing-power audiences in the world. Here\'s how to reach them profitably.',
     content: `<p>Dubai e-commerce is booming. The UAE's e-commerce market is growing at rates that consistently outpace mature Western markets, driven by high smartphone penetration, tech-savvy consumers, and purchasing power that makes it one of the most attractive e-commerce markets on earth. The brands capitalising on this aren't necessarily the biggest - they're the ones running performance marketing that understands the Dubai consumer.</p>
 <h2>Meta Ads for Dubai E-commerce</h2>
-<p>Meta remains the dominant paid social channel for Dubai e-commerce in 2026. Dubai consumers are active Instagram shoppers, and the platform's e-commerce features - product tags, shopping tabs, and checkout integrations - have made it a genuine sales channel, not just a discovery platform. The creative standards for Dubai Meta Ads are high; production quality that underperforms in the market is immediately visible against the premium content Dubai audiences are accustomed to.</p>
+<p>Meta remains the dominant paid social channel for Dubai e-commerce in 2025. Dubai consumers are active Instagram shoppers, and the platform's e-commerce features - product tags, shopping tabs, and checkout integrations - have made it a genuine sales channel, not just a discovery platform. The creative standards for Dubai Meta Ads are high; production quality that underperforms in the market is immediately visible against the premium content Dubai audiences are accustomed to.</p>
 <h2>Google Shopping in the UAE</h2>
 <p>Google Shopping campaigns in the UAE offer strong intent-based reach for e-commerce brands across product categories. The key differentiator in the Dubai market is product feed quality - brands with well-optimised feeds, correct categorisation, and competitive pricing signals consistently outperform competitors running the same budget with mediocre feed hygiene.</p>
 <h2>TikTok's Growing Role in UAE E-commerce</h2>
@@ -393,7 +393,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'content-marketing-uae',
-    title: 'Content Marketing in the UAE: What Works and What Doesn\'t in 2026',
+    title: 'Content Marketing in the UAE: What Works and What Doesn\'t in 2025',
     date: '2025-05-18',
     category: 'Content',
     location: 'Dubai',
@@ -460,7 +460,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'tiktok-dubai-businesses',
-    title: 'TikTok for Dubai Businesses: How Brands Are Growing Organically in 2026',
+    title: 'TikTok for Dubai Businesses: How Brands Are Growing Organically in 2025',
     date: '2025-03-05',
     category: 'Social Media',
     location: 'Dubai',
@@ -489,7 +489,7 @@ export const posts: BlogPost[] = [
 <h2>What World-Class Event Execution Looks Like</h2>
 <p>The Dubai event brands that make an impact invest in three things: exceptional physical design that competes with the best in the space, experiential programming that gives attendees a reason to engage and stay, and a systematic content strategy that amplifies the event investment to audiences who weren't there. A Dubai event activation that reaches only the people physically present is a missed opportunity.</p>
 <h2>Hybrid and Digital Extension</h2>
-<p>Dubai events in 2026 are increasingly hybrid - live production paired with professional streaming and digital content distribution that extends reach far beyond the venue. Brands that invest in live streaming, professional photography and videography, and rapid post-event content turnaround get 3-5x the reach from the same event investment as brands that treat it purely as an in-person activation.</p>
+<p>Dubai events in 2025 are increasingly hybrid - live production paired with professional streaming and digital content distribution that extends reach far beyond the venue. Brands that invest in live streaming, professional photography and videography, and rapid post-event content turnaround get 3-5x the reach from the same event investment as brands that treat it purely as an in-person activation.</p>
 <p>SA Media plans and produces events for Dubai brands - from booth design and experiential programming through to complete content production and digital amplification.</p>`,
   },
   {
@@ -499,7 +499,7 @@ export const posts: BlogPost[] = [
     category: 'Development',
     location: 'Dubai',
     readTime: '7 min',
-    excerpt: 'Dubai customers judge businesses by their websites in seconds. Here\'s what high-converting Dubai sites look like in 2026.',
+    excerpt: 'Dubai customers judge businesses by their websites in seconds. Here\'s what high-converting Dubai sites look like in 2025.',
     content: `<p>A Dubai business website is a first impression that many potential clients judge before they ever speak to your team. In a market where visual standards are high and alternatives are abundant, a website that looks dated, loads slowly, or fails to communicate clearly in the first five seconds is actively losing business for you every day.</p>
 <h2>Bilingual Website Architecture</h2>
 <p>Dubai businesses serving both Arabic and English-speaking audiences need website architecture that serves both languages with equal quality. That means separate URL structures or language toggles, genuinely native content in both languages (not translated English), and right-to-left layout support for Arabic that doesn't feel like an afterthought. The technical and design requirements for a properly bilingual Dubai website are more complex than they appear.</p>
@@ -543,15 +543,15 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'social-media-marketing-new-york',
-    title: 'Social Media Marketing for New York Brands: Cutting Through the Noise in 2026',
+    title: 'Social Media Marketing for New York Brands: Cutting Through the Noise in 2024',
     date: '2024-11-28',
     category: 'Social Media',
     location: 'New York',
     readTime: '7 min',
-    excerpt: 'New York audiences are the most saturated in the world. Here\'s how brands are cutting through in 2026.',
+    excerpt: 'New York audiences are the most saturated in the world. Here\'s how brands are cutting through in 2024.',
     content: `<p>New York's social media landscape is the most competitive in the world. Every major brand, every emerging DTC startup, and every influencer with serious ambitions is creating content for the same audience. The New York consumer is sophisticated, fast to scroll past average content, and genuinely difficult to earn attention from in a way that moves business metrics.</p>
 <h2>What Works for New York Brands</h2>
-<p>The social media content that cuts through for New York brands in 2026 tends to share one characteristic: specificity. Content that references real New York culture, real neighbourhoods, real food scenes, real moments - not aspirational lifestyle content that could be from anywhere - builds the local relevance that resonates with New York audiences who can immediately tell when content was produced for a generic "urban" audience rather than for them.</p>
+<p>The social media content that cuts through for New York brands in 2024 tends to share one characteristic: specificity. Content that references real New York culture, real neighbourhoods, real food scenes, real moments - not aspirational lifestyle content that could be from anywhere - builds the local relevance that resonates with New York audiences who can immediately tell when content was produced for a generic "urban" audience rather than for them.</p>
 <h2>Platform Dynamics in the New York Market</h2>
 <p>Instagram remains the dominant brand platform for New York consumer brands - the city's visual culture and its role as a fashion, food, and design capital makes Instagram a natural fit. TikTok has enormous reach in New York, particularly for brands targeting the 18-35 demographic. LinkedIn is indispensable for B2B brands headquartered in or serving New York's financial services, tech, and professional services sectors.</p>
 <h2>The NYC Creator Ecosystem</h2>
@@ -616,7 +616,7 @@ export const posts: BlogPost[] = [
     location: 'New York',
     readTime: '8 min',
     excerpt: 'New York\'s most competitive companies are using AI to run leaner, faster marketing operations. Here\'s what they\'re building.',
-    content: `<p>New York's marketing community was initially resistant to AI - the city's concentration of creative talent and its agency culture made it easy to dismiss AI as a threat to craft. In 2026, that resistance has given way to adoption. The agencies and brands winning in New York's competitive markets are using AI to move faster, test more, and free their teams for the creative and strategic work that actually differentiates them.</p>
+    content: `<p>New York's marketing community was initially resistant to AI - the city's concentration of creative talent and its agency culture made it easy to dismiss AI as a threat to craft. In 2024, that resistance has given way to adoption. The agencies and brands winning in New York's competitive markets are using AI to move faster, test more, and free their teams for the creative and strategic work that actually differentiates them.</p>
 <h2>Where NYC Marketing Teams Are Using AI Most</h2>
 <p>The highest-impact AI applications in New York marketing operations are performance creative testing (generating and testing significantly more creative variations than human teams can produce), content scaling (producing consistent content across channels at a volume that's not economically viable with purely human teams), and analytics (using AI to process campaign data and surface insights that would take analysts days to produce manually).</p>
 <h2>AI Automation for NYC Agency Operations</h2>
@@ -668,7 +668,7 @@ export const posts: BlogPost[] = [
     excerpt: 'AI search is changing how New York customers find businesses. Most brands haven\'t started optimising for it yet.',
     content: `<p>New York businesses have some of the most sophisticated SEO and digital marketing operations in the world. And almost none of them have started optimising for the search channel that's growing fastest: AI search tools like ChatGPT, Perplexity, and Google's AI Overviews. This is one of the few genuine first-mover opportunities left in digital marketing.</p>
 <h2>How New York Customers Are Using AI Search</h2>
-<p>In 2026, a meaningful and growing percentage of New York consumers and business buyers are using AI assistants as search engines - asking questions like "what's the best accounting firm in Midtown Manhattan" or "who are the top DTC brands for activewear in New York" instead of entering those terms into Google. The businesses that appear in AI-generated answers to these questions are capturing demand that their competitors who haven't invested in GEO and AIEO are losing.</p>
+<p>In 2024, a meaningful and growing percentage of New York consumers and business buyers are using AI assistants as search engines - asking questions like "what's the best accounting firm in Midtown Manhattan" or "who are the top DTC brands for activewear in New York" instead of entering those terms into Google. The businesses that appear in AI-generated answers to these questions are capturing demand that their competitors who haven't invested in GEO and AIEO are losing.</p>
 <h2>What AIEO Optimization Looks Like for a New York Business</h2>
 <p>AIEO optimization for a New York business starts with an audit of what AI tools currently say about your brand, your category, and your competitors in New York. It then builds an optimisation program designed to increase the frequency and accuracy of AI citations - through structured online information, authoritative content, earned media in publications that AI tools draw from heavily, and technical optimisations that make your content more parsable by AI systems.</p>
 <h2>The New York First-Mover Window</h2>
@@ -685,7 +685,7 @@ export const posts: BlogPost[] = [
     excerpt: 'New York startups need websites that convert investors, customers, and talent. Here\'s what that looks like.',
     content: `<p>New York startup culture has a bias toward shipping fast. The city's funding environment, its concentration of talent, and its culture of ambition create pressure to move quickly - which too often means websites that were built to launch fast and have never been properly invested in since. For a New York startup that's past the seed stage, a website that doesn't convert at the level the business needs is a growth constraint that compounds every month it goes unaddressed.</p>
 <h2>What New York Startup Websites Need to Do</h2>
-<p>The job of a New York startup website in 2026 is multifaceted: it needs to convert potential customers, credentialise the company for investors, attract talent, and serve as the foundation for SEO and content marketing. A site optimised only for one of these audiences underserves the others. The best New York startup websites are architected to serve all these audiences with specific landing pages and content paths for each.</p>
+<p>The job of a New York startup website in 2024 is multifaceted: it needs to convert potential customers, credentialise the company for investors, attract talent, and serve as the foundation for SEO and content marketing. A site optimised only for one of these audiences underserves the others. The best New York startup websites are architected to serve all these audiences with specific landing pages and content paths for each.</p>
 <h2>Speed and Technical Performance</h2>
 <p>New York startup audiences are technologically sophisticated. Slow websites, broken mobile experiences, and outdated design conventions signal that the company isn't executing at the level it claims. For a startup pitching disruptive technology or innovative products, having a website that doesn't perform technically is an obvious contradiction that investors and customers notice.</p>
 <h2>The Stack Matters</h2>
@@ -733,13 +733,13 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'get-cited-chatgpt-gemini-perplexity',
-    title: 'How to Get Your Brand Cited by ChatGPT, Gemini, and Perplexity in 2026',
+    title: 'How to Get Your Brand Cited by ChatGPT, Gemini, and Perplexity in 2024',
     date: '2024-05-16',
     category: 'AIEO',
     location: 'General',
     readTime: '11 min',
     excerpt: 'AI tools are answering your customers\' questions. Here\'s how to make sure your brand is the answer they give.',
-    content: `<p>When a potential customer asks ChatGPT for recommendations in your category, or asks Perplexity to find the best provider of your service in their city, your brand is either in the answer or it isn't. In 2026, that binary is becoming as commercially important as whether you rank on page one of Google. Here's how to improve your brand's probability of being cited by the major AI tools.</p>
+    content: `<p>When a potential customer asks ChatGPT for recommendations in your category, or asks Perplexity to find the best provider of your service in their city, your brand is either in the answer or it isn't. In 2024, that binary is becoming as commercially important as whether you rank on page one of Google. Here's how to improve your brand's probability of being cited by the major AI tools.</p>
 <h2>Understand the AI Citation Ecosystem</h2>
 <p>ChatGPT, Gemini, and Perplexity all work differently. ChatGPT in its base form draws from training data - information available on the web up to its knowledge cutoff. ChatGPT with Browse and Perplexity search the web in real time and cite sources. Google's AI Overviews draw from Google's search index. Each of these systems weights different signals, which means that a comprehensive AI citation strategy addresses all of them, not just one.</p>
 <h2>Build Entity Consistency Across the Web</h2>
@@ -758,15 +758,15 @@ export const posts: BlogPost[] = [
     category: 'GEO',
     location: 'General',
     readTime: '9 min',
-    excerpt: 'Traditional SEO isn\'t dead. But it\'s changing faster than most brands realise. Here\'s what the search landscape actually looks like in 2026.',
-    content: `<p>The phrase "SEO is dead" has been declared prematurely many times. But in 2026, something genuinely different is happening. The share of searches that result in a click on any web result - already declining for years due to featured snippets and zero-click searches - has fallen further as Google's AI Overviews, Perplexity, and other AI tools answer more queries without requiring users to visit a website. The implications for brands that depend on organic search traffic are significant and demand a strategic response.</p>
+    excerpt: 'Traditional SEO isn\'t dead. But it\'s changing faster than most brands realise. Here\'s what the search landscape actually looks like in 2024.',
+    content: `<p>The phrase "SEO is dead" has been declared prematurely many times. But in 2024, something genuinely different is happening. The share of searches that result in a click on any web result - already declining for years due to featured snippets and zero-click searches - has fallen further as Google's AI Overviews, Perplexity, and other AI tools answer more queries without requiring users to visit a website. The implications for brands that depend on organic search traffic are significant and demand a strategic response.</p>
 <h2>What's Actually Changing</h2>
 <p>Traditional SEO hasn't been replaced - it's been extended. Domain authority, quality content, and technical performance still matter enormously. What's changed is that they now matter for two purposes: ranking in traditional search results AND earning citations in AI-generated answers. The brands that understand this and invest in both simultaneously are building a search presence that's durable across the evolving landscape. The brands that treat GEO as separate from SEO and haven't started are falling behind in the AI search channel while maintaining their traditional search positions.</p>
 <h2>The Zero-Click Problem</h2>
 <p>For many query types - definitions, simple factual questions, local business information, weather, and an expanding category of more complex queries - AI search tools are providing answers that require no click-through. For brands that generate significant revenue from organic traffic (media companies, content businesses, lead generation sites), this is a genuine business model threat that requires strategic adaptation.</p>
 <h2>The Opportunity Side of AI Search</h2>
 <p>The shift to AI search also creates opportunities. Brands that invest in AIEO and GEO while their competitors focus exclusively on traditional SEO will earn AI search citations that feel organic and trustworthy to users in a way that paid placements never will. The competitive moat around strong AI search visibility is significant - and the window to build it while the landscape is still developing is open now.</p>
-<h2>Building a Search Strategy for 2026 and Beyond</h2>
+<h2>Building a Search Strategy for 2024 and Beyond</h2>
 <p>The search strategy that will compound over the next three years combines traditional SEO foundations (domain authority, technical performance, content quality) with GEO and AIEO optimisation (question-answering content, entity consistency, earned media in AI-trusted sources, structured data). SA Media builds search strategies that address the full landscape - traditional and AI search - as an integrated system.</p>`,
   },
   {
@@ -779,7 +779,7 @@ export const posts: BlogPost[] = [
     excerpt: 'AI agents are moving from experiment to infrastructure for marketing teams. Here\'s what they are and where they actually add value.',
     content: `<p>AI agents are autonomous systems that can execute multi-step tasks without continuous human direction. Unlike simple AI tools that respond to a single prompt, agents can plan, take actions (browsing the web, calling APIs, writing and sending emails), evaluate results, and adapt their approach - repeating this loop until a task is complete. For marketing teams, this represents a qualitative shift in what automation can accomplish.</p>
 <h2>What Marketing AI Agents Actually Do</h2>
-<p>The most valuable marketing AI agents in production in 2026 handle tasks that previously required significant human time: competitor monitoring and reporting (agents that check competitor websites, pricing, content, and social activity on a schedule and produce structured reports), content research and brief generation (agents that research a topic comprehensively and produce content briefs that human writers can execute quickly), lead research and qualification (agents that take a list of leads and research each one to assess fit and personalise outreach), and performance reporting (agents that pull data from multiple platforms, synthesise it into narrative summaries, and deliver reports on schedule).</p>
+<p>The most valuable marketing AI agents in production in 2024 handle tasks that previously required significant human time: competitor monitoring and reporting (agents that check competitor websites, pricing, content, and social activity on a schedule and produce structured reports), content research and brief generation (agents that research a topic comprehensively and produce content briefs that human writers can execute quickly), lead research and qualification (agents that take a list of leads and research each one to assess fit and personalise outreach), and performance reporting (agents that pull data from multiple platforms, synthesise it into narrative summaries, and deliver reports on schedule).</p>
 <h2>The Technical Reality of Marketing Agents</h2>
 <p>Building effective marketing agents requires more than prompting a chatbot. Production-grade agents need reliable tool use (the ability to call APIs, browse the web, and interact with software), memory management (the ability to maintain context across multi-step tasks), error handling (the ability to recognise when something has gone wrong and adapt), and integration with your existing marketing stack (connecting to your CRM, your email platform, your analytics tools). This is engineering work, not prompt engineering.</p>
 <h2>Where Agents Add Value vs. Simpler Automation</h2>
@@ -787,14 +787,14 @@ export const posts: BlogPost[] = [
 <p>SA Media builds marketing AI agents in partnership with Zune Lab for clients that want to systematically automate the research, reporting, and operational tasks that currently consume their teams' time.</p>`,
   },
   {
-    slug: 'ai-powered-marketing-stack-2026',
-    title: 'How to Build an AI-Powered Marketing Stack in 2026',
+    slug: 'ai-powered-marketing-stack-2024',
+    title: 'How to Build an AI-Powered Marketing Stack in 2024',
     date: '2024-03-21',
     category: 'AI',
     location: 'General',
     readTime: '11 min',
-    excerpt: 'The best marketing stacks in 2026 use AI not as a feature but as infrastructure. Here\'s how to build one.',
-    content: `<p>The AI-powered marketing stack has moved from a competitive advantage to a competitive requirement in 2026. Brands still running manual content workflows, human-only reporting processes, and ad-hoc testing approaches are operating at a structural disadvantage against competitors who have built AI into the core of their marketing operations. Building the right stack - not the most expensive or the most complex, but the right one for your business - is the defining marketing infrastructure question of the moment.</p>
+    excerpt: 'The best marketing stacks in 2024 use AI not as a feature but as infrastructure. Here\'s how to build one.',
+    content: `<p>The AI-powered marketing stack has moved from a competitive advantage to a competitive requirement in 2024. Brands still running manual content workflows, human-only reporting processes, and ad-hoc testing approaches are operating at a structural disadvantage against competitors who have built AI into the core of their marketing operations. Building the right stack - not the most expensive or the most complex, but the right one for your business - is the defining marketing infrastructure question of the moment.</p>
 <h2>Layer 1: Data and Attribution</h2>
 <p>No AI marketing stack works without reliable data. The foundation is a properly configured GA4 instance, accurate conversion tracking across all channels, and ideally a multi-touch attribution model that shows the full customer journey. AI tools applied to bad data produce bad outputs - faster. Getting data right before adding AI to the stack saves enormous effort later.</p>
 <h2>Layer 2: Content Production</h2>
@@ -812,7 +812,7 @@ export const posts: BlogPost[] = [
     location: 'General',
     readTime: '9 min',
     excerpt: 'The way customers find businesses is changing faster than most marketers realise. Here\'s what the next three years look like.',
-    content: `<p>Search has been the dominant customer discovery channel for 25 years. Through every shift in the digital landscape - social media, mobile, voice search - Google maintained its position as the primary way people find businesses, information, and products. In 2026, that position is genuinely being challenged for the first time. AI-powered search tools are not a supplement to traditional search - they're becoming an alternative to it.</p>
+    content: `<p>Search has been the dominant customer discovery channel for 25 years. Through every shift in the digital landscape - social media, mobile, voice search - Google maintained its position as the primary way people find businesses, information, and products. In 2024, that position is genuinely being challenged for the first time. AI-powered search tools are not a supplement to traditional search - they're becoming an alternative to it.</p>
 <h2>The AI Search Adoption Curve</h2>
 <p>AI search tool adoption follows a predictable technology diffusion pattern. Early adopters - typically younger, more tech-savvy, and more information-intensive in their work - adopted AI search tools first and have already substantially shifted their search behaviour. The early majority - the mainstream technology users who determine which innovations become ubiquitous - are adopting AI search tools now. Brands that aren't building for the AI search landscape are setting up to lose relevance with the most influential and earliest-adopting consumers.</p>
 <h2>What Customer Discovery Looks Like in an AI-First World</h2>
@@ -839,7 +839,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'optimize-content-for-ai-search-engines',
-    title: 'How to Optimize Your Content for AI Search Engines in 2026',
+    title: 'How to Optimize Your Content for AI Search Engines in 2024',
     date: '2024-01-24',
     category: 'AIEO',
     location: 'General',
@@ -871,7 +871,7 @@ export const posts: BlogPost[] = [
 <p>Traditional SEO optimises for ranking in search results that humans click on and read. AIEO optimises for being cited in AI-generated answers that may or may not include a link back to your site. This distinction has significant implications: a top-ten Google ranking generates predictable click volume; an AI citation may generate a recommendation without a direct link - influencing a purchasing decision without appearing in your analytics as a referral visit.</p>
 <p>Content structure for AIEO prioritises question-answering formats and AI-parseable organisation over the keyword-density and internal linking architecture that traditional SEO content uses. Entity consistency - the accuracy and uniformity of how your brand is described across the web - matters more for AIEO than it does for traditional SEO, where your own site's signals dominate.</p>
 <h2>Which Should You Prioritize?</h2>
-<p>For most brands in 2026, the answer is both - but with a sequenced approach. Start with traditional SEO foundations (domain authority, technical performance, content quality) because they take time to build and serve as the foundation for AIEO as well. Layer in AIEO-specific work (question-answering content, entity optimization, earned media in AI-trusted sources, schema markup) as a complement - not a replacement. The brands that will dominate search visibility in 2028 are building both simultaneously today.</p>
+<p>For most brands in 2024, the answer is both - but with a sequenced approach. Start with traditional SEO foundations (domain authority, technical performance, content quality) because they take time to build and serve as the foundation for AIEO as well. Layer in AIEO-specific work (question-answering content, entity optimization, earned media in AI-trusted sources, schema markup) as a complement - not a replacement. The brands that will dominate search visibility in 2028 are building both simultaneously today.</p>
 <p>SA Media runs integrated search visibility programs that address traditional SEO and AIEO as a single discipline - audit, strategy, and execution that builds visibility across both traditional and AI search.</p>`,
   },
 ]
