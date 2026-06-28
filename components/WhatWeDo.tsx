@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const lineColors = ['text-dark', 'text-dark', 'text-lime']
 
 export default function WhatWeDo() {
-  const lines = ['Social Media,', 'Content &', 'Digital Growth.']
+  const lines = ['Digital Growth', 'Systems using', 'Data & Design.']
   return (
     <section className="bg-off-white px-6 py-16 md:py-32 overflow-hidden border-t-[3px] border-lime">
       <div className="max-w-7xl mx-auto">
