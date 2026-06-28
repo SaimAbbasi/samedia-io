@@ -37,7 +37,7 @@ const capabilities = [
   {
     n: '01',
     name: 'Strategy',
-    accent: 'bg-lime',
+    accent: 'border-lime',
     accentText: 'text-lime',
     summary: 'Every campaign we run starts with a strategy built around your specific market, audience, and goals. We do not recycle playbooks.',
     items: [
@@ -50,7 +50,7 @@ const capabilities = [
   {
     n: '02',
     name: 'Design',
-    accent: 'bg-teal',
+    accent: 'border-teal',
     accentText: 'text-teal',
     summary: 'Design is not decoration. Every pixel we produce serves a purpose brand recognition, conversion, or both.',
     items: [
@@ -64,7 +64,7 @@ const capabilities = [
   {
     n: '03',
     name: 'Build',
-    accent: 'bg-lime',
+    accent: 'border-lime',
     accentText: 'text-lime',
     summary: 'We build digital products that are fast, accessible, and engineered to perform. From marketing sites to full e-commerce platforms.',
     items: [
@@ -79,7 +79,7 @@ const capabilities = [
   {
     n: '04',
     name: 'Market',
-    accent: 'bg-teal',
+    accent: 'border-teal',
     accentText: 'text-teal',
     summary: 'We get your brand in front of the right people at the right time across every major channel and we measure every dollar.',
     items: [
@@ -96,7 +96,7 @@ const capabilities = [
   {
     n: '05',
     name: 'AI',
-    accent: 'bg-lime',
+    accent: 'border-lime',
     accentText: 'text-lime',
     summary: 'We build AI into your brand operations not as a novelty, but as infrastructure that gives you a permanent competitive edge.',
     items: [
@@ -113,7 +113,7 @@ const capabilities = [
   {
     n: '06',
     name: 'Events',
-    accent: 'bg-teal',
+    accent: 'border-teal',
     accentText: 'text-teal',
     summary: 'From brand activations to full-scale conferences, we produce events that people remember and talk about.',
     items: [
