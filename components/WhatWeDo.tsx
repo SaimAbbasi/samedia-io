@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-const lineColors = ['text-dark', 'text-dark', 'text-lime']
+const lineColors = ['text-teal', 'text-teal', 'text-lime']
 
 export default function WhatWeDo() {
   const lines = ['Digital Growth', 'Systems using', 'Data & Design.']
