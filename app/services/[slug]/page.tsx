@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Script from 'next/script'
 import { services, getService } from '@/lib/services-data'
 
 export function generateStaticParams() {
@@ -26,12 +27,12 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-dark pt-36 pb-24 px-6">
+      <section className="bg-dark pt-28 md:pt-36 pb-16 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto">
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6">
             {service.eyebrow} · {service.n}
           </p>
-          <h1 className="font-heading text-6xl md:text-8xl text-white leading-none mb-8">
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-8xl text-white leading-none mb-8">
             {service.name}
           </h1>
           <p className="font-body text-xl text-white/50 max-w-2xl leading-relaxed">
@@ -210,6 +211,101 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         </section>
       )}
 
+      {/* Who it's for */}
+      {service.whoFor && (
+        <section className="bg-off-white px-6 py-20 border-t border-dark">
+          <div className="max-w-7xl mx-auto">
+            <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-6">
+              WHO THIS IS FOR
+            </p>
+            <p className="font-body text-xl text-dark/80 max-w-3xl leading-relaxed">
+              {service.whoFor}
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* Our Process */}
+      {service.process && (
+        <section className="bg-dark px-6 py-24">
+          <div className="max-w-7xl mx-auto">
+            <p className="font-mono text-xs text-teal uppercase tracking-widest mb-4">
+              HOW WE WORK
+            </p>
+            <h2 className="font-heading text-3xl md:text-5xl text-white leading-tight mb-16 max-w-2xl">
+              Our process, step by step.
+            </h2>
+            <div className="flex flex-col divide-y divide-white/10">
+              {service.process.map((step) => (
+                <div key={step.n} className="py-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
+                  <div className="flex items-center gap-4">
+                    <span className="font-mono text-sm text-lime">{step.n}</span>
+                    <h3 className="font-heading text-xl text-white">{step.title}</h3>
+                  </div>
+                  <p className="md:col-span-3 font-body text-base text-white/50 leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ */}
+      {service.faq && (
+        <>
+          <Script
+            id={`faq-schema-${service.slug}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: service.faq.map((item) => ({
+                  '@type': 'Question',
+                  name: item.q,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: item.a,
+                  },
+                })),
+              }),
+            }}
+          />
+          <section className="bg-off-white px-6 py-24 border-t border-dark">
+            <div className="max-w-7xl mx-auto">
+              <p className="font-mono text-xs text-dark/50 uppercase tracking-widest mb-4">
+                FAQ
+              </p>
+              <h2 className="font-heading text-3xl md:text-5xl text-dark leading-tight mb-16 max-w-2xl">
+                Common questions answered.
+              </h2>
+              <div className="flex flex-col divide-y divide-dark/10">
+                {service.faq.map((item) => (
+                  <details
+                    key={item.q}
+                    className="group py-8 cursor-pointer"
+                  >
+                    <summary className="list-none flex items-center justify-between gap-6">
+                      <h3 className="font-heading text-xl md:text-2xl text-dark leading-snug">
+                        {item.q}
+                      </h3>
+                      <span className="font-mono text-xl text-dark/30 shrink-0 group-open:rotate-45 transition-transform duration-200">
+                        +
+                      </span>
+                    </summary>
+                    <p className="font-body text-base text-dark/60 leading-relaxed mt-6 max-w-3xl">
+                      {item.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
       {/* CTA */}
       <section className="bg-off-white px-6 py-24 border-t border-dark">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
@@ -221,7 +317,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
           <div className="flex flex-col gap-4 shrink-0">
             <Link
-              href="/contact-us"
+              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
               className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
             >
               Start a project →

@@ -3,8 +3,24 @@ import Link from 'next/link'
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import { useRef, useEffect } from 'react'
 
-const words = ['DIGITAL', 'GROWTH', 'SOLUTIONS.']
-const ticker = ['TORONTO', 'NEW YORK', 'DUBAI', 'SEO', 'CONTENT', 'PAID MEDIA', 'AI', 'BRAND', 'WEB', 'EVENTS', 'STRATEGY', 'DESIGN']
+const words = ['DIGITAL', 'GROWTH', 'SOLUTIONS']
+const ticker = [
+  'BRAND STRATEGY & POSITIONING',
+  'BRAND IDENTITY & DESIGN',
+  'SOCIAL MEDIA MANAGEMENT',
+  'CONTENT CREATION',
+  'MEDIA BUYING & ADS',
+  'INFLUENCER MARKETING',
+  'SEO & CONTENT STRATEGY',
+  'EMAIL & CRM AUTOMATION',
+  'WEB & E-COMMERCE DEVELOPMENT',
+  'APP DEVELOPMENT',
+  'ANALYTICS & ATTRIBUTION',
+  'AI DEVELOPMENT & AUTOMATION',
+  'AI AGENT BUILDING',
+  'AIEO & GEO OPTIMIZATION',
+  'EVENT PLANNING & PRODUCTION',
+]
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -15,6 +31,7 @@ export default function Hero() {
 
   const orbX = useTransform(springX, [0, 1], [-30, 30])
   const orbY = useTransform(springY, [0, 1], [-20, 20])
+
 
   useEffect(() => {
     const el = sectionRef.current
@@ -29,7 +46,7 @@ export default function Hero() {
   }, [mouseX, mouseY])
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen bg-dark flex flex-col justify-center overflow-hidden px-6 pt-16">
+    <section ref={sectionRef} className="relative min-h-screen bg-dark flex flex-col overflow-hidden pt-16">
 
       {/* Parallax gradient orbs */}
       <motion.div
@@ -56,7 +73,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto w-full py-24 relative z-10">
+      {/* Main content — flex-1 fills space between top and bottom strips */}
+      <div className="flex-1 flex flex-col justify-center max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
         {/* Eyebrow */}
         <motion.p
           className="font-mono text-xs text-lime tracking-widest uppercase mb-8"
@@ -64,11 +82,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          DIGITAL MARKETING AGENCY
+          GLOBAL MEDIA FIRM
         </motion.p>
 
-        {/* Stacked headline with interactive hover highlight */}
-        <h1 className="font-heading text-7xl md:text-9xl leading-none text-white mb-10">
+        {/* Stacked headline */}
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-9xl leading-none text-white mb-8 md:mb-10">
           {words.map((word, i) => (
             <motion.span
               key={word}
@@ -85,7 +103,7 @@ export default function Hero() {
 
         {/* Subhead */}
         <motion.p
-          className="font-body text-lg text-white/60 max-w-lg leading-relaxed mb-10"
+          className="font-body text-base md:text-lg text-white/60 max-w-lg leading-relaxed mb-8 md:mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.55 }}
@@ -108,7 +126,9 @@ export default function Hero() {
             Our services
           </Link>
           <Link
-            href="/contact-us"
+            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group font-body text-sm text-lime hover:opacity-80 transition-opacity flex items-center gap-2"
           >
             Free consultation
@@ -122,6 +142,30 @@ export default function Hero() {
         </motion.div>
       </div>
 
+      {/* Cities strip — in flow, sits naturally above the ticker */}
+      <div className="relative z-10 border-t border-white/10 px-6 py-4 md:py-6">
+        <div className="max-w-7xl mx-auto flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 1 }}
+            className="flex flex-wrap justify-center items-baseline gap-x-3 gap-y-2 md:gap-x-6"
+          >
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-lime tracking-widest leading-none">TORONTO</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white/20 leading-none select-none">/</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white tracking-widest leading-none">NEW YORK</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white/20 leading-none select-none">/</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-teal tracking-widest leading-none">DUBAI</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white/20 leading-none select-none">/</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-teal tracking-widest leading-none">SINGAPORE</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white/20 leading-none select-none">/</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-lime tracking-widest leading-none">MONACO</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white/20 leading-none select-none">/</span>
+            <span className="font-heading text-base sm:text-xl md:text-3xl lg:text-4xl text-white tracking-widest leading-none">MIAMI</span>
+          </motion.div>
+        </div>
+      </div>
+
       {/* Scrolling ticker */}
       <div className="relative z-10 border-t border-white/10 overflow-hidden">
         <motion.div
@@ -130,30 +174,11 @@ export default function Hero() {
           transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
         >
           {[...ticker, ...ticker].map((item, i) => (
-            <span key={i} className="font-mono text-xs text-white/20 uppercase tracking-widest shrink-0">
-              {item} <span className="text-lime mx-4">·</span>
+            <span key={i} className={`font-mono text-xs uppercase tracking-widest shrink-0 ${i % 3 === 0 ? 'text-white/30' : i % 3 === 1 ? 'text-lime/40' : 'text-teal/40'}`}>
+              {item} <span className="text-white/15 mx-4">·</span>
             </span>
           ))}
         </motion.div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="absolute bottom-12 left-6 right-6 max-w-7xl mx-auto flex justify-between items-end z-10">
-        <motion.p
-          className="font-mono text-xs text-teal tracking-widest uppercase"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-        >
-          TORONTO · NEW YORK · DUBAI
-        </motion.p>
-        <motion.p
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="font-mono text-xs text-white/30 uppercase tracking-widest"
-        >
-          SCROLL ↓
-        </motion.p>
       </div>
     </section>
   )

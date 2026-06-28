@@ -14,8 +14,8 @@ describe('Clients', () => {
 
   it('renders partner section labels', () => {
     render(<Clients />)
-    expect(screen.getByText('— SOCIAL MEDIA PARTNERS')).toBeInTheDocument()
-    expect(screen.getByText('— AI PARTNERS')).toBeInTheDocument()
+    expect(screen.getByText(' -  SOCIAL MEDIA PARTNERS')).toBeInTheDocument()
+    expect(screen.getByText(' -  AI PARTNERS')).toBeInTheDocument()
   })
 
   it('renders social media partner names', () => {

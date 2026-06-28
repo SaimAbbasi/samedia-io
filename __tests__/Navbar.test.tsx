@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import Navbar from '@/components/Navbar'
 
-// useScroll returns scrollY MotionValue with initial value 0 in jsdom —
+// useScroll returns scrollY MotionValue with initial value 0 in jsdom  - 
 // useMotionValueEvent listener never fires in tests so scrolled stays false.
 // No mock needed; framer-motion works in jsdom for this pattern.
 

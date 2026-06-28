@@ -29,4 +29,13 @@
   .prose-blog strong {
     @apply font-semibold text-dark;
   }
+  .prose-blog h3 {
+    @apply font-heading text-xl md:text-2xl text-dark mt-8 mb-3 leading-tight;
+  }
+  .prose-blog a {
+    @apply text-teal underline underline-offset-2 hover:text-dark transition-colors;
+  }
+  .prose-blog blockquote {
+    @apply border-l-2 border-lime pl-6 italic text-dark/60 my-6;
+  }
 }

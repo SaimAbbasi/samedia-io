@@ -1,6 +1,7 @@
 'use client'
 import { useState, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion'
 import { services } from '@/lib/services-data'
 
@@ -38,10 +39,16 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logotype */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="font-heading font-bold text-white text-base tracking-wider">SA</span>
-          <span className="w-px h-4 bg-lime" />
-          <span className="font-heading font-bold text-white text-base tracking-wider">MEDIA</span>
+        <Link href="/" className="flex items-center gap-2.5">
+          <Image
+            src="/images/sa-media-logo.png"
+            alt="SA Media"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain"
+            priority
+          />
+          <span className="font-heading font-bold text-white text-base tracking-wider">SA MEDIA</span>
         </Link>
 
         {/* Desktop nav */}
@@ -127,7 +134,9 @@ export default function Navbar() {
             )
           )}
           <Link
-            href="/contact-us"
+            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-body text-xs uppercase tracking-wider text-lime border border-lime px-4 py-2 hover:opacity-80 transition-opacity"
           >
             Start a project
@@ -165,6 +174,17 @@ export default function Navbar() {
               ×
             </button>
 
+            <Link href="/" className="flex items-center gap-3 mb-2" onClick={() => setMenuOpen(false)}>
+              <Image
+                src="/images/sa-media-logo.png"
+                alt="SA Media"
+                width={48}
+                height={48}
+                className="w-12 h-12 object-contain"
+              />
+              <span className="font-heading font-bold text-white text-xl tracking-wider">SA MEDIA</span>
+            </Link>
+
             <Link
               href="/"
               className="font-heading text-3xl text-white hover:text-lime transition-colors"
@@ -174,11 +194,11 @@ export default function Navbar() {
             </Link>
 
             {/* Services group in mobile */}
-            <div className="w-full max-w-xs">
+            <div className="w-full max-w-sm px-6">
               <p className="font-heading text-3xl text-white text-center mb-4">
                 <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
               </p>
-              <div className="grid grid-cols-1 gap-1 px-6">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {services.map((s) => (
                   <Link
                     key={s.slug}
@@ -204,7 +224,9 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/contact-us"
+              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-heading text-xl text-lime border border-lime px-6 py-3 mt-4"
               onClick={() => setMenuOpen(false)}
             >

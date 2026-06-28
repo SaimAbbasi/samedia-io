@@ -12,6 +12,19 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${post.title} | SA Media Blog`,
     description: post.excerpt,
+    openGraph: {
+      title: `${post.title} | SA Media Blog`,
+      description: post.excerpt,
+      url: `https://samedia.io/blog/${post.slug}`,
+      type: 'article',
+      publishedTime: post.date,
+      tags: [post.category, post.location],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | SA Media Blog`,
+      description: post.excerpt,
+    },
   }
 }
 
@@ -19,14 +32,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug)
   if (!post) notFound()
 
-  const currentIndex = posts.findIndex((p) => p.slug === post.slug)
-  const prev = currentIndex > 0 ? posts[currentIndex - 1] : null
-  const next = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null
+  const sorted = [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  const currentIndex = sorted.findIndex((p) => p.slug === post.slug)
+  const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null
+  const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null
 
   return (
     <>
       {/* Hero */}
-      <section className="bg-dark pt-36 pb-20 px-6">
+      <section className="bg-dark pt-28 md:pt-36 pb-12 md:pb-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Link
@@ -95,7 +109,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </h2>
           </div>
           <Link
-            href="/contact-us"
+            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
             className="font-heading text-xl text-lime hover:opacity-80 transition-opacity shrink-0"
           >
             Start a project →

@@ -29,8 +29,8 @@ describe('WhatsOnTheTable', () => {
 
   it('renders bullet items with em-dash prefix', () => {
     render(<WhatsOnTheTable />)
-    expect(screen.getByText('— Digital Marketing Plan')).toBeInTheDocument()
-    expect(screen.getByText('— Google Ads')).toBeInTheDocument()
-    expect(screen.getByText('— SEO & Link Building')).toBeInTheDocument()
+    expect(screen.getByText(' -  Digital Marketing Plan')).toBeInTheDocument()
+    expect(screen.getByText(' -  Google Ads')).toBeInTheDocument()
+    expect(screen.getByText(' -  SEO & Link Building')).toBeInTheDocument()
   })
 })

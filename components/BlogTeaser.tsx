@@ -7,9 +7,9 @@ export default function BlogTeaser() {
   const recent = getRecentPosts(3)
 
   return (
-    <section className="bg-dark px-6 py-24 border-t border-white/10">
+    <section className="bg-off-white px-6 py-24 border-t-[3px] border-lime">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-end justify-between mb-12">
+        <div className="flex items-end justify-between mb-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -17,19 +17,19 @@ export default function BlogTeaser() {
             transition={{ duration: 0.5 }}
           >
             <p className="font-mono text-xs text-teal uppercase tracking-widest mb-4">FROM THE BLOG</p>
-            <h2 className="font-heading text-3xl md:text-4xl text-white">
-              Ideas worth reading.
+            <h2 className="font-heading text-3xl md:text-5xl text-dark">
+              Ideas worth <span className="text-teal">reading.</span>
             </h2>
           </motion.div>
           <Link
             href="/blog"
-            className="font-mono text-xs text-teal hover:text-lime transition-colors tracking-widest shrink-0"
+            className="font-mono text-xs text-dark/50 hover:text-lime transition-colors tracking-widest shrink-0"
           >
             ALL POSTS →
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {recent.map((post, i) => (
             <motion.div
               key={post.slug}
@@ -40,19 +40,34 @@ export default function BlogTeaser() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="group md:px-8 first:md:pl-0 last:md:pr-0 py-8 md:py-0 flex flex-col gap-4 h-full"
+                className="group flex flex-col gap-5 h-full border border-dark/15 hover:border-lime/60 bg-white hover:bg-white transition-all duration-300 p-8 relative overflow-hidden"
               >
-                <div>
-                  <p className="font-mono text-xs text-lime uppercase tracking-widest mb-1">{post.category}</p>
-                  <p className="font-mono text-xs text-white/30">{post.location} · {post.readTime}</p>
+                {/* Colored top accent strip alternating lime/teal */}
+                <div className={`absolute top-0 left-0 right-0 h-0.5 ${i % 2 === 0 ? 'bg-lime' : 'bg-teal'}`} />
+                {/* Top meta */}
+                <div className="flex items-center justify-between mt-1">
+                  <p className={`font-mono text-xs uppercase tracking-widest ${i % 2 === 0 ? 'text-lime' : 'text-teal'}`}>{post.category}</p>
+                  <p className="font-mono text-xs text-dark/30">{post.readTime}</p>
                 </div>
-                <h3 className="font-heading text-lg text-white leading-snug group-hover:text-lime transition-colors duration-300">
+
+                {/* Divider */}
+                <div className="h-px bg-dark/10 group-hover:bg-lime/40 transition-colors duration-300" />
+
+                {/* Title */}
+                <h3 className="font-heading text-xl text-dark leading-snug group-hover:text-lime transition-colors duration-300 flex-1">
                   {post.title}
                 </h3>
-                <p className="font-body text-sm text-white/40 leading-relaxed line-clamp-3 mt-auto">{post.excerpt}</p>
-                <span className="font-mono text-xs text-white/20 group-hover:text-lime transition-colors duration-300 mt-2">
-                  Read →
-                </span>
+
+                {/* Excerpt */}
+                <p className="font-body text-sm text-dark/55 leading-relaxed line-clamp-3">{post.excerpt}</p>
+
+                {/* Footer */}
+                <div className="flex items-center justify-between pt-2 border-t border-dark/10">
+                  <p className="font-mono text-xs text-dark/40">{post.location}</p>
+                  <span className="font-mono text-xs text-dark/30 group-hover:text-lime transition-colors duration-300">
+                    Read →
+                  </span>
+                </div>
               </Link>
             </motion.div>
           ))}

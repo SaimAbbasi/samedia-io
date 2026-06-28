@@ -5,8 +5,11 @@ export interface ServiceData {
   eyebrow: string
   tagline: string
   description: string
+  whoFor?: string
   includes: string[]
   outcomes: { stat: string; label: string }[]
+  process?: { n: string; title: string; desc: string }[]
+  faq?: { q: string; a: string }[]
   philosophy?: {
     title: string
     body: string
@@ -38,8 +41,21 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '1', label: 'Clear positioning statement your whole team can execute' },
-      { stat: '3–5×', label: 'Better campaign performance when strategy leads creative' },
+      { stat: '3 - 5×', label: 'Better campaign performance when strategy leads creative' },
       { stat: '90 days', label: 'From discovery to a fully deployed marketing plan' },
+    ],
+    whoFor: 'Built for founders, CMOs, and growth leads at scaling companies who are spending on marketing without a clear strategic foundation  -  and want to fix that before they spend another dollar.',
+    process: [
+      { n: '01', title: 'Discovery & Audit', desc: 'We conduct a full audit of your current positioning, messaging, channel mix, competitive landscape, and customer data. This includes interviews with your leadership team and, where possible, existing customers. We need to understand the gap between how you describe your brand and how the market perceives it.' },
+      { n: '02', title: 'Market & Competitor Mapping', desc: 'We map every significant player in your category, identify white space in positioning, and define the battlefield. Where is the market crowded? Where is there authority to be claimed? What are competitors saying, and more importantly, what are they not saying? This is where most positioning opportunities live.' },
+      { n: '03', title: 'Positioning Framework Build', desc: 'We build your positioning framework: the ICP definition, the value proposition, the messaging architecture for each audience segment, and the competitive differentiation statement. Every element is tested against the question: would someone actually buy based on this?' },
+      { n: '04', title: 'Digital Marketing Plan Delivery', desc: 'We translate the strategy into an executable digital marketing plan: recommended channel mix, budget allocation framework, 90-day launch priorities, KPI targets, and attribution setup. You receive a full briefing session with your leadership team and a reference document your team can execute against.' },
+    ],
+    faq: [
+      { q: 'What does a brand strategy engagement with SA Media include?', a: 'A brand strategy engagement includes a full audit of your current market position, ICP mapping, competitive landscape analysis, brand positioning framework, messaging architecture for each audience segment, channel and budget allocation recommendations, and a 90-day executable digital marketing plan. We deliver a reference document and a live briefing session with your leadership team.' },
+      { q: 'How long does brand strategy take?', a: 'A full brand strategy engagement runs 4 to 8 weeks depending on the complexity of your market and the amount of customer research required. We deliver the complete positioning framework and digital marketing plan within 90 days of kickoff. Simpler engagements for early-stage companies can be completed in 3 to 4 weeks.' },
+      { q: 'Do I need brand strategy before starting paid media or SEO?', a: 'Yes. Running paid media or SEO without a defined positioning and ICP framework means you are optimising for traffic without knowing whether that traffic converts. Strategy determines who you are targeting, what you are saying, and which channels are right for your business. Every campaign you run before doing this work costs more and performs worse than it should.' },
+      { q: 'How is SA Media\'s brand strategy different from a traditional branding agency?', a: 'Traditional branding agencies produce visual and verbal identity. We produce marketing strategy - the decisions that determine how you acquire customers, how you position against competitors, and how you allocate budget across channels. Our output is an operational playbook, not a deck. Every recommendation is tied to a specific business objective and a measurable outcome.' },
     ],
     philosophy: {
       title: 'Most agencies sell decks. We sell decisions.',
@@ -79,9 +95,22 @@ export const services: ServiceData[] = [
       'Print & Collateral Design',
     ],
     outcomes: [
-      { stat: '2–4 wks', label: 'From brief to final brand identity delivery' },
+      { stat: '2 - 4 wks', label: 'From brief to final brand identity delivery' },
       { stat: '100%', label: 'Consistent cross-channel brand presentation' },
       { stat: '∞', label: 'Scalable design system you own and can extend' },
+    ],
+    whoFor: 'Built for companies launching, rebranding, or scaling into new markets who need a visual identity system that matches the quality of their product and the ambition of their growth plans.',
+    process: [
+      { n: '01', title: 'Brand Discovery', desc: 'We run a structured discovery session with your leadership team to understand your company\'s values, personality, target audience, competitive context, and design references. We review existing brand assets, identify what is working and what is not, and define the emotional and functional impression your brand needs to create.' },
+      { n: '02', title: 'Concept Exploration', desc: 'We develop two to three distinct creative directions, each with a rationale for why it serves your positioning. Each direction includes initial logo concepts, a colour palette, a typography selection, and an example application. This is the creative divergence phase - we need to explore before we converge.' },
+      { n: '03', title: 'Design Development', desc: 'We develop the chosen direction into a full identity system: logo variants, colour system, typography hierarchy, iconography, photography style guidelines, and component-level design for your primary digital and print applications. We move through rounds of refinement until the system is complete.' },
+      { n: '04', title: 'System Delivery & Handoff', desc: 'We deliver a complete brand guidelines document, all source files in every format you need, and an asset library organised for your internal team to use immediately. The handoff includes a walkthrough session covering how to apply the system correctly across every channel your brand operates in.' },
+    ],
+    faq: [
+      { q: 'What deliverables do I receive from a brand identity project?', a: 'You receive the complete logo system in all formats (SVG, PNG, PDF, EPS), a comprehensive brand guidelines document covering colour, typography, logo usage rules, photography style, and application examples, a social media template library, and all source files in Figma and Adobe formats. Everything is yours to own and extend.' },
+      { q: 'How many revision rounds are included?', a: 'Our process includes two structured revision rounds after the initial concept presentation, and one final revision round after the chosen direction is developed into the full system. Revisions outside this scope are available at a day rate. In practice, most projects are resolved within the included rounds when the discovery phase is thorough.' },
+      { q: 'Can SA Media redesign an existing brand without losing brand equity?', a: 'Yes. A brand evolution that preserves existing equity while modernising the execution is a specific skill set. We audit what is working in your current brand, identify the elements that carry genuine recognition value, and build the new system around those foundations rather than discarding them. A rebrand does not need to mean starting from zero.' },
+      { q: 'Do you handle brand identity for both digital and physical applications?', a: 'Yes. We design for both digital-first (web, social, digital advertising, mobile) and physical applications (packaging, print, signage, event materials). Our team designs systems that work across all surfaces, with specific guidance for how the identity adapts to each context without losing coherence.' },
     ],
     philosophy: {
       title: 'We do not design logos. We design decision frameworks.',
@@ -125,6 +154,19 @@ export const services: ServiceData[] = [
       { stat: '50M+', label: 'Likes and engagements generated' },
       { stat: '30 days', label: 'To your first full content calendar, live' },
     ],
+    whoFor: 'Built for brands that need to show up consistently on social media but do not have the internal team, time, or creative infrastructure to do it at the quality and volume required to compete.',
+    process: [
+      { n: '01', title: 'Channel Audit & Strategy', desc: 'We audit your existing social presence, benchmark it against your top competitors, and identify the platforms, content formats, and posting cadences that offer the highest return for your specific audience. We define your brand voice, content pillars, and the KPIs we will track to measure success. This becomes the operating brief for everything that follows.' },
+      { n: '02', title: 'Content Calendar Build', desc: 'We build a monthly content calendar mapping every post across every channel: the format, the caption direction, the creative brief, the publishing time, and the strategic purpose. You review and approve the calendar before anything is produced, giving you full visibility and control over what goes out under your brand.' },
+      { n: '03', title: 'Creative Production', desc: 'Our creative team produces all content to the calendar: graphics, short-form video, Reels, Stories, carousels, and written copy. Everything is produced to your brand standards and platform specifications. We manage the full production pipeline and handle all scheduling and publishing.' },
+      { n: '04', title: 'Community Management & Reporting', desc: 'We manage comments, DMs, and brand mentions across all channels - responding, engaging, and escalating where appropriate. At the end of each month, you receive a performance report covering reach, engagement, follower growth, and top-performing content, with recommendations for the following month.' },
+    ],
+    faq: [
+      { q: 'Which social media platforms does SA Media manage?', a: 'We manage Instagram, TikTok, LinkedIn, X (formerly Twitter), Facebook, and YouTube. The platforms we prioritise for your brand are determined by your target audience, industry, and growth objectives. We do not manage every platform by default - we manage the platforms where your audience actually is and where your content can realistically compete.' },
+      { q: 'How much input do I have in what gets posted?', a: 'You approve the monthly content calendar before anything is produced or posted. You can request changes, flag content that does not feel right, and set directional preferences at any time. We handle execution entirely, but you have full visibility and approval authority over everything published under your brand.' },
+      { q: 'How quickly can SA Media take over our social media management?', a: 'We can have your first content calendar live within 30 days of onboarding. The first two weeks cover the strategy and brand immersion phase. By week three, we are producing content and have the calendar ready for your review. By week four, we are publishing.' },
+      { q: 'Does social media management include paid advertising?', a: 'Social media management covers organic content strategy, production, scheduling, and community management. Paid social advertising (Meta Ads, TikTok Ads) is a separate service. Many clients run both - organic builds the brand and community, paid amplifies the best-performing content and drives direct conversion. We offer both and can coordinate them as an integrated programme.' },
+    ],
     philosophy: {
       title: 'Social media is not a content calendar. It is the most direct relationship your brand has with its audience.',
       body: 'Most agencies manage social media like a publishing schedule: post three times a week, use trending audio, include a call to action. That is the floor, not the ceiling. The brands in the top 0.1% treat their social channels as owned media properties - with editorial direction, audience development strategy, community culture, and platform-specific positioning that makes their presence feel irreplaceable rather than interchangeable. We run social media as an operating system for brand trust. Every piece of content serves a purpose in the audience journey - awareness, consideration, loyalty, or advocacy. Nothing goes out because it fills a slot.',
@@ -164,8 +206,21 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '100+', label: 'Creatives produced across client campaigns' },
-      { stat: '3–5×', label: 'More content output vs. in-house teams at same cost' },
+      { stat: '3 - 5×', label: 'More content output vs. in-house teams at same cost' },
       { stat: '72 hrs', label: 'Average turnaround on content briefs' },
+    ],
+    whoFor: 'Built for brands that need a consistent, high-volume supply of on-brand content across photo, video, and copy without the overhead of an in-house creative team.',
+    process: [
+      { n: '01', title: 'Creative Brief & Direction', desc: 'We develop a master creative brief that defines your content pillars, visual style, tone of voice, and platform-specific requirements. For video content, we build storyboards and scripts. For photography, we build mood boards and shot lists. Every piece of content we produce is briefed before it is made - no guesswork, no off-brand surprises.' },
+      { n: '02', title: 'Production', desc: 'Our creative team handles the full production pipeline: photography, videography, editing, graphic design, copywriting, and animation. We work to your brand standards and deliver content that is ready to publish across every channel without additional formatting work from your team.' },
+      { n: '03', title: 'Review & Approval', desc: 'You review all content before it is published or handed over. We operate a structured feedback cycle: content is submitted for review with context on where it will be used and what it is designed to achieve. Revisions are handled within the same cycle, typically within 48 hours.' },
+      { n: '04', title: 'Delivery & Repurposing', desc: 'We deliver all final assets in the correct formats for every intended platform. We also develop a repurposing plan: every long-form video becomes a series of short clips, every photo shoot becomes a three-month social asset library. The goal is to maximise the return on every production investment.' },
+    ],
+    faq: [
+      { q: 'What types of content does SA Media produce?', a: 'We produce photography (product, lifestyle, editorial), short-form and long-form video (Reels, TikToks, YouTube, brand films), UGC at scale, graphic design (social templates, infographics, ad creatives), copywriting (captions, blog articles, email, ad copy), and scripts and storyboards. We handle single-channel content needs and full multi-format content programmes.' },
+      { q: 'How fast is the content turnaround?', a: 'Our average turnaround on a creative brief is 72 hours for graphic and copy-based content, and 5 to 7 business days for video production including editing. Rush turnarounds are available. We operate on project-based and monthly retainer structures, with retainer clients receiving priority scheduling and dedicated creative team capacity.' },
+      { q: 'Do I need to provide brand assets or do you build from scratch?', a: 'Both. If you have existing brand assets, we work within your guidelines to produce content that is consistent with your established identity. If you are building from scratch or your existing assets are not fit for purpose, we can develop a content-specific style guide as part of the engagement. We do not publish content that is off-brand.' },
+      { q: 'Can SA Media handle UGC content at scale?', a: 'Yes. We have a network of content creators who produce authentic user-generated content to your brief. UGC programmes can run alongside professionally produced content or as a standalone supply, and are particularly effective for paid social advertising where authentic formats outperform polished production.' },
     ],
     philosophy: {
       title: 'Good content is not creative for creativity\'s sake. It is a distribution strategy with a visual execution.',
@@ -206,8 +261,21 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '$1M+', label: 'In client sales generated through paid campaigns' },
-      { stat: '2–4×', label: 'Average ROAS improvement after first 60 days' },
+      { stat: '2 - 4×', label: 'Average ROAS improvement after first 60 days' },
       { stat: '30 days', label: 'To full campaign launch and first data cycle' },
+    ],
+    whoFor: 'Built for e-commerce brands, lead generation businesses, and B2B companies that need paid media campaigns that are managed with the same rigour as a financial investment and reported on with full revenue attribution.',
+    process: [
+      { n: '01', title: 'Account Audit & Strategy', desc: 'We audit your existing ad accounts, identify structural issues, wasted spend, and missed opportunities. We review your creative library, landing pages, audience structure, and attribution setup. This gives us a baseline and a clear set of priorities for the first 30 days.' },
+      { n: '02', title: 'Campaign Architecture Build', desc: 'We build or rebuild your campaign structure from the ground up: audience segmentation, campaign objectives, bidding strategy, ad group organisation, and creative testing framework. We set up tracking, attribution, and reporting before the first campaign goes live.' },
+      { n: '03', title: 'Creative Production & Launch', desc: 'We produce the ad creative - static images, video, carousel, and copy variants - and launch the initial campaign set. The first 30 days are a data collection phase: we are testing hypotheses about audiences, creatives, and messages rather than scaling spend prematurely.' },
+      { n: '04', title: 'Ongoing Optimisation', desc: 'From day 30 forward, we operate in a continuous optimisation cycle: weekly creative tests, bid adjustments, audience expansions, and budget reallocation based on performance data. You receive weekly performance reports with clear revenue attribution, and a monthly strategy review covering what we have learned and what we are doing next.' },
+    ],
+    faq: [
+      { q: 'Which advertising platforms does SA Media manage?', a: 'We manage Google Ads (Search, Display, Shopping, Performance Max, YouTube), Meta Ads (Facebook and Instagram), and TikTok Ads. We also work with LinkedIn Ads for B2B clients and Pinterest Ads for relevant e-commerce categories. The platforms we prioritise are determined by where your target audience is and where your offer can achieve the best cost-per-acquisition.' },
+      { q: 'What ROAS can I expect from SA Media paid media management?', a: 'ROAS varies significantly by industry, product margin, and the state of your existing account. Clients coming to us with no prior paid media history typically see their first positive ROAS within 30 to 60 days as the account builds data. Clients migrating from underperforming agencies typically see a 2 to 4x ROAS improvement within 60 days of restructuring. We set honest expectations in the initial audit based on your specific category and competitive landscape.' },
+      { q: 'How does SA Media handle ad creative?', a: 'We produce all ad creative in-house: static images, short-form video, carousels, and copy variants. Creative testing is built into every campaign structure - we run a minimum of 5 to 10 creative variants per campaign and systematically identify winners. We refresh creative every 2 to 4 weeks to prevent ad fatigue, which is one of the most common causes of declining campaign performance.' },
+      { q: 'Do you require a minimum ad spend?', a: 'We work with ad budgets starting from $3,000 per month. Below this threshold, the data volume required for meaningful optimisation is insufficient and results are unreliable. For clients with larger budgets, we operate at any scale. Our management fee is separate from ad spend and covers strategy, creative production, campaign management, and reporting.' },
     ],
     philosophy: {
       title: 'The most dangerous thing in paid media is a comfortable ROAS.',
@@ -248,8 +316,21 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '50+', label: 'Clients served with influencer campaigns' },
-      { stat: '3–10×', label: 'Earned media value vs. paid media equivalent spend' },
+      { stat: '3 - 10×', label: 'Earned media value vs. paid media equivalent spend' },
       { stat: '14 days', label: 'From brief to first creator posts live' },
+    ],
+    whoFor: 'Built for consumer brands, e-commerce companies, and launches that need to build credibility and drive purchase intent through creator voices that their target audience already trusts.',
+    process: [
+      { n: '01', title: 'Campaign Strategy & Creator Criteria', desc: 'We define the campaign objective, the creator profile that matches your audience, the content format requirements, and the metrics we will track. We build the selection criteria that every creator must meet before being considered: audience demographics, engagement rate benchmarks, content quality standards, and brand safety requirements.' },
+      { n: '02', title: 'Creator Research & Vetting', desc: 'We identify and vet a longlist of creators against your criteria, then narrow to a shortlist with individual analysis covering audience authenticity, engagement quality, brand alignment, and historical performance. We present the shortlist with our recommendation and rationale for each creator before any outreach begins.' },
+      { n: '03', title: 'Outreach, Negotiation & Contracting', desc: 'We handle all creator outreach, rate negotiation, and contract execution. Contracts cover deliverables, timelines, exclusivity windows, content approval rights, and UGC usage rights. We protect your brand and budget at every stage of the negotiation.' },
+      { n: '04', title: 'Content Management & Reporting', desc: 'We brief creators, review content before publication, manage revision cycles, and track campaign performance from first post to final report. Post-campaign, you receive a full analysis covering reach, engagement, conversion data, UGC assets acquired, and recommendations for the next campaign.' },
+    ],
+    faq: [
+      { q: 'What size influencers does SA Media work with?', a: 'We work across all tiers: nano (1,000 to 10,000 followers), micro (10,000 to 100,000), mid-tier (100,000 to 500,000), macro (500,000 to 1M), and mega (1M+). The tier we recommend depends on your objective. For conversion-focused campaigns, nano and micro creators consistently outperform on cost-per-acquisition. For awareness campaigns, macro and mega creators deliver the reach. Many of our programmes combine tiers strategically.' },
+      { q: 'How does SA Media vet influencers for brand safety?', a: 'Our vetting process covers audience authenticity (bot detection and engagement analysis), demographic verification against your ICP, content history review for brand safety risks, and engagement quality analysis. We reject creators with purchased followers, misaligned audiences, or a history of content that could create brand risk. We also verify that creators are not actively working with direct competitors under exclusivity agreements.' },
+      { q: 'Who owns the content created by influencers?', a: 'Usage rights depend on the contract terms we negotiate. For UGC-specific campaigns, we negotiate full usage rights for your brand to repurpose content across paid social, website, and email channels. For standard influencer campaigns, usage rights typically cover the platform and duration specified in the contract. We advise on the right rights structure for your intended use before contracting begins.' },
+      { q: 'How do you measure influencer campaign ROI?', a: 'We measure influencer ROI across several dimensions: reach and impressions, engagement rate and quality, tracked clicks and conversions via UTM links and promo codes, earned media value compared to equivalent paid media spend, and UGC asset value. For e-commerce brands, we can track direct revenue attribution through discount codes. We report on all metrics in a post-campaign analysis delivered within five business days of the campaign closing.' },
     ],
     philosophy: {
       title: 'We do not cast influencers. We build distribution partnerships with people who have earned their audience\'s trust.',
@@ -290,8 +371,21 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '6 mos', label: 'To meaningful organic traffic growth from a standing start' },
-      { stat: '3–5×', label: 'More organic sessions after 12-month engagement' },
+      { stat: '3 - 5×', label: 'More organic sessions after 12-month engagement' },
       { stat: '∞', label: 'Traffic that keeps coming even when you pause spend' },
+    ],
+    whoFor: 'Built for companies that want to own organic search traffic in their category rather than rent it through paid advertising, and are willing to invest in a 6 to 12 month programme that compounds over time.',
+    process: [
+      { n: '01', title: 'Technical SEO Audit & Fixes', desc: 'We run a full technical audit covering crawlability, indexation, site speed, Core Web Vitals, mobile performance, structured data, duplicate content, and internal linking. Critical issues are fixed before any content work begins, because technical problems cap the ceiling on everything else.' },
+      { n: '02', title: 'Keyword Research & Content Strategy', desc: 'We build a keyword map of every search term your target customers use across the buying journey, from broad awareness queries to specific purchase-intent searches. We identify the content gaps between what your audience is searching for and what currently exists on your site, and we build an editorial calendar to close those gaps systematically.' },
+      { n: '03', title: 'Content Production & On-Page Optimisation', desc: 'We produce authoritative content that targets your priority keyword clusters: long-form guides, comparison pages, local landing pages, and topic cluster articles. Every piece is optimised for search intent, readability, and AI citation. We also optimise existing pages that have ranking potential but are not performing at their ceiling.' },
+      { n: '04', title: 'Authority Building & Reporting', desc: 'We build domain authority through digital PR, link acquisition from relevant publications, and brand mention campaigns. Every month you receive a rankings report showing position changes for your tracked keywords, organic traffic trends, and the content and link building activities completed that month.' },
+    ],
+    faq: [
+      { q: 'How long does SEO take to show results?', a: 'For a site with no existing SEO foundation, meaningful organic traffic growth typically begins at 4 to 6 months and accelerates significantly from months 8 to 12. For sites with existing domain authority and fixable technical issues, results can come faster. SEO is a compounding investment - the longer you run the programme, the higher your traffic ceiling becomes and the lower your cost per acquisition falls.' },
+      { q: 'What is the difference between SEO and AIEO?', a: 'Traditional SEO optimises for search engine rankings so users click through to your website. AIEO (AI Engine Optimization) optimises your brand to be cited by AI search tools like ChatGPT, Perplexity, and Google AI Overviews, which generate answers directly without requiring a click. Our SEO programmes are built to serve both - the content and authority signals that drive traditional rankings also improve AI citation rates, but AIEO requires additional work on structured data, brand mentions, and content format.' },
+      { q: 'Does SA Media handle both technical SEO and content?', a: 'Yes. We handle the full SEO stack: technical infrastructure, keyword strategy, content production, on-page optimisation, and authority building. Most agencies specialise in one layer. We treat them as an integrated programme because technical SEO without content has no ceiling to reach, and great content on a technically broken site is invisible.' },
+      { q: 'What reporting does SA Media provide for SEO?', a: 'You receive a monthly SEO report covering keyword ranking changes for your tracked terms, organic traffic trends by page and keyword cluster, technical issue log, content published that month, links acquired, and a strategic commentary on what is working and what the following month\'s priorities are. Rankings and traffic are tracked in a live dashboard you can access at any time.' },
     ],
     philosophy: {
       title: 'SEO is trust arbitrage. The question is not how to rank - it is how to become the brand the internet recommends.',
@@ -331,9 +425,22 @@ export const services: ServiceData[] = [
       'A/B Testing & Deliverability Optimization',
     ],
     outcomes: [
-      { stat: '40–60%', label: 'Average open rate on well-segmented SA Media sequences' },
-      { stat: '3–8×', label: 'ROI on email vs. every other marketing channel' },
+      { stat: '40 - 60%', label: 'Average open rate on well-segmented SA Media sequences' },
+      { stat: '3 - 8×', label: 'ROI on email vs. every other marketing channel' },
       { stat: '30 days', label: 'To first automated flow live and generating revenue' },
+    ],
+    whoFor: 'Built for e-commerce brands and B2B businesses that want to generate consistent revenue from their existing customer and lead database without increasing their acquisition spend.',
+    process: [
+      { n: '01', title: 'Platform Audit & Architecture Design', desc: 'We audit your current email platform setup, list health, existing flows, and sending history. We design the automation architecture: the flows required at each stage of the customer lifecycle, the segmentation structure, the trigger logic, and the integration requirements with your CRM and e-commerce platform.' },
+      { n: '02', title: 'Flow Build & Copywriting', desc: 'We build every automated flow from scratch: welcome series, abandoned cart, post-purchase, re-engagement, and any campaign-specific sequences. We write all copy and design all templates to your brand standards. Every email in every flow is written with a specific conversion objective and a clear next step for the reader.' },
+      { n: '03', title: 'Testing & Deliverability Setup', desc: 'Before any flow goes live, we test every email across devices and clients, validate all tracking and attribution links, check deliverability against spam filters, and confirm all automation triggers are firing correctly. We also configure domain authentication (SPF, DKIM, DMARC) to protect your sending reputation.' },
+      { n: '04', title: 'Ongoing Optimisation', desc: 'We review flow performance monthly: open rates, click rates, conversion rates, and revenue attribution by flow. We test subject lines, send times, and content variations systematically. We add new flows as your programme matures and update existing flows to reflect changes in your product, offers, and customer segments.' },
+    ],
+    faq: [
+      { q: 'Which email platforms does SA Media work with?', a: 'We work with Klaviyo, HubSpot, Mailchimp, ActiveCampaign, and Salesforce Marketing Cloud. For e-commerce clients, Klaviyo is our default recommendation due to its native Shopify integration and revenue attribution capability. For B2B clients, HubSpot provides the deepest CRM integration. We can migrate existing programmes between platforms as part of the engagement.' },
+      { q: 'What email flows does every e-commerce brand need?', a: 'The four non-negotiable flows for any e-commerce brand are the welcome series (converts subscribers to first purchasers), abandoned cart (recovers lost revenue from checkout drop-offs), post-purchase sequence (drives repeat purchase and review collection), and winback campaign (re-engages lapsed customers). These four flows typically account for 30 to 40 percent of total email revenue. Everything else is built on top of this foundation.' },
+      { q: 'How does SA Media approach email list segmentation?', a: 'We build segmentation structures based on purchase behaviour, engagement level, acquisition source, and lifecycle stage. The most impactful segments for most e-commerce brands are: new subscribers (no purchase), active customers (purchased in last 90 days), lapsed customers (no purchase in 90 to 180 days), and VIP customers (high lifetime value). Each segment receives messaging calibrated to where they are in their relationship with your brand.' },
+      { q: 'Can SA Media improve an existing underperforming email programme?', a: 'Yes. We regularly take over email programmes that have been neglected or poorly configured and rebuild them into high-performing revenue channels. The first step is always an honest audit: identifying the structural issues (list hygiene, deliverability problems, broken flows, missing automations) and prioritising fixes by revenue impact. Most programmes show measurable improvement within 60 days of a rebuild.' },
     ],
     philosophy: {
       title: 'Email is the only channel you truly own. We treat it like the asset it is.',
@@ -374,9 +481,22 @@ export const services: ServiceData[] = [
       'Security & Accessibility Compliance',
     ],
     outcomes: [
-      { stat: '2–4×', label: 'Conversion rate improvement vs. DIY builds' },
+      { stat: '2 - 4×', label: 'Conversion rate improvement vs. DIY builds' },
       { stat: '<2s', label: 'Load time target on all SA Media builds' },
-      { stat: '6–12 wks', label: 'Full-scope website from kickoff to launch' },
+      { stat: '6 - 12 wks', label: 'Full-scope website from kickoff to launch' },
+    ],
+    whoFor: 'Built for scaling companies whose website is underperforming, under-converting, or no longer reflects the quality and ambition of the business it represents.',
+    process: [
+      { n: '01', title: 'Discovery & Conversion Architecture', desc: 'We run a structured discovery process covering your business objectives, target audiences, key conversion paths, competitive benchmarks, and technical requirements. We map the information architecture and user journeys before any design work begins - because the structure of the site determines whether it converts, not the visual design.' },
+      { n: '02', title: 'Design (UX + UI)', desc: 'We build wireframes for every key template, get alignment on information hierarchy and user flows, then develop high-fidelity UI designs. Every design decision is made in context of the user journey it is part of. We present designs with rationale, not just aesthetics, and refine through structured feedback cycles.' },
+      { n: '03', title: 'Development', desc: 'We build in Next.js (React) for custom sites and Shopify for e-commerce, with a focus on performance, accessibility, and scalability. We integrate every third-party tool your stack requires: CRM, analytics, payment systems, booking platforms, and marketing automation. All code is production-grade, documented, and handed over with a CMS your team can manage.' },
+      { n: '04', title: 'Launch & Optimisation', desc: 'We handle the full launch process: QA testing across devices and browsers, performance optimisation, SEO infrastructure setup, analytics and conversion tracking configuration, and a team training session on your CMS. Post-launch, we provide a 30-day support period and an optional ongoing optimisation retainer to improve conversion rates based on live data.' },
+    ],
+    faq: [
+      { q: 'What technology does SA Media use to build websites?', a: 'We build custom websites in Next.js (React) - the same framework used by Vercel, Nike, and thousands of high-performance marketing sites. For e-commerce, we build on Shopify with fully custom themes. We do not use Wix, Squarespace, or generic WordPress templates. Every build is performant by default, fully owned by you, and deployable on any hosting infrastructure.' },
+      { q: 'How long does a website project take?', a: 'A standard marketing website (5 to 15 pages) runs 6 to 8 weeks from kickoff to launch. A full e-commerce build with custom features runs 8 to 12 weeks. More complex applications with custom functionality run 12 to 16 weeks. Timeline is determined by scope, feedback turnaround speed, and third-party integration complexity. We provide a detailed project timeline at the proposal stage.' },
+      { q: 'Will I be able to manage the website myself after launch?', a: 'Yes. Every website we build includes a headless CMS integration (Sanity, Contentful, or Shopify\'s native CMS for e-commerce) that allows your team to update content, add pages, and manage products without touching code. We provide a training session at handoff and documentation covering every content management task your team needs to perform.' },
+      { q: 'Does SA Media handle SEO as part of the website build?', a: 'We build SEO infrastructure into every site as standard: semantic HTML, correct heading hierarchy, page speed optimisation, meta title and description framework, Open Graph tags, canonical tags, XML sitemap, and robots.txt configuration. This is the technical foundation. Content SEO - keyword strategy, content production, link building - is a separate ongoing programme that we run alongside or after the site launch.' },
     ],
     philosophy: {
       title: 'A website is not a brochure. It is a 24/7 sales system, a brand statement, and a conversion machine operating simultaneously.',
@@ -416,9 +536,22 @@ export const services: ServiceData[] = [
       'QA Testing & Security Audits',
     ],
     outcomes: [
-      { stat: '3–6 wks', label: 'MVP delivery from approved spec' },
+      { stat: '3 - 6 wks', label: 'MVP delivery from approved spec' },
       { stat: '99.9%', label: 'Uptime SLA on all production deployments' },
       { stat: '∞', label: 'Scalable architecture that grows with your user base' },
+    ],
+    whoFor: 'Built for companies that need custom software to solve a specific business problem that off-the-shelf tools cannot address, and want it built to a production standard that can scale.',
+    process: [
+      { n: '01', title: 'Specification & Architecture', desc: 'We translate your business requirements into a technical specification: the features, the data model, the API contracts, the third-party integrations, and the infrastructure requirements. We define the MVP scope explicitly - what is in, what is explicitly out, and what gets built in phase two. Good specification is the highest-leverage investment in any software project.' },
+      { n: '02', title: 'Design & User Experience', desc: 'We design the user interface and experience for every key workflow in the application. For consumer products, this includes user research and usability testing. For internal tools and B2B applications, it includes workflow mapping with the actual end users. Every interface we design is reviewed for usability before a line of code is written.' },
+      { n: '03', title: 'Development & Testing', desc: 'We build in two-week sprints with defined deliverables and a working demo at the end of each sprint. Every feature is tested before it is merged - unit tests, integration tests, and manual QA across all target devices and browsers. We deploy to a staging environment throughout development so you can review progress continuously.' },
+      { n: '04', title: 'Launch, Handover & Support', desc: 'We manage the production deployment, configure monitoring and alerting, and run a full security and performance audit before go-live. Post-launch, we provide a 60-day support period covering bug fixes and minor adjustments. We hand over all source code, documentation, and deployment instructions, and offer ongoing retainer support for clients who need it.' },
+    ],
+    faq: [
+      { q: 'What kinds of applications does SA Media build?', a: 'We build web applications (dashboards, portals, internal tools, SaaS products), mobile applications in React Native, and backend APIs and data pipelines. We have delivered client-facing consumer products, internal operations tools, booking and scheduling platforms, custom e-commerce applications, and AI-powered workflow tools. If the requirement is clear and the business case is sound, we can build it.' },
+      { q: 'How do you handle scope changes during a project?', a: 'We manage scope changes through a formal change request process. Any addition to the agreed specification is documented, estimated, and approved before work begins. We do not absorb scope changes silently - this is how projects run over time and budget. We are proactive about identifying requirements gaps early so that scope adjustments happen at the start of a sprint rather than the end of a project.' },
+      { q: 'Who owns the code at the end of the project?', a: 'You own everything. All source code, all design files, all documentation, and all deployment infrastructure is transferred to you on project completion. We do not use proprietary frameworks or tools that create vendor dependency. You can take everything we build and have any other developer continue working on it.' },
+      { q: 'Does SA Media provide ongoing maintenance after launch?', a: 'Yes. We offer ongoing maintenance and support retainers that cover dependency updates, security patches, performance monitoring, bug fixes, and minor feature additions. The appropriate level of retainer support depends on the complexity of the application and the frequency of changes your business requires. We discuss and recommend a support structure at the proposal stage.' },
     ],
     philosophy: {
       title: 'Software is operations made permanent. We build for where you are going, not just where you are.',
@@ -458,9 +591,22 @@ export const services: ServiceData[] = [
       'Monthly Analytics Reporting',
     ],
     outcomes: [
-      { stat: '20–40%', label: 'Typical ad spend savings when attribution is fixed' },
+      { stat: '20 - 40%', label: 'Typical ad spend savings when attribution is fixed' },
       { stat: '100%', label: 'Visibility into which channel closes deals' },
       { stat: '2 wks', label: 'To full tracking stack live and validated' },
+    ],
+    whoFor: 'Built for marketing teams and business owners who are spending significant budgets across multiple channels and need to understand, with genuine precision, which channels, campaigns, and creatives are actually driving revenue.',
+    process: [
+      { n: '01', title: 'Tracking Audit', desc: 'We audit your existing analytics setup: GA4 configuration, tag manager deployment, conversion event definitions, ad platform pixel health, and CRM integration. We identify every tracking gap, broken event, and attribution misconfiguration. Most companies discover they are missing 30 to 50 percent of their actual conversion data.' },
+      { n: '02', title: 'Architecture Design', desc: 'We design the tracking architecture: the event taxonomy, the attribution model appropriate for your sales cycle, the data sources to be integrated, and the reporting outputs your team needs to make decisions. We document every decision so the system is understandable and maintainable by your internal team.' },
+      { n: '03', title: 'Implementation', desc: 'We implement the full tracking stack: GA4 event configuration via GTM, server-side tracking where browser-side tracking is unreliable, ad platform conversion APIs, CRM pipeline integration, and custom dashboard builds in Looker Studio or your preferred BI tool. Every implementation is tested and validated before sign-off.' },
+      { n: '04', title: 'Reporting & Ongoing Support', desc: 'We deliver a live dashboard covering every marketing channel, with revenue attribution by campaign, creative, and audience. We train your team on reading and acting on the data. Ongoing support covers data validation, dashboard updates as your marketing mix evolves, and quarterly attribution model reviews.' },
+    ],
+    faq: [
+      { q: 'Why is GA4 setup not enough for proper marketing attribution?', a: 'GA4 tracks what happens on your website, but by default it uses last-click attribution and cannot connect ad platform spend to CRM revenue. A complete attribution stack integrates GA4 with your ad platforms via their conversion APIs, connects to your CRM so you can see which marketing source drove closed deals, and uses a multi-touch attribution model that reflects how customers actually make decisions. GA4 alone is one lens. Attribution requires the full picture.' },
+      { q: 'What is server-side tracking and why does it matter?', a: 'Browser-side tracking (standard Google Tag Manager) relies on JavaScript that runs in the user\'s browser. Ad blockers, iOS privacy restrictions, and browser limitations mean that 20 to 40 percent of conversions are typically not captured. Server-side tracking sends conversion data directly from your server to ad platforms and analytics tools, bypassing browser limitations. This improves data accuracy, improves ad platform optimisation (which learns from more signals), and future-proofs your tracking against further browser privacy restrictions.' },
+      { q: 'How long does it take to set up proper attribution?', a: 'A standard attribution implementation (GA4, GTM, ad platform conversions, basic CRM integration) takes 2 to 3 weeks from audit to validated live deployment. More complex implementations involving server-side tracking, custom CRM integrations, or multi-source data pipelines take 4 to 6 weeks. The audit phase at the start of the project determines the scope.' },
+      { q: 'Can SA Media fix broken tracking on an existing setup?', a: 'Yes, and this is one of the highest-ROI engagements we run. Most companies have tracking that was set up years ago by someone who has since left, with gaps that have accumulated as new platforms and tools were added. We audit the existing setup, identify the gaps, prioritise fixes by revenue impact, and rebuild where necessary. Most clients recover 20 to 40 percent of previously unmeasured conversions within the first month.' },
     ],
     philosophy: {
       title: 'Attribution is not a technical problem. It is the strategic problem that determines whether every other investment is rational.',
@@ -503,6 +649,19 @@ export const services: ServiceData[] = [
       { stat: '35+', label: 'Hours per week recovered per client on average' },
       { stat: '$147K+', label: 'Per year in manual work eliminated' },
       { stat: '2×', label: 'Client capacity without adding headcount' },
+    ],
+    whoFor: 'Built for operations-heavy businesses, marketing agencies, and scaling companies that are spending too much of their team\'s time on repetitive, rule-based work that could be automated - and want to redeploy that capacity toward higher-value activity.',
+    process: [
+      { n: '01', title: 'Workflow Audit & Opportunity Mapping', desc: 'We map the workflows across your operations to identify automation opportunities ranked by time cost, error rate, and strategic value. We document every manual process that meets the criteria for automation: rule-based, repetitive, high-volume, or high-stakes. This audit becomes the prioritised roadmap for the engagement.' },
+      { n: '02', title: 'Solution Design', desc: 'For each automation opportunity, we design the solution architecture: the trigger, the logic, the integrations required, the edge cases, and the human oversight points. We present the design before building it, with a realistic assessment of the time and cost savings it will generate, so you can make informed prioritisation decisions.' },
+      { n: '03', title: 'Build & Integration', desc: 'We build each automation using the appropriate toolset for the complexity: n8n, Make, or Zapier for workflow automation; custom Python or Node.js scripts for data processing; LLM integrations for content or classification tasks; and API integrations for every tool in your stack. Everything is tested in a staging environment before production deployment.' },
+      { n: '04', title: 'Deployment, Training & Monitoring', desc: 'We deploy to production with monitoring configured for every automated workflow. We train your team on managing and updating the automations, and provide documentation covering every workflow\'s logic, trigger conditions, and failure protocols. Ongoing support is available to add new automations and update existing ones as your operations evolve.' },
+    ],
+    faq: [
+      { q: 'What business processes can SA Media automate?', a: 'We automate a broad range of business processes: client onboarding, lead qualification and routing, proposal and contract generation, reporting and analytics delivery, social media scheduling, email sequences, customer support ticket routing, invoice and payment processing, data enrichment and CRM updates, and any multi-step workflow that currently requires manual execution. If a process is rule-based and repetitive, it is a candidate for automation.' },
+      { q: 'Does SA Media build automations with AI, or standard workflow automation?', a: 'Both. Standard workflow automation (using Make, Zapier, or n8n) handles rule-based processes with defined inputs and outputs. AI-powered automation adds a layer of intelligence for tasks that require classification, generation, summarisation, or decision-making. Most of our automation programmes combine both: standard automation for the workflow orchestration, and LLM integration for the tasks within the workflow that require language understanding or generation.' },
+      { q: 'What tools and platforms does SA Media integrate with?', a: 'We integrate with the full standard business software stack: HubSpot, Salesforce, Notion, Airtable, Slack, Google Workspace, Microsoft 365, Shopify, Stripe, Xero, QuickBooks, Intercom, Zendesk, Typeform, Calendly, and hundreds of others via API. If the tool has an API, we can integrate it. If it does not, we build custom connectors using browser automation where necessary.' },
+      { q: 'How do you ensure automated workflows do not make mistakes?', a: 'We build every automation with error handling, logging, and validation built in. High-stakes automations (anything involving financial transactions, customer communications, or data deletion) include explicit human approval steps. Every automation has a failure notification protocol so errors are caught immediately rather than silently propagating. We also build testing frameworks that verify automation outputs against expected results on a scheduled basis.' },
     ],
     philosophy: {
       title: 'The companies that will dominate the next decade are not the ones with the most employees. They are the ones with the most leverage.',
@@ -624,7 +783,7 @@ export const services: ServiceData[] = [
     outcomes: [
       { stat: '80%', label: 'Reduction in repetitive human-handled tasks' },
       { stat: '24/7', label: 'Agents work around the clock with zero overtime' },
-      { stat: '4–6 wks', label: 'From scoping to first agent live in production' },
+      { stat: '4 - 6 wks', label: 'From scoping to first agent live in production' },
     ],
     philosophy: {
       title: 'An AI agent is not a chatbot. It is a digital team member with a defined role, measurable output, and the ability to act.',
@@ -644,6 +803,19 @@ export const services: ServiceData[] = [
         },
       ],
     },
+    whoFor: 'Built for mid-market and enterprise operations teams, sales organisations, and founders who have identified repeatable tasks that are consuming skilled headcount. Ideal for companies with at least one clearly defined workflow they want to remove from the human workload permanently.',
+    process: [
+      { n: '01', title: 'Agent Scoping Workshop', desc: 'We identify the exact tasks, tools, and decision points the agent will handle. Scope definition prevents the most common failure mode: an agent given too broad a mandate that produces unreliable outputs.' },
+      { n: '02', title: 'Architecture & Tool Integration', desc: 'We design the agent architecture - model selection, tool use, memory system, and API integrations. Every agent is built on the specific infrastructure its task requires, not a generic template.' },
+      { n: '03', title: 'Build, Test, Guardrail', desc: 'We build the agent with full guardrail systems: output validation, confidence thresholds, escalation triggers, and audit logging. We test against real edge cases before any production deployment.' },
+      { n: '04', title: 'Deploy, Monitor, Improve', desc: 'We deploy your agent with monitoring dashboards, performance metrics, and a 30-day optimisation window. Agents improve with use - we track their output quality and refine the system based on real production data.' },
+    ],
+    faq: [
+      { q: 'What is the difference between an AI agent and a chatbot?', a: 'A chatbot responds to questions. An AI agent takes autonomous action - it can research, write, send, update databases, call APIs, and execute multi-step workflows without a human initiating each step. Agents are defined by their ability to act, not just respond.' },
+      { q: 'How long does it take to build and deploy an AI agent?', a: 'Most agents go from scoping to first production deployment in 4-6 weeks. More complex multi-agent systems with deep integrations can take 8-12 weeks. We scope every project before committing to a timeline.' },
+      { q: 'Which tasks are best suited for AI agents?', a: 'The highest-value targets are repetitive, rule-based workflows that currently consume skilled human time: prospecting research, report generation, ticket triage, data extraction and enrichment, scheduling coordination, and monitoring workflows. We help you identify your highest-ROI agent opportunity during scoping.' },
+      { q: 'How do you ensure agent outputs are accurate and safe?', a: 'Every agent we build includes output validation logic, confidence thresholds that trigger human review for uncertain cases, comprehensive audit logs, and defined escalation paths. We also conduct red-team testing to identify failure modes before production deployment.' },
+    ],
     zunelabPartner: true,
     zunelabStats: [
       { value: '$10M+', label: 'Value created across AI projects' },
@@ -670,7 +842,7 @@ export const services: ServiceData[] = [
       'Ongoing AIEO Monitoring & Reporting',
     ],
     outcomes: [
-      { stat: '3–6 mos', label: 'To measurable AI search visibility improvement' },
+      { stat: '3 - 6 mos', label: 'To measurable AI search visibility improvement' },
       { stat: '40%', label: 'Of Google searches now show AI overviews' },
       { stat: '1st', label: 'Mover advantage - most brands have not started yet' },
     ],
@@ -692,6 +864,19 @@ export const services: ServiceData[] = [
         },
       ],
     },
+    whoFor: 'Built for brands that are already investing in content and SEO but are invisible in AI-generated search results. Particularly valuable for B2B SaaS, professional services, financial services, and any category where buyers research through AI assistants before making decisions.',
+    process: [
+      { n: '01', title: 'AIEO Visibility Audit', desc: 'We benchmark your current AI search presence across ChatGPT, Perplexity, Gemini, and Google AI Overviews. We identify where you appear, where competitors appear instead of you, and the specific gap your brand needs to close.' },
+      { n: '02', title: 'Authority Architecture', desc: 'We map the topical areas where your brand needs to establish AI citation authority and design the content and structured data infrastructure that positions you as the definitive source in your category.' },
+      { n: '03', title: 'Content & Schema Execution', desc: 'We produce the authority content, FAQ structures, schema markup, and brand mention campaigns that signal trustworthiness to AI training data and retrieval systems. Every asset is built with AI citation criteria as the primary design constraint.' },
+      { n: '04', title: 'Monitoring & Optimisation', desc: 'We track your AI search visibility monthly across all major platforms, identify citation trends, and refine the strategy based on what the data shows. AIEO is a compounding investment - we manage it as one.' },
+    ],
+    faq: [
+      { q: 'What is AIEO and how is it different from SEO?', a: 'AIEO (AI Engine Optimization) and GEO (Generative Engine Optimization) are disciplines focused on making your brand appear in AI-generated answers from platforms like ChatGPT, Perplexity, and Google AI Overviews. Traditional SEO optimised for link clicks; AIEO optimises for citation in AI-generated answers. The technical signals overlap but the weighting is different - AI engines prioritise structured data, factual accuracy, and topical authority over keyword density.' },
+      { q: 'How do you measure AIEO performance?', a: 'We measure brand citation frequency across major AI platforms, share of AI-generated answers in your category, Google AI Overview appearances, and referral traffic from AI platforms. We establish baselines at the start of every engagement and report monthly on visibility trends.' },
+      { q: 'How long does it take to see results from AIEO?', a: 'Most clients see measurable improvement in AI citation frequency within 3-6 months. The timeline depends on your starting authority level and category competitiveness. AIEO is a compounding investment - brands that start now will have structural advantages over brands that start in 12 months.' },
+      { q: 'Does AIEO work alongside traditional SEO?', a: 'Yes - and the two disciplines reinforce each other. Strong domain authority and high-quality content improve both traditional search rankings and AI citation likelihood. We build AIEO strategies that compound on your existing SEO investment rather than replacing it.' },
+    ],
     zunelabPartner: true,
     zunelabStats: [
       { value: '$10M+', label: 'Value created through AI-first strategy' },
@@ -721,7 +906,7 @@ export const services: ServiceData[] = [
     ],
     outcomes: [
       { stat: '100%', label: 'End-to-end ownership so you show up and present' },
-      { stat: '2–8 wks', label: 'Lead time depending on event scale' },
+      { stat: '2 - 8 wks', label: 'Lead time depending on event scale' },
       { stat: '∞', label: 'Repurposed content from every event we produce' },
     ],
     philosophy: {
@@ -742,6 +927,19 @@ export const services: ServiceData[] = [
         },
       ],
     },
+    whoFor: 'Built for executive teams, brand leaders, and marketing directors at companies that treat events as brand investments, not budget line items. Particularly valuable for B2B companies hosting client events, financial services firms running investor or advisory events, and consumer brands executing product launches and activations.',
+    process: [
+      { n: '01', title: 'Event Strategy & Brief', desc: 'We begin every event engagement with a strategic brief: the objective, the audience, the key message, the success metrics, and the experience we want every guest to carry away. Logistics follow strategy - not the other way around.' },
+      { n: '02', title: 'Creative Concept & Production Design', desc: 'We develop the event concept, visual identity, venue shortlist, and run-of-show structure. Every design decision - from the invitation to the exit experience - is built around the core strategic objective.' },
+      { n: '03', title: 'Vendor Coordination & Pre-Production', desc: 'We manage every vendor relationship: venue, AV, catering, decor, speakers, live streaming, and photography. Our team handles all pre-production logistics so your team can focus on the content and the relationships.' },
+      { n: '04', title: 'Live Execution & Content Capture', desc: 'On the day, we run the full production operation. We also ensure the event is captured as a comprehensive content asset - video, photography, testimonials, and social content that extends the event\'s marketing value for months after the room empties.' },
+    ],
+    faq: [
+      { q: 'What types of events does SA Media produce?', a: 'We produce corporate conferences, executive roundtables, product launches, brand activations, client appreciation events, award ceremonies, hybrid and virtual events, and multi-city touring events. We operate across Toronto, New York, and Dubai.' },
+      { q: 'How far in advance do you need to be engaged?', a: 'For most events we need 4-8 weeks of lead time. Large-scale productions, multi-day conferences, and events requiring complex venue sourcing may need 12-16 weeks. We have delivered events on compressed timelines for clients with urgent requirements.' },
+      { q: 'Do you handle event marketing and promotion as well?', a: 'Yes - we handle everything from invitation design and email campaigns to social media promotion, PR outreach, and post-event content production. We treat every event as a marketing campaign with a live component, not a logistics project.' },
+      { q: 'How do you measure event success?', a: 'We define success metrics at the brief stage before any production decisions are made. Depending on your objective, we track attendance quality, earned media coverage, content assets generated, attendee NPS, pipeline influenced, and post-event brand sentiment. We deliver a full post-event report with every engagement.' },
+    ],
   },
 ]
 
