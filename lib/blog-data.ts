@@ -10221,5 +10221,5 @@ export function getPost(slug: string): BlogPost | undefined {
 }
 
 export function getRecentPosts(n = 3): BlogPost[] {
-  return posts.slice(0, n)
+  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, n)
 }
