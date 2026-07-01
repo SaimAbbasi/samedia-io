@@ -3,6 +3,8 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion'
+import { services } from '@/lib/services-data'
+import { fractionalServices } from '@/lib/fractional-data'
 
 const navLinks = [
   { label: 'Home', href: '/' },
