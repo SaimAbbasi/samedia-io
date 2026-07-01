@@ -10221,6 +10221,7 @@ export const posts: BlogPost[] = [
 ]
 
 // Metadata-only array (no HTML content) — safe to import in client components.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const postMetas: PostMeta[] = posts.map(({ content: _content, ...meta }) => meta)
 
 // Pre-sorted by date descending, computed once at module load instead of on every call.
