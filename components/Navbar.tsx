@@ -3,8 +3,6 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion'
-import { services } from '@/lib/services-data'
-import { fractionalServices } from '@/lib/fractional-data'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -186,89 +184,67 @@ export default function Navbar() {
         {menuOpen && (
           <motion.nav
             aria-label="Mobile menu"
-            className="md:hidden fixed inset-0 bg-dark flex flex-col items-center justify-center gap-6 z-40 overflow-y-auto py-20"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            className="md:hidden fixed inset-0 bg-dark z-40 flex flex-col"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
           >
-            <button
-              aria-label="Close menu"
-              className="absolute top-5 right-6 text-white text-2xl"
-              onClick={() => setMenuOpen(false)}
-            >
-              ×
-            </button>
-
-            <Link href="/" className="flex items-center gap-3 mb-2" onClick={() => setMenuOpen(false)}>
-              <Image
-                src="/images/sa-media-logo.png"
-                alt="SA Media"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-contain"
-              />
-              <span className="font-heading font-bold text-white text-xl tracking-wider">SA MEDIA</span>
-            </Link>
-
-            {/* Services group in mobile */}
-            <div className="w-full max-w-sm px-6">
-              <p className="font-heading text-3xl text-white text-center mb-4">
-                <Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-              </p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-                {services.map((s) => (
-                  <Link
-                    key={s.slug}
-                    href={`/services/${s.slug}`}
-                    className="font-body text-sm text-white/50 hover:text-lime transition-colors py-1 text-center"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {s.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Fractional C-Suite group in mobile */}
-            <div className="w-full max-w-sm px-6">
-              <p className="font-heading text-3xl text-white text-center mb-4">
-                <Link href="/fractional" onClick={() => setMenuOpen(false)}>Fractional</Link>
-              </p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-                {fractionalServices.map((s) => (
-                  <Link
-                    key={s.slug}
-                    href={`/fractional/${s.slug}`}
-                    className="font-body text-sm text-white/50 hover:text-lime transition-colors py-1 text-center"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {s.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {['About', 'Team', 'Blog', 'Contact'].map((label) => (
-              <Link
-                key={label}
-                href={label === 'Contact' ? '/contact-us' : `/${label.toLowerCase()}`}
-                className="font-heading text-3xl text-white hover:text-lime transition-colors"
+            {/* Header row */}
+            <div className="flex items-center justify-between px-6 h-16 border-b border-white/10 shrink-0">
+              <Link href="/" className="flex items-center gap-2.5" onClick={() => setMenuOpen(false)}>
+                <Image
+                  src="/images/sa-media-logo.png"
+                  alt="SA Media"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="font-heading font-bold text-white text-base tracking-wider">SA MEDIA</span>
+              </Link>
+              <button
+                aria-label="Close menu"
+                className="text-white/60 hover:text-white transition-colors text-3xl leading-none"
                 onClick={() => setMenuOpen(false)}
               >
-                {label}
-              </Link>
-            ))}
+                ×
+              </button>
+            </div>
 
-            <Link
-              href="https://calendly.com/samedia-saim/sa-discovery-meeting"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-heading text-xl text-lime border border-lime px-6 py-3 mt-4"
-              onClick={() => setMenuOpen(false)}
-            >
-              Start a project
-            </Link>
+            {/* Nav links */}
+            <div className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-1">
+              {[
+                { label: 'Home', href: '/' },
+                { label: 'About', href: '/about' },
+                { label: 'Team', href: '/team' },
+                { label: 'Services', href: '/services' },
+                { label: 'Fractional C-Suite', href: '/fractional' },
+                { label: 'Blog', href: '/blog' },
+                { label: 'Contact', href: '/contact-us' },
+              ].map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="font-heading text-2xl text-white hover:text-lime transition-colors duration-200 py-3 border-b border-white/10"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="px-6 py-8 border-t border-white/10 shrink-0">
+              <Link
+                href="https://calendly.com/samedia-saim/sa-discovery-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center font-heading text-lg text-lime border border-lime px-6 py-4 hover:opacity-80 transition-opacity"
+                onClick={() => setMenuOpen(false)}
+              >
+                Start a project →
+              </Link>
+            </div>
           </motion.nav>
         )}
       </AnimatePresence>
