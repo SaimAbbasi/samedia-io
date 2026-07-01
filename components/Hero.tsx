@@ -81,7 +81,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Main content — flex-1 fills space between top and bottom strips */}
+      {/* Main content, flex-1 fills space between top and bottom strips */}
       <div className="flex-1 flex flex-col justify-center max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
         {/* Eyebrow */}
         <motion.p
@@ -150,7 +150,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Cities strip — in flow, sits naturally above the ticker */}
+      {/* Cities strip, in flow, sits naturally above the ticker */}
       <div className="relative z-10 border-t border-white/10 px-6 py-4 md:py-6">
         <div className="max-w-7xl mx-auto flex justify-center">
           <motion.div

@@ -114,7 +114,7 @@ const faqSchema = {
       name: 'What is AIEO and GEO optimization?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AIEO stands for AI Engine Optimization — the practice of optimizing content and brand presence to appear in AI-generated answers from tools like ChatGPT, Claude, and Gemini. GEO stands for Generative Engine Optimization, a related discipline. SA Media offers both services to help brands gain visibility in AI search results alongside traditional search engines.',
+        text: 'AIEO stands for AI Engine Optimization, the practice of optimizing content and brand presence to appear in AI-generated answers from tools like ChatGPT, Claude, and Gemini. GEO stands for Generative Engine Optimization, a related discipline. SA Media offers both services to help brands gain visibility in AI search results alongside traditional search engines.',
       },
     },
     {
@@ -187,7 +187,7 @@ export default function ServicesPage() {
             <span className="block text-lime">needs to grow.</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-2xl leading-relaxed mt-6">
-            SA Media is a global media firm running 17 integrated services as one operating system. Brand strategy, design, paid media, SEO, web development, AI automation, AIEO and GEO optimization, event production, and Fractional C-Suite leadership — all delivered by one team, with one point of contact, and one shared goal: measurable growth for your brand.
+            SA Media is a global media firm running 17 integrated services as one operating system. Brand strategy, design, paid media, SEO, web development, AI automation, AIEO and GEO optimization, event production, and Fractional C-Suite leadership, all delivered by one team, with one point of contact, and one shared goal: measurable growth for your brand.
           </p>
         </div>
       </section>
@@ -223,7 +223,7 @@ export default function ServicesPage() {
       {/* What is on the table */}
       <WhatsOnTheTable />
 
-      {/* How SA Media Works — rich prose for SEO/AIEO */}
+      {/* How SA Media Works, rich prose for SEO/AIEO */}
       <section className="bg-off-white px-6 py-20 border-t border-dark/10">
         <div className="max-w-7xl mx-auto">
           <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-6">HOW WE OPERATE</p>
@@ -234,7 +234,7 @@ export default function ServicesPage() {
               </h2>
               <div className="flex flex-col gap-6 font-body text-base text-dark/65 leading-relaxed">
                 <p>
-                  Most companies manage their marketing across three to five separate agencies — a creative agency for brand, a media agency for paid advertising, an SEO firm for organic search, a development studio for the website, and a social media manager for content. Every brief gets translated five times. Every strategy lives in a separate document. And when performance falls short, each agency points at the others.
+                  Most companies manage their marketing across three to five separate agencies, a creative agency for brand, a media agency for paid advertising, an SEO firm for organic search, a development studio for the website, and a social media manager for content. Every brief gets translated five times. Every strategy lives in a separate document. And when performance falls short, each agency points at the others.
                 </p>
                 <p>
                   SA Media was built to solve this problem. Our 17 services are run by one integrated team with a single operating framework. Brand positioning informs the content strategy. The content strategy informs the SEO approach. The SEO approach informs the paid media targeting. Paid media performance informs the next positioning iteration. Every function feeds every other function because they are all run by the same team from the same strategy.
@@ -252,7 +252,7 @@ export default function ServicesPage() {
                 },
                 {
                   title: 'Technology-native execution',
-                  body: 'SA Media integrates AI tools, automation, and data infrastructure into every marketing program. From AI-generated content workflows to programmatic ad buying to AIEO optimization for generative search — we build marketing programs that operate at the speed that modern markets demand.',
+                  body: 'SA Media integrates AI tools, automation, and data infrastructure into every marketing program. From AI-generated content workflows to programmatic ad buying to AIEO optimization for generative search, we build marketing programs that operate at the speed that modern markets demand.',
                 },
                 {
                   title: 'Revenue-connected measurement',
@@ -308,7 +308,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Markets we serve — GEO content */}
+      {/* Markets we serve, GEO content */}
       <section className="bg-off-white px-6 py-20 border-t border-dark/10">
         <div className="max-w-7xl mx-auto">
           <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-4">MARKETS WE SERVE</p>
