@@ -40,7 +40,7 @@ const testimonials = [
   {
     quote: 'They transformed our social presence completely. Results we hadn\'t seen in years.',
     attribution: 'Roshan U.',
-    role: 'COO, Practitionet',
+    role: 'COO, Pulse',
   },
   {
     quote: 'Strategic, data-driven, and actually fun to work with.',
@@ -351,7 +351,7 @@ export default function WhySAMedia() {
             </motion.h2>
           </div>
           <Link
-            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+            href="https://calendly.com/samedia-saim/sa-discovery-meeting"
             target="_blank"
             rel="noopener noreferrer"
             className="font-heading text-xl text-lime hover:opacity-80 transition-opacity shrink-0"

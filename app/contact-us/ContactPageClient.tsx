@@ -45,7 +45,7 @@ export default function ContactPage() {
               <p className="font-heading text-2xl text-white mb-4">Message received.</p>
               <p className="font-body text-base text-white/50">We will be in touch within one business day. In the meantime, book a discovery call below.</p>
               <a
-                href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+                href="https://calendly.com/samedia-saim/sa-discovery-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-6 font-heading text-lg text-lime border border-lime px-8 py-4 hover:opacity-80 transition-opacity"
@@ -126,7 +126,7 @@ export default function ContactPage() {
                     Book a free 30-minute discovery call with our team. We will talk through your goals and whether SA Media is the right fit.
                   </p>
                   <a
-                    href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+                    href="https://calendly.com/samedia-saim/sa-discovery-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-heading text-base text-lime border border-lime px-6 py-3 inline-block hover:opacity-80 transition-opacity"

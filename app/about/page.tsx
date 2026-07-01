@@ -219,7 +219,7 @@ export default function AboutPage() {
               Meet the team →
             </Link>
             <a
-              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting"
               target="_blank"
               rel="noopener noreferrer"
               className="font-heading text-lg text-lime border border-lime px-8 py-4 hover:opacity-80 transition-opacity text-center"

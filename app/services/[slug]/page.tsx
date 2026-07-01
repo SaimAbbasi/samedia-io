@@ -10,12 +10,24 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const service = getService(params.slug)
   if (!service) return {}
+  const desc = service.description.slice(0, 160)
+  const title = `${service.name} Services in Toronto, New York and Dubai | SA Media`
   return {
-    title: `${service.name} | SA Media`,
-    description: service.philosophy?.body.slice(0, 160) ?? service.description,
+    title,
+    description: desc,
+    keywords: [service.name, 'SA Media', service.eyebrow, 'marketing agency Toronto', 'marketing agency Dubai', 'marketing agency New York', ...service.includes.slice(0, 5)].join(', '),
     openGraph: {
-      title: `${service.name} | SA Media`,
-      description: service.philosophy?.body.slice(0, 160) ?? service.description,
+      title,
+      description: desc,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: desc,
+    },
+    alternates: {
+      canonical: `https://samedia.io/services/${params.slug}`,
     },
   }
 }
@@ -24,8 +36,31 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   const service = getService(params.slug)
   if (!service) notFound()
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.name,
+    description: service.description,
+    provider: {
+      '@type': 'Organization',
+      name: 'SA Media',
+      url: 'https://samedia.io',
+      areaServed: ['Toronto', 'New York', 'Dubai', 'Singapore', 'Monaco', 'Miami'],
+    },
+    serviceType: service.eyebrow,
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+    },
+  }
+
   return (
     <>
+      <Script
+        id={`service-schema-${service.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {/* Hero */}
       <section className="bg-dark pt-28 md:pt-36 pb-16 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto">
@@ -317,7 +352,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
           <div className="flex flex-col gap-4 shrink-0">
             <Link
-              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting" target="_blank" rel="noopener noreferrer"
               className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
             >
               Start a project →

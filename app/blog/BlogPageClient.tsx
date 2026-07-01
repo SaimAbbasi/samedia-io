@@ -93,7 +93,7 @@ export default function BlogPageClient() {
             </h2>
           </div>
           <Link
-            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
+            href="https://calendly.com/samedia-saim/sa-discovery-meeting" target="_blank" rel="noopener noreferrer"
             className="font-heading text-xl text-lime hover:opacity-80 transition-opacity shrink-0"
           >
             Start a project →

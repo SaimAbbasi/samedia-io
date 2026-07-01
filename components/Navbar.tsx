@@ -4,13 +4,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion'
 import { services } from '@/lib/services-data'
+import { fractionalServices } from '@/lib/fractional-data'
 
 const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Team', href: '/team' },
   { label: 'Services', href: '/services', hasDropdown: true },
   { label: 'Blog', href: '/blog' },
-  { label: 'Team', href: '/team' },
-  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact-us' },
 ]
 
@@ -110,6 +111,24 @@ export default function Navbar() {
                           ))}
                         </div>
                         <div className="mt-4 pt-4 border-t border-white/10">
+                          <p className="font-mono text-xs text-white/30 uppercase tracking-widest mb-3">Fractional C-Suite</p>
+                          <div className="grid grid-cols-2 gap-x-8 gap-y-1">
+                            {fractionalServices.map((s) => (
+                              <Link
+                                key={s.slug}
+                                href={`/fractional/${s.slug}`}
+                                className="group flex items-center gap-2 py-2 border-b border-white/5 hover:border-lime/30 transition-colors"
+                                onClick={() => setDropdownOpen(false)}
+                              >
+                                <span className="font-mono text-xs text-lime/60 w-6 shrink-0">{s.n}</span>
+                                <span className="font-body text-sm text-white/70 group-hover:text-white transition-colors">
+                                  {s.name}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="mt-4 pt-4 border-t border-white/10">
                           <Link
                             href="/services"
                             className="font-mono text-xs text-teal hover:text-lime transition-colors tracking-widest"
@@ -134,7 +153,7 @@ export default function Navbar() {
             )
           )}
           <Link
-            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+            href="https://calendly.com/samedia-saim/sa-discovery-meeting"
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-xs uppercase tracking-wider text-lime border border-lime px-4 py-2 hover:opacity-80 transition-opacity"
@@ -212,7 +231,26 @@ export default function Navbar() {
               </div>
             </div>
 
-            {['Blog', 'Team', 'About', 'Contact'].map((label) => (
+            {/* Fractional C-Suite group in mobile */}
+            <div className="w-full max-w-sm px-6">
+              <p className="font-heading text-3xl text-white text-center mb-4">
+                <Link href="/fractional" onClick={() => setMenuOpen(false)}>Fractional</Link>
+              </p>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+                {fractionalServices.map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/fractional/${s.slug}`}
+                    className="font-body text-sm text-white/50 hover:text-lime transition-colors py-1 text-center"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {['About', 'Team', 'Blog', 'Contact'].map((label) => (
               <Link
                 key={label}
                 href={label === 'Contact' ? '/contact-us' : `/${label.toLowerCase()}`}
@@ -224,7 +262,7 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting"
               target="_blank"
               rel="noopener noreferrer"
               className="font-heading text-xl text-lime border border-lime px-6 py-3 mt-4"

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube } from 'react-icons/fa6'
 import { services } from '@/lib/services-data'
+import { fractionalServices } from '@/lib/fractional-data'
 
 const exploreLinks = [
   { label: 'Home', href: '/' },
@@ -45,7 +46,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col gap-3 shrink-0">
                 <Link
-                  href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+                  href="https://calendly.com/samedia-saim/sa-discovery-meeting"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-heading text-lg text-lime border border-lime px-8 py-4 hover:opacity-80 transition-opacity text-center"
@@ -63,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* Columns */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 md:gap-10">
             {/* Brand */}
             <div className="col-span-2 sm:col-span-3 md:col-span-1">
               <Link href="/" className="flex items-center gap-2 mb-5">
@@ -163,6 +164,22 @@ export default function Footer() {
                   <Link
                     key={s.slug}
                     href={`/services/${s.slug}`}
+                    className="font-body text-sm text-dark/65 hover:text-lime transition-colors duration-200"
+                  >
+                    {s.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Fractional C-Suite */}
+            <div>
+              <p className="font-mono text-xs text-dark/40 uppercase tracking-widest mb-4">FRACTIONAL</p>
+              <div className="flex flex-col gap-2">
+                {fractionalServices.map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/fractional/${s.slug}`}
                     className="font-body text-sm text-dark/65 hover:text-lime transition-colors duration-200"
                   >
                     {s.name}

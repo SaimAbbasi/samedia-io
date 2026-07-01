@@ -34,6 +34,12 @@ const jsonLd = {
 
 const testimonials = [
   {
+    quote: 'SA Media\'s SEO and paid media work generated hundreds of qualified leads for us. They understood our market immediately and built a program that delivered real, measurable results. I would recommend them to any company serious about growth.',
+    name: 'Chris Hopper',
+    role: 'VP, Growth & Finance · Waste Reduction Group',
+    service: 'SEO & Paid Media',
+  },
+  {
     quote: 'The website they built for us is the best thing we have done for the brand. Clean, fast, and built around our story.',
     name: 'Aarav Chugh',
     role: 'Founder, Aarav\'s Garage',
@@ -66,7 +72,7 @@ const testimonials = [
   {
     quote: 'They transformed our social presence completely. Results we had not seen in years.',
     name: 'Roshan U.',
-    role: 'COO, Practitionet',
+    role: 'COO, Pulse',
     service: 'Social Media Management',
   },
   {
@@ -253,7 +259,7 @@ export default function ClientsPage() {
             </h2>
           </div>
           <Link
-            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
+            href="https://calendly.com/samedia-saim/sa-discovery-meeting" target="_blank" rel="noopener noreferrer"
             className="font-heading text-xl text-lime border border-lime px-8 py-4 hover:opacity-80 transition-opacity shrink-0"
           >
             Start a project →

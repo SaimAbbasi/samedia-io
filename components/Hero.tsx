@@ -11,6 +11,7 @@ const ticker = [
   'CONTENT CREATION',
   'MEDIA BUYING & ADS',
   'INFLUENCER MARKETING',
+  'PUBLIC RELATIONS',
   'SEO & CONTENT STRATEGY',
   'EMAIL & CRM AUTOMATION',
   'WEB & E-COMMERCE DEVELOPMENT',
@@ -20,6 +21,13 @@ const ticker = [
   'AI AGENT BUILDING',
   'AIEO & GEO OPTIMIZATION',
   'EVENT PLANNING & PRODUCTION',
+  'BLOCKCHAIN & CRYPTO MARKETING',
+  'FRACTIONAL CMO',
+  'FRACTIONAL CTO',
+  'FRACTIONAL CFO',
+  'FRACTIONAL CSO',
+  'FRACTIONAL CRO',
+  'FRACTIONAL COS',
 ]
 
 export default function Hero() {
@@ -126,7 +134,7 @@ export default function Hero() {
             Our services
           </Link>
           <Link
-            href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting"
+            href="https://calendly.com/samedia-saim/sa-discovery-meeting"
             target="_blank"
             rel="noopener noreferrer"
             className="group font-body text-sm text-lime hover:opacity-80 transition-opacity flex items-center gap-2"

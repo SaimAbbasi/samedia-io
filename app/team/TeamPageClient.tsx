@@ -290,7 +290,7 @@ export default function TeamPage() {
           </div>
           <div className="flex flex-col gap-4 shrink-0">
             <Link
-              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting" target="_blank" rel="noopener noreferrer"
               className="font-heading text-xl text-lime hover:opacity-80 transition-opacity"
             >
               Get in touch →

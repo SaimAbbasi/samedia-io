@@ -1,8 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
 
-const row1 = ['YSL', 'Lamborghini', 'Netflix', 'Emirates', 'Nike', 'Adidas', 'Apple', 'Samsung']
-const row2 = ['Spotify', 'Airbnb', 'Tesla', 'LVMH', 'Gucci', 'Rolex', 'Zara', 'Louis Vuitton']
+const row1 = ['KotoKuru', 'YSL', 'Pluto Blockchain Solutions', 'Lamborghini', 'Twizzy', 'Netflix', 'Waste Reduction Group', 'Emirates', 'Rondah AI', 'Nike', 'Pulse', 'Adidas', 'Media Time', 'Apple', 'Meaghan Living Properties', 'Samsung', 'James Li Realty', 'Surface Labs']
+const row2 = ['Fuse AI', 'Spotify', 'Vullnet Nura Group', 'Airbnb', 'WhatsUpAshraf', 'Tesla', 'Konan of Kaspa', 'LVMH', 'Progress Group Inc', 'Gucci', 'Vosyn AI', 'Rolex', 'Squirrel Technologies', 'Zara', 'EyesofDanya', 'Louis Vuitton', 'Iron Key Capital']
+
 
 const socialPartners = [
   { name: 'Meta', color: 'lime' },
@@ -76,14 +77,14 @@ function MarqueeRow({ items, reverse = false }: { items: string[]; reverse?: boo
       <motion.div
         className="flex gap-0 whitespace-nowrap"
         animate={{ x: reverse ? ['-33.33%', '0%'] : ['0%', '-33.33%'] }}
-        transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
       >
         {doubled.map((name, i) => (
           <span
             key={i}
             className="group inline-flex items-center gap-0 cursor-default select-none"
           >
-            <span className="font-heading text-3xl md:text-6xl lg:text-7xl tracking-tight text-white/10 group-hover:text-teal transition-colors duration-300 px-5 md:px-8">
+            <span className="font-heading text-lg md:text-2xl lg:text-3xl tracking-tight text-white/10 group-hover:text-teal transition-colors duration-300 px-4 md:px-6">
               {name}
             </span>
             <span className="font-mono text-lime/30 text-lg group-hover:text-lime transition-colors duration-300">✦</span>

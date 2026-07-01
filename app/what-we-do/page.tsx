@@ -297,7 +297,7 @@ export default function WhatWeDoPage() {
               View all services →
             </Link>
             <Link
-              href="https://calendly.com/samedia-saim/sa-consulting-discovery-meeting" target="_blank" rel="noopener noreferrer"
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting" target="_blank" rel="noopener noreferrer"
               className="font-heading text-lg text-lime border border-lime px-8 py-4 hover:opacity-80 transition-opacity"
             >
               Start a project →
