@@ -73,6 +73,22 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           <p className="font-body text-xl text-white/50 max-w-2xl leading-relaxed">
             {service.description}
           </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://calendly.com/samedia-saim/sa-discovery-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-heading text-base text-dark bg-lime px-8 py-4 hover:opacity-90 transition-opacity"
+            >
+              Book a discovery call →
+            </a>
+            <Link
+              href="/services"
+              className="inline-block font-body text-sm text-white/50 border border-white/20 px-8 py-4 hover:border-white/50 hover:text-white transition-colors"
+            >
+              ← All services
+            </Link>
+          </div>
           {service.zunelabPartner && (
             <div className="mt-8 inline-flex items-center gap-3 border border-lime/30 px-5 py-3">
               <span className="font-mono text-xs text-lime tracking-widest">POWERED IN PARTNERSHIP WITH</span>
