@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { posts } from '@/lib/blog-data'
+import { postMetas } from '@/lib/blog-data'
 
 const locations = ['All', 'Toronto', 'Dubai', 'New York', 'Monaco', 'Miami', 'Singapore']
 
@@ -9,8 +9,8 @@ export default function BlogPageClient() {
   const [activeLocation, setActiveLocation] = useState('All')
 
   const filtered = (activeLocation === 'All'
-    ? posts
-    : posts.filter((p) => p.location === activeLocation)
+    ? postMetas
+    : postMetas.filter((p) => p.location === activeLocation)
   ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   return (

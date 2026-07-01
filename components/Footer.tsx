@@ -17,6 +17,7 @@ const companyLinks = [
   { label: 'Capabilities', href: '/capabilities' },
   { label: 'Clients', href: '/clients' },
   { label: 'Why SA Media', href: '/why-sa-media' },
+  { label: 'Testimonials', href: '/testimonials' },
   { label: 'FAQ', href: '/faq' },
 ]
 

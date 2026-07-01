@@ -11,7 +11,7 @@ export default function Services() {
         {/* Header row */}
         <div className="flex justify-between items-baseline mb-10">
           <p className="font-mono text-xs text-teal uppercase tracking-widest">OUR SERVICES</p>
-          <p className="font-mono text-xs text-white/20">01 - 17</p>
+          <p className="font-mono text-xs text-white/20">01 - {String(services.length).padStart(2, '0')}</p>
         </div>
 
         {/* Intro */}

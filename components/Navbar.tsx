@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion'
@@ -23,6 +23,12 @@ export default function Navbar() {
   const { scrollY } = useScroll()
 
   useMotionValueEvent(scrollY, 'change', (v) => setScrolled(v > 80))
+
+  useEffect(() => {
+    return () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current)
+    }
+  }, [])
 
   function openDropdown() {
     if (closeTimer.current) clearTimeout(closeTimer.current)
@@ -165,6 +171,7 @@ export default function Navbar() {
         {/* Hamburger */}
         <button
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
           className="md:hidden text-white flex flex-col gap-1.5"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
@@ -202,14 +209,6 @@ export default function Navbar() {
                 className="w-12 h-12 object-contain"
               />
               <span className="font-heading font-bold text-white text-xl tracking-wider">SA MEDIA</span>
-            </Link>
-
-            <Link
-              href="/"
-              className="font-heading text-3xl text-white hover:text-lime transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              Home
             </Link>
 
             {/* Services group in mobile */}

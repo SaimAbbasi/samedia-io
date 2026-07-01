@@ -9,6 +9,10 @@ export interface BlogPost {
   content: string
 }
 
+// PostMeta strips the large HTML `content` field — use this in client components
+// and list pages so the full post body is never sent to the browser bundle.
+export type PostMeta = Omit<BlogPost, 'content'>
+
 export const posts: BlogPost[] = [
   {
     slug: `AIEO-optimization-toronto-real-estate-1`,
@@ -10216,10 +10220,18 @@ export const posts: BlogPost[] = [
   },
 ]
 
+// Metadata-only array (no HTML content) — safe to import in client components.
+export const postMetas: PostMeta[] = posts.map(({ content: _content, ...meta }) => meta)
+
+// Pre-sorted by date descending, computed once at module load instead of on every call.
+const _sortedMetas: PostMeta[] = [...postMetas].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+)
+
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug)
 }
 
-export function getRecentPosts(n = 3): BlogPost[] {
-  return [...posts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, n)
+export function getRecentPosts(n = 3): PostMeta[] {
+  return _sortedMetas.slice(0, n)
 }

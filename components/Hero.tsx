@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
+import { motion, useMotionValue, useTransform, useSpring, useReducedMotion } from 'framer-motion'
 import { useRef, useEffect } from 'react'
 
 const words = ['DIGITAL', 'GROWTH', 'SOLUTIONS']
@@ -31,6 +31,7 @@ const ticker = [
 ]
 
 export default function Hero() {
+  const shouldReduceMotion = useReducedMotion()
   const sectionRef = useRef<HTMLElement>(null)
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -68,8 +69,8 @@ export default function Hero() {
       <motion.div
         className="pointer-events-none absolute -bottom-20 -right-20 w-[500px] h-[500px]"
         style={{ background: 'radial-gradient(circle, rgba(234,241,58,0.07) 0%, transparent 65%)' }}
-        animate={{ scale: [1, 1.2, 1], x: [0, -20, 0], y: [0, 20, 0] }}
-        transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        animate={shouldReduceMotion ? {} : { scale: [1, 1.2, 1], x: [0, -20, 0], y: [0, 20, 0] }}
+        transition={shouldReduceMotion ? {} : { duration: 14, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
       />
 
       {/* Grid */}
@@ -141,8 +142,8 @@ export default function Hero() {
           >
             Free consultation
             <motion.span
-              animate={{ x: [0, 4, 0] }}
-              transition={{ duration: 1.2, repeat: Infinity }}
+              animate={shouldReduceMotion ? {} : { x: [0, 4, 0] }}
+              transition={shouldReduceMotion ? {} : { duration: 1.2, repeat: Infinity }}
             >
               →
             </motion.span>
@@ -178,8 +179,8 @@ export default function Hero() {
       <div className="relative z-10 border-t border-white/10 overflow-hidden">
         <motion.div
           className="flex gap-12 py-4 whitespace-nowrap"
-          animate={{ x: ['0%', '-50%'] }}
-          transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
+          animate={shouldReduceMotion ? {} : { x: ['0%', '-50%'] }}
+          transition={shouldReduceMotion ? {} : { duration: 22, repeat: Infinity, ease: 'linear' }}
         >
           {[...ticker, ...ticker].map((item, i) => (
             <span key={i} className={`font-mono text-xs uppercase tracking-widest shrink-0 ${i % 3 === 0 ? 'text-white/30' : i % 3 === 1 ? 'text-lime/40' : 'text-teal/40'}`}>

@@ -1,5 +1,6 @@
 'use client'
-import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { motion, useReducedMotion } from 'framer-motion'
 
 const row1 = ['KotoKuru', 'YSL', 'Pluto Blockchain Solutions', 'Lamborghini', 'Twizzy', 'Netflix', 'Waste Reduction Group', 'Emirates', 'Rondah AI', 'Nike', 'Pulse', 'Adidas', 'Media Time', 'Apple', 'Meaghan Living Properties', 'Samsung', 'James Li Realty', 'Surface Labs']
 const row2 = ['Fuse AI', 'Spotify', 'Vullnet Nura Group', 'Airbnb', 'WhatsUpAshraf', 'Tesla', 'Konan of Kaspa', 'LVMH', 'Progress Group Inc', 'Gucci', 'Vosyn AI', 'Rolex', 'Squirrel Technologies', 'Zara', 'EyesofDanya', 'Louis Vuitton', 'Iron Key Capital']
@@ -71,13 +72,14 @@ const aiPartners = [
 ]
 
 function MarqueeRow({ items, reverse = false }: { items: string[]; reverse?: boolean }) {
+  const shouldReduceMotion = useReducedMotion()
   const doubled = [...items, ...items, ...items]
   return (
     <div className="overflow-hidden py-4 border-y border-white/10">
       <motion.div
         className="flex gap-0 whitespace-nowrap"
-        animate={{ x: reverse ? ['-33.33%', '0%'] : ['0%', '-33.33%'] }}
-        transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
+        animate={shouldReduceMotion ? {} : { x: reverse ? ['-33.33%', '0%'] : ['0%', '-33.33%'] }}
+        transition={shouldReduceMotion ? {} : { duration: 25, repeat: Infinity, ease: 'linear' }}
       >
         {doubled.map((name, i) => (
           <span
@@ -137,12 +139,12 @@ export default function Clients() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.35 }}
             >
-              <a
+              <Link
                 href="/clients"
                 className="font-mono text-xs text-teal hover:text-lime transition-colors duration-200 tracking-widest"
               >
                 VIEW ALL CLIENTS →
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

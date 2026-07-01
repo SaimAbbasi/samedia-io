@@ -1,5 +1,6 @@
 import FAQPageClient from './FAQPageClient'
 import type { Metadata } from 'next'
+import { faqJsonLd } from '@/lib/faq-data'
 
 export const metadata: Metadata = {
   title: 'FAQ | SA Media Frequently Asked Questions',
@@ -13,5 +14,14 @@ export const metadata: Metadata = {
 }
 
 export default function FAQPage() {
-  return <FAQPageClient />
+  return (
+    <>
+      {/* JSON-LD rendered server-side so crawlers see it in the initial HTML */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <FAQPageClient />
+    </>
+  )
 }
