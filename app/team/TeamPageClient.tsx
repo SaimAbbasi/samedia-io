@@ -10,7 +10,7 @@ const team = [
     initial: 'SA',
     color: 'bg-lime',
     textColor: 'text-dark',
-    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CTO, Head of AI, and CMO for Progress Group Inc., CMO for Squirrel Wallet, and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
+    bio: "Saim brings an engineer's discipline, a capital markets analyst's rigour, and a serial entrepreneur's instinct to brand strategy. His expertise spans growth strategy, AI, venture building, paid media, and executive leadership. At SA Media, he is the direct senior point of contact on every client engagement.",
     tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
     linkedin: 'https://www.linkedin.com/in/saimabbasi/',
     website: 'https://saimabbasi.com/',
