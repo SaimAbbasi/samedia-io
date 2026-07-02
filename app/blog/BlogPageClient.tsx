@@ -20,9 +20,9 @@ export default function BlogPageClient() {
         <div className="max-w-7xl mx-auto w-full">
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-8">INSIGHTS</p>
           <h1 className="font-heading text-6xl md:text-8xl leading-none text-white">
-            <span className="block">Ideas.</span>
-            <span className="block">Strategies.</span>
-            <span className="block text-lime">Results.</span>
+            <span className="block">Ideas</span>
+            <span className="block">Strategies</span>
+            <span className="block text-lime">Results</span>
           </h1>
         </div>
       </section>

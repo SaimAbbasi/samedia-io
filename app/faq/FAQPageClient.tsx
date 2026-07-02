@@ -15,7 +15,7 @@ export default function FAQPageClient() {
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6 md:mb-8">FAQ</p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl leading-none text-white mb-6">
             Frequently Asked{' '}
-            <span className="text-teal">Questions.</span>
+            <span className="text-teal">Questions</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-xl leading-relaxed mt-6">
             Everything you want to know about working with SA Media, our services, process, and pricing.

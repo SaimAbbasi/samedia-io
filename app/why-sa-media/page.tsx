@@ -172,7 +172,7 @@ export default function WhySAMediaPage() {
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6 md:mb-8">WHY SA MEDIA</p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none text-white mb-6">
             Numbers that<br />
-            <span className="text-lime">speak for themselves.</span>
+            <span className="text-lime">speak for themselves</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-2xl leading-relaxed mt-8">
             We are a global media firm, not just a digital marketing agency. We combine strategy, design, development,

@@ -13,7 +13,7 @@ export default function NotFound() {
         <p className="font-mono text-xs text-teal uppercase tracking-widest mb-8">404</p>
         <h1 className="font-heading text-6xl sm:text-8xl md:text-9xl leading-none text-white mb-6">
           <span className="block">PAGE</span>
-          <span className="block text-lime">NOT FOUND.</span>
+          <span className="block text-lime">NOT FOUND</span>
         </h1>
         <p className="font-body text-base text-white/50 max-w-md leading-relaxed mb-10">
           The page you are looking for does not exist or has been moved. Head back to the homepage or explore our services.

@@ -159,7 +159,7 @@ export default function WhatWeDoPage() {
           <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none text-white mb-6">
             <span className="block">Social Media,</span>
             <span className="block">Content &</span>
-            <span className="block text-lime">Digital Growth.</span>
+            <span className="block text-lime">Digital Growth</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-2xl leading-relaxed mt-8">
             SA Media is a global media firm that manages social media, produces content at scale, and builds digital

@@ -33,7 +33,7 @@ const team = [
     textColor: 'text-lime',
     bio: 'Aly co-founded SA Media and oversees the financial strategy and operational infrastructure that lets the agency move fast and stay lean. His background in finance and business development means clients get an agency that is as rigorous about ROI as it is about creative quality.',
     tags: ['Finance', 'Operations', 'Growth'],
-    linkedin: 'https://www.linkedin.com/company/sa-mediaio/',
+    linkedin: 'https://www.linkedin.com/in/aly-mandviya/',
   },
   {
     name: 'Content Strategist',
@@ -122,7 +122,7 @@ export default function TeamPage() {
               animate={{ opacity: 1, y: 0, skewY: 0 }}
               transition={{ duration: 0.7, delay: 0.34, ease: [0.22, 1, 0.36, 1] }}
             >
-              RESULTS.
+              RESULTS
             </motion.span>
           </h1>
           <motion.p

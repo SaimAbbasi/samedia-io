@@ -34,7 +34,7 @@ export default function ContactPage() {
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6 md:mb-8">GET IN TOUCH</p>
           <h1 className="font-heading text-5xl sm:text-6xl md:text-9xl leading-none mb-6">
             <span className="block text-white">LET&apos;S</span>
-            <span className="block text-lime">TALK.</span>
+            <span className="block text-lime">TALK</span>
           </h1>
           <p className="font-body text-base text-white/50 max-w-lg leading-relaxed mb-10 md:mb-16">
             Tell us about your brand and what you are trying to build. We will come back to you within one business day.

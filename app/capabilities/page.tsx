@@ -143,7 +143,7 @@ export default function CapabilitiesPage() {
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6 md:mb-8">CAPABILITIES</p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none text-white mb-6">
             Everything you need,{' '}
-            <span className="text-lime">under one roof.</span>
+            <span className="text-lime">under one roof</span>
           </h1>
           <p className="font-body text-lg text-white/70 max-w-2xl leading-relaxed mt-8">
             Six integrated capability pillars: Strategy, Design, Build, Market, AI, and Events. Run by one

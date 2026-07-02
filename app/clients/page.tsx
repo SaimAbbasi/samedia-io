@@ -130,8 +130,8 @@ export default function ClientsPage() {
         <div className="max-w-7xl mx-auto w-full">
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6 md:mb-8">OUR CLIENTS</p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none text-white mb-6">
-            <span className="block">Brands that ship.</span>
-            <span className="block text-lime">We help them grow.</span>
+            <span className="block">Brands that ship</span>
+            <span className="block text-lime">We help them grow</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-2xl leading-relaxed mt-8">
             SA Media has worked with 50+ clients across real estate, fintech, hospitality, fashion, and beyond.

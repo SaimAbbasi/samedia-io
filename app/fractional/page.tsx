@@ -109,7 +109,7 @@ export default function FractionalPage() {
           </p>
           <h1 className="font-heading text-4xl sm:text-6xl md:text-8xl text-white leading-none mb-8">
             Executive leadership.<br />
-            <span className="text-lime">Without the full-time overhead.</span>
+            <span className="text-lime">Without the full-time overhead</span>
           </h1>
           <p className="font-body text-xl text-white/50 max-w-2xl leading-relaxed">
             SA Media places experienced C-suite executives inside your business on a fractional basis. Senior strategic leadership, part-time commitment, full strategic impact, at 60-70% of the cost of a full-time hire.

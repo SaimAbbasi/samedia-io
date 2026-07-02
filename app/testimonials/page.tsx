@@ -63,7 +63,7 @@ export default function TestimonialsPage() {
           <p className="font-mono text-xs text-teal uppercase tracking-widest mb-6">CLIENTS SAY</p>
           <h1 className="font-heading text-5xl sm:text-6xl md:text-9xl leading-none text-white mb-6">
             WHAT THEY<br />
-            <span className="text-lime">SAY.</span>
+            <span className="text-lime">SAY</span>
           </h1>
           <p className="font-body text-base text-white/50 max-w-lg leading-relaxed">
             Real words from founders, CEOs, and marketing leads who have worked with SA Media across brand, design, development, and growth.

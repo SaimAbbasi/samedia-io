@@ -184,7 +184,7 @@ export default function ServicesPage() {
           <h1 className="font-heading text-4xl sm:text-5xl md:text-8xl leading-none text-white mb-6">
             <span className="block">Everything</span>
             <span className="block">your brand</span>
-            <span className="block text-lime">needs to grow.</span>
+            <span className="block text-lime">needs to grow</span>
           </h1>
           <p className="font-body text-lg text-white/50 max-w-2xl leading-relaxed mt-6">
             SA Media is a global media firm running 17 integrated services as one operating system. Brand strategy, design, paid media, SEO, web development, AI automation, AIEO and GEO optimization, event production, and Fractional C-Suite leadership, all delivered by one team, with one point of contact, and one shared goal: measurable growth for your brand.
