@@ -148,13 +148,20 @@ export default function TeamPage() {
                   <span className="font-heading text-2xl font-bold text-dark">SA</span>
                 </div>
                 <div className="pt-1">
-                  <h2 className="font-heading text-3xl text-white mb-1">Saim Abbasi</h2>
+                  <a
+                    href="https://saimabbasi.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-heading text-3xl text-white hover:text-lime transition-colors duration-200 mb-1 block"
+                  >
+                    Saim Abbasi
+                  </a>
                   <p className="font-mono text-xs text-teal uppercase tracking-widest">Founder · President & CEO</p>
                 </div>
               </div>
               <div className="flex flex-col gap-4 font-body text-base text-white/55 leading-relaxed mb-8">
                 <p>
-                  <a href="https://saimabbasi.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-lime transition-colors duration-200 underline underline-offset-2">Saim</a> is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds, making the firm structurally different from agencies built by creatives alone.
+                  Saim is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds, making the firm structurally different from agencies built by creatives alone.
                 </p>
                 <p>
                   Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
