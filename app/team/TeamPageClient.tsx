@@ -167,7 +167,7 @@ export default function TeamPage() {
               {[
                 { metric: '3', label: 'Exits completed in 24 months' },
                 { metric: '250M+', label: 'Content views across platforms' },
-                { metric: '$10M+', label: 'Revenue generated via SA platforms' },
+                { metric: '$10M+', label: 'Revenue generated via SA ecosystem' },
                 { metric: '6', label: 'Active ventures across VC, media & AI' },
                 { metric: '1,000+', label: 'Founders and students mentored' },
               ].map((item) => (
