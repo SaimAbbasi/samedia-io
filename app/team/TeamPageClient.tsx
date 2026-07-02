@@ -9,7 +9,7 @@ const team = [
     initial: 'SA',
     color: 'bg-lime',
     textColor: 'text-dark',
-    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years — including an exit to a NASDAQ-listed company (Asset Entities, $ASST) — and is Managing Partner at Iron Key Capital. He has served as CMO at Squirrel Wallet and Progress Group Inc., and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
+    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Squirrel Wallet and Progress Group Inc., and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
     tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
     linkedin: 'https://www.linkedin.com/in/saimabbasi',
   },
@@ -69,7 +69,7 @@ const values = [
   { n: '01', name: 'Results first', desc: 'We measure everything that matters. If we can\'t show you how our work connects to revenue, we don\'t do it.' },
   { n: '02', name: 'No black boxes', desc: 'Full transparency on strategy, spend, performance, and process. You always know exactly what\'s happening and why.' },
   { n: '03', name: 'One team', desc: 'Strategy, creative, media, and tech work together in one room. No silos, no hand-offs, no information lost in translation.' },
-  { n: '04', name: 'Built to last', desc: 'We build systems and brand equity that compound over time - not campaigns that spike once and disappear.' },
+  { n: '04', name: 'Built to last', desc: 'We build systems and brand equity that compound over time, not campaigns that spike once and disappear.' },
 ]
 
 export default function TeamPage() {
@@ -130,7 +130,7 @@ export default function TeamPage() {
             transition={{ duration: 0.6, delay: 0.55 }}
           >
             A small, focused team of strategists, creatives, engineers, and operators.
-            We don&apos;t hire for headcount - we hire for impact.
+            We don&apos;t hire for headcount. We hire for impact.
           </motion.p>
         </div>
       </section>
@@ -152,10 +152,10 @@ export default function TeamPage() {
               </div>
               <div className="flex flex-col gap-4 font-body text-base text-white/55 leading-relaxed mb-8">
                 <p>
-                  Saim is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds — making the firm structurally different from agencies built by creatives alone.
+                  Saim is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds, making the firm structurally different from agencies built by creatives alone.
                 </p>
                 <p>
-                  Before founding SA Media, Saim completed three company acquisitions in under two years — culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
+                  Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
                 </p>
                 <p>
                   Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and his SA platform has generated over $10M in collective economic value across 1,000+ founders and students mentored.

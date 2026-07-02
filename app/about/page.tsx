@@ -4,13 +4,13 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About SA Media | Global Media Firm for Enterprise & Growth-Stage Brands',
   description:
-    'SA Media is a global media firm founded by Saim Abbasi — a Queen\'s University engineering graduate, former Scotiabank Capital Markets analyst, and serial entrepreneur behind three exits including a NASDAQ-listed company. We run brand strategy, design, development, and marketing as one integrated operating system for enterprise and growth-stage brands across Toronto, New York, Dubai, Singapore, Monaco, and Miami.',
+    'SA Media is a global media firm founded by Saim Abbasi, a Queen\'s University engineering graduate, former Scotiabank Capital Markets analyst, and serial entrepreneur behind three exits including a NASDAQ-listed company. We run brand strategy, design, development, and marketing as one integrated operating system for enterprise and growth-stage brands across Toronto, New York, Dubai, Singapore, Monaco, and Miami.',
   keywords: 'SA Media about, Saim Abbasi, global media firm, enterprise marketing agency, brand strategy agency Toronto, marketing agency New York, marketing agency Dubai, fractional CMO Canada, NASDAQ marketing agency, growth marketing firm, integrated media firm, Queen\'s University, Scotiabank Capital Markets',
   alternates: { canonical: 'https://samedia.io/about' },
   openGraph: {
     title: 'About SA Media | Global Media Firm Founded in Toronto',
     description:
-      'Founded by Saim Abbasi — engineer, trader, operator, and serial entrepreneur behind three exits including a NASDAQ-listed company. 50+ brands. 1B+ reach. Three continents. One team.',
+      'Founded by Saim Abbasi: engineer, trader, operator, and serial entrepreneur behind three exits including a NASDAQ-listed company. 50+ brands. 1B+ reach. Three continents. One team.',
     url: 'https://samedia.io/about',
   },
 }
@@ -133,10 +133,10 @@ export default function AboutPage() {
               SA Media was built around a simple observation: most agencies are good at one or two things, but the brands growing fastest needed everything working together. Strategy without execution is a slide deck. Creative without distribution is wasted. Paid media without attribution is guesswork.
             </p>
             <p className="font-body text-base text-dark/65 leading-relaxed mb-5">
-              So we built SA Media to run all of it as one system. Strategy, design, development, and marketing under one roof, operated by one team, accountable to one outcome: your growth. That integrated model is not incidental — it is the product of a founder who has operated simultaneously as an engineer, a financial markets analyst, a CMO, a venture investor, and a media operator. Every discipline informed the firm.
+              So we built SA Media to run all of it as one system. Strategy, design, development, and marketing under one roof, operated by one team, accountable to one outcome: your growth. That integrated model is not incidental. It is the product of a founder who has operated simultaneously as an engineer, a financial markets analyst, a CMO, a venture investor, and a media operator. Every discipline informed the firm.
             </p>
             <p className="font-body text-base text-dark/65 leading-relaxed mb-5">
-              Founder Saim Abbasi brought to SA Media a background that few agency founders share: a Mechanical Engineering degree from Queen&apos;s University, time on the institutional trading desk at Scotiabank Capital Markets covering XVA, Collateral and Credit Sales, and a track record of three company acquisitions in under two years — culminating in a transaction with a NASDAQ-listed public company and a subsequent deal with Strive Asset Management. That experience, applied to brand building and media strategy, produces a calibre of strategic thinking most agencies cannot access.
+              Founder Saim Abbasi brought to SA Media a background that few agency founders share: a Mechanical Engineering degree from Queen&apos;s University, time on the institutional trading desk at Scotiabank Capital Markets covering XVA, Collateral and Credit Sales, and a track record of three company acquisitions in under two years, culminating in a transaction with a NASDAQ-listed public company and a subsequent deal with Strive Asset Management. That experience, applied to brand building and media strategy, produces a calibre of strategic thinking most agencies cannot access.
             </p>
             <p className="font-body text-base text-dark/65 leading-relaxed">
               Today SA Media works with 50+ brands across Toronto, New York, Dubai, Singapore, Monaco, and Miami. Our clients range from growth-stage technology companies entering new markets to established enterprises modernizing their marketing function. The approach scales. The standards do not change.
@@ -172,16 +172,16 @@ export default function AboutPage() {
               </h2>
               <div className="flex flex-col gap-5 font-body text-base text-white/55 leading-relaxed">
                 <p>
-                  Saim Abbasi founded SA Media after a career that crossed financial markets, engineering, venture building, and digital media. A Mechanical Engineering graduate from Queen&apos;s University, he began his career as an XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets — a role that instilled a rigorous, data-first approach to every business problem he has worked on since.
+                  Saim Abbasi founded SA Media after a career that crossed financial markets, engineering, venture building, and digital media. A Mechanical Engineering graduate from Queen&apos;s University, he began his career as an XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets, a role that instilled a rigorous, quantitative approach to every business problem he has worked on since.
                 </p>
                 <p>
-                  Before founding SA Media, Saim completed three company acquisitions in under two years — culminating in an exit to Asset Entities (NASDAQ: <span className="text-lime font-mono text-sm">$ASST</span>), a publicly traded company, and a subsequent transaction with Strive Asset Management. He has since become one of the youngest Managing Partners in global venture capital through Iron Key Capital.
+                  Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="text-lime font-mono text-sm">$ASST</span>), a publicly traded company, and a subsequent transaction with Strive Asset Management. He has since become one of the youngest Managing Partners in global venture capital through Iron Key Capital.
                 </p>
                 <p>
                   Across his portfolio, Saim has served as Chief Marketing Officer for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have generated 250M+ views and his SA platform has collectively produced over $10M in economic value across 1,000+ founders and students mentored.
                 </p>
                 <p>
-                  SA Media is the firm Saim built to give enterprise and growth-stage businesses access to the same level of strategic thinking that drove his own exits and platform growth — without the learning curve. When you work with SA Media, you get a team that has operated at every level of the business growth stack: from seed-stage brand building to NASDAQ-level corporate communications.
+                  SA Media is the firm Saim built to give enterprise and growth-stage businesses access to the same level of strategic thinking that drove his own exits and platform growth, without the learning curve. When you work with SA Media, you get a team that has operated at every level of the business growth stack, from seed-stage brand building to NASDAQ-level corporate communications.
                 </p>
               </div>
             </div>
@@ -191,9 +191,9 @@ export default function AboutPage() {
                 {[
                   { year: '2020', label: 'Scotiabank Capital Markets', note: 'XVA, Collateral & Credit Sales Trading Analyst' },
                   { year: '2022', label: 'Three Acquisitions in 24 Months', note: 'SA Capital → OptionsSwing → Asset Entities (NASDAQ: $ASST) → Strive Asset Management' },
-                  { year: '2024', label: 'Founded SA Media', note: 'President & CEO — global media firm across 6 markets' },
+                  { year: '2024', label: 'Founded SA Media', note: 'President & CEO, global media firm across 6 markets' },
                   { year: '2024', label: 'Fractional CMO Roles', note: 'Squirrel Wallet & Progress Group Inc.' },
-                  { year: '2025', label: 'Iron Key Capital', note: 'Managing Partner — one of the youngest globally' },
+                  { year: '2025', label: 'Iron Key Capital', note: 'Managing Partner, one of the youngest globally' },
                 ].map((item) => (
                   <div key={item.year} className="flex gap-6 py-4 border-b border-white/10 last:border-0">
                     <span className="font-mono text-xs text-lime shrink-0 w-10">{item.year}</span>
@@ -208,7 +208,7 @@ export default function AboutPage() {
                 <p className="font-heading text-xl text-white leading-snug mb-3">
                   &ldquo;I don&apos;t manage time. I manufacture leverage.&rdquo;
                 </p>
-                <p className="font-mono text-xs text-white/30">— Saim Abbasi, Founder & CEO</p>
+                <p className="font-mono text-xs text-white/30">Saim Abbasi, Founder & CEO</p>
               </div>
               <div className="border border-white/10 p-6">
                 <p className="font-mono text-xs text-teal uppercase tracking-widest mb-4">EDUCATION</p>
@@ -250,7 +250,7 @@ export default function AboutPage() {
             {[
               {
                 title: 'Executive-level thinking on every engagement',
-                body: 'Saim Abbasi is the strategic lead on every SA Media engagement. Enterprise clients get direct access to a founder with C-suite experience across financial services, AI, fintech, and media — not a junior account manager.',
+                body: 'Saim Abbasi is the strategic lead on every SA Media engagement. Enterprise clients get direct access to a founder with C-suite experience across financial services, AI, fintech, and media, not a junior account manager.',
               },
               {
                 title: 'Systems designed to scale with complexity',
@@ -266,7 +266,7 @@ export default function AboutPage() {
               },
               {
                 title: 'Fractional C-Suite embedded leadership',
-                body: 'For enterprise organizations restructuring their marketing leadership, SA Media places embedded Fractional CMO, CTO, and CSO executives who integrate directly with your leadership team — not as vendors, but as operators.',
+                body: 'For enterprise organizations restructuring their marketing leadership, SA Media places embedded Fractional CMO, CTO, and CSO executives who integrate directly with your leadership team, operating as part of your business rather than as an outside vendor.',
               },
               {
                 title: 'Global operations, local market execution',
