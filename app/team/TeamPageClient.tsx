@@ -161,13 +161,6 @@ export default function TeamPage() {
                   Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and his SA platform has generated over $10M in collective economic value across 1,000+ founders and students mentored.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {["Queen's Engineering", 'Scotiabank Capital Markets', 'NASDAQ Exit', 'Iron Key Capital', 'Fractional CMO', 'Venture Capital', 'AI & Web3', 'Growth Strategy'].map((tag) => (
-                  <span key={tag} className="font-mono text-xs text-lime/60 border border-lime/20 px-3 py-1">
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </div>
             <div className="bg-dark p-8 md:p-12 flex flex-col gap-6 border-t border-white/10 lg:border-t-0 lg:border-l lg:border-white/10">
               <p className="font-mono text-xs text-teal uppercase tracking-widest">TRACK RECORD</p>
