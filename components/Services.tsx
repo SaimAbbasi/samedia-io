@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { services } from '@/lib/services-data'
-import { fractionalServices } from '@/lib/fractional-data'
 
 export default function Services() {
   return (
@@ -58,48 +57,6 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Fractional C-Suite */}
-        <div className="mt-16 pt-10 border-t border-white/10">
-          <div className="flex justify-between items-baseline mb-8">
-            <p className="font-mono text-xs text-teal uppercase tracking-widest">FRACTIONAL C-SUITE</p>
-            <Link href="/fractional" className="font-mono text-xs text-white/30 hover:text-lime transition-colors tracking-widest">
-              VIEW ALL →
-            </Link>
-          </div>
-          <p className="font-body text-base text-white/50 max-w-xl mb-10 leading-relaxed">
-            Executive leadership on a fractional basis.{' '}
-            <span className="text-lime">Senior strategy, without the full-time overhead.</span>
-          </p>
-          <div className="border-t border-white/10">
-            {fractionalServices.map((s, i) => (
-              <motion.div
-                key={s.n}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
-              >
-                <Link
-                  href={`/fractional/${s.slug}`}
-                  className="group relative flex items-center gap-6 py-5 border-b border-white/10 pl-0 hover:pl-3 transition-all duration-300 overflow-hidden"
-                >
-                  <span className="absolute left-0 top-0 bottom-0 w-0 group-hover:w-1 bg-teal transition-all duration-300" />
-                  <span className="absolute inset-0 bg-teal/0 group-hover:bg-teal/[0.04] transition-colors duration-300" />
-                  <span className="font-mono text-sm text-teal w-10 shrink-0 relative">{s.n}</span>
-                  <span className="font-heading text-base md:text-xl text-white flex-1 relative group-hover:translate-x-1 transition-transform duration-300">
-                    {s.name}
-                  </span>
-                  <span className="font-body text-sm text-white/40 text-right hidden md:block max-w-xs relative">
-                    {s.tagline}
-                  </span>
-                  <span className="font-mono text-sm text-white/25 group-hover:text-teal group-hover:translate-x-1 transition-all duration-300 shrink-0 relative">
-                    →
-                  </span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
