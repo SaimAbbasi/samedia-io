@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { FaLinkedinIn } from 'react-icons/fa6'
 
 const team = [
   {
@@ -11,7 +12,8 @@ const team = [
     textColor: 'text-dark',
     bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Progress Group Inc. and Squirrel Wallet, and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
     tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
-    linkedin: 'https://www.linkedin.com/in/saimabbasi',
+    linkedin: 'https://www.linkedin.com/in/saimabbasi/',
+    website: 'https://saimabbasi.com/',
   },
   {
     name: 'Anastasiia Krasnova',
@@ -228,12 +230,36 @@ export default function TeamPage() {
 
                 {/* Info */}
                 <div>
-                  <p className="font-heading text-2xl text-dark group-hover:text-white transition-colors duration-300 mb-1">
-                    {member.name}
-                  </p>
-                  <p className="font-mono text-xs text-teal uppercase tracking-widest">
-                    {member.role}
-                  </p>
+                  {(member as { website?: string }).website ? (
+                    <a
+                      href={(member as { website?: string }).website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-heading text-2xl text-dark group-hover:text-white hover:text-lime transition-colors duration-300 mb-1 block"
+                    >
+                      {member.name}
+                    </a>
+                  ) : (
+                    <p className="font-heading text-2xl text-dark group-hover:text-white transition-colors duration-300 mb-1">
+                      {member.name}
+                    </p>
+                  )}
+                  <div className="flex items-center gap-3">
+                    <p className="font-mono text-xs text-teal uppercase tracking-widest">
+                      {member.role}
+                    </p>
+                    {member.linkedin !== '#' && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        className="text-dark/30 group-hover:text-white/40 hover:text-lime transition-colors duration-200"
+                      >
+                        <FaLinkedinIn size={12} />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 {/* Bio */}
