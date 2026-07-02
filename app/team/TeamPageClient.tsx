@@ -147,7 +147,7 @@ export default function TeamPage() {
                 </div>
                 <div className="pt-1">
                   <h2 className="font-heading text-3xl text-white mb-1">Saim Abbasi</h2>
-                  <p className="font-mono text-xs text-teal uppercase tracking-widest">Founder & CEO · Managing Partner, Iron Key Capital</p>
+                  <p className="font-mono text-xs text-teal uppercase tracking-widest">Founder · President & CEO</p>
                 </div>
               </div>
               <div className="flex flex-col gap-4 font-body text-base text-white/55 leading-relaxed mb-8">
