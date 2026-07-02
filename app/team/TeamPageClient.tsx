@@ -165,7 +165,7 @@ export default function TeamPage() {
             <div className="bg-dark p-8 md:p-12 flex flex-col gap-6 border-t border-white/10 lg:border-t-0 lg:border-l lg:border-white/10">
               <p className="font-mono text-xs text-teal uppercase tracking-widest">TRACK RECORD</p>
               {[
-                { metric: '3', label: 'Exits completed in 24 months' },
+                { metric: '3', label: 'Successful business exits' },
                 { metric: '250M+', label: 'Content views across platforms' },
                 { metric: '$10M+', label: 'Revenue generated via SA ecosystem' },
                 { metric: '10+', label: 'Active ventures across VC, Media & AI' },
