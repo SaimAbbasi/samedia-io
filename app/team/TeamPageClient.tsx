@@ -9,7 +9,7 @@ const team = [
     initial: 'SA',
     color: 'bg-lime',
     textColor: 'text-dark',
-    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Squirrel Wallet and Progress Group Inc., and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
+    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Progress Group Inc. and Squirrel Wallet, and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
     tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
     linkedin: 'https://www.linkedin.com/in/saimabbasi',
   },
@@ -158,7 +158,7 @@ export default function TeamPage() {
                   Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
                 </p>
                 <p>
-                  Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and the SA ecosystem has generated over $10M in collective economic value across 1,000+ founders and students mentored.
+                  Saim has served as CMO for Progress Group Inc. and Squirrel Wallet, Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and the SA ecosystem has generated over $10M in collective economic value across 1,000+ founders and students mentored.
                 </p>
               </div>
             </div>
