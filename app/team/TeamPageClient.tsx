@@ -9,9 +9,9 @@ const team = [
     initial: 'SA',
     color: 'bg-lime',
     textColor: 'text-dark',
-    bio: 'Saim founded SA Media with one belief: that great marketing is equal parts science and storytelling. With a background spanning growth strategy, paid media, and brand building across Toronto, Dubai, and New York, he leads the agency with a bias toward results and a zero-tolerance policy for vanity metrics.',
-    tags: ['Strategy', 'Paid Media', 'Growth'],
-    linkedin: '#',
+    bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years — including an exit to a NASDAQ-listed company (Asset Entities, $ASST) — and is Managing Partner at Iron Key Capital. He has served as CMO at Squirrel Wallet and Progress Group Inc., and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
+    tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
+    linkedin: 'https://www.linkedin.com/in/saimabbasi',
   },
   {
     name: 'Anastasiia Krasnova',
@@ -132,6 +132,59 @@ export default function TeamPage() {
             A small, focused team of strategists, creatives, engineers, and operators.
             We don&apos;t hire for headcount - we hire for impact.
           </motion.p>
+        </div>
+      </section>
+
+      {/* Founder Spotlight */}
+      <section className="bg-dark px-6 py-14 md:py-20 border-t-[3px] border-lime">
+        <div className="max-w-7xl mx-auto">
+          <p className="font-mono text-xs text-teal uppercase tracking-widest mb-8">LEADERSHIP</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-px bg-white/10">
+            <div className="col-span-1 lg:col-span-2 bg-dark p-8 md:p-12">
+              <div className="flex items-start gap-6 mb-8">
+                <div className="w-20 h-20 bg-lime flex items-center justify-center shrink-0">
+                  <span className="font-heading text-2xl font-bold text-dark">SA</span>
+                </div>
+                <div className="pt-1">
+                  <h2 className="font-heading text-3xl text-white mb-1">Saim Abbasi</h2>
+                  <p className="font-mono text-xs text-teal uppercase tracking-widest">Founder & CEO · Managing Partner, Iron Key Capital</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-4 font-body text-base text-white/55 leading-relaxed mb-8">
+                <p>
+                  Saim is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds — making the firm structurally different from agencies built by creatives alone.
+                </p>
+                <p>
+                  Before founding SA Media, Saim completed three company acquisitions in under two years — culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
+                </p>
+                <p>
+                  Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and his SA platform has generated over $10M in collective economic value across 1,000+ founders and students mentored.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {["Queen's Engineering", 'Scotiabank Capital Markets', 'NASDAQ Exit', 'Iron Key Capital', 'Fractional CMO', 'Venture Capital', 'AI & Web3', 'Growth Strategy'].map((tag) => (
+                  <span key={tag} className="font-mono text-xs text-lime/60 border border-lime/20 px-3 py-1">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="bg-dark p-8 md:p-12 flex flex-col gap-6 border-t border-white/10 lg:border-t-0 lg:border-l lg:border-white/10">
+              <p className="font-mono text-xs text-teal uppercase tracking-widest">TRACK RECORD</p>
+              {[
+                { metric: '3', label: 'Exits completed in 24 months' },
+                { metric: '250M+', label: 'Content views across platforms' },
+                { metric: '$10M+', label: 'Revenue generated via SA platforms' },
+                { metric: '6', label: 'Active ventures across VC, media & AI' },
+                { metric: '1,000+', label: 'Founders and students mentored' },
+              ].map((item) => (
+                <div key={item.label} className="border-b border-white/10 pb-5 last:border-0 last:pb-0">
+                  <p className="font-mono font-bold text-3xl text-lime leading-none mb-1">{item.metric}</p>
+                  <p className="font-body text-sm text-white/40">{item.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
