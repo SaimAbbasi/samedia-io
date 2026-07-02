@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { FaLinkedinIn } from 'react-icons/fa6'
@@ -12,7 +11,6 @@ const team = [
     color: 'bg-lime',
     textColor: 'text-dark',
     bio: "Saim is a Queen's University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Progress Group Inc. and Squirrel Wallet, and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement.",
-    bioNode: (<><a href="https://saimabbasi.com/" target="_blank" rel="noopener noreferrer" className="hover:text-lime transition-colors duration-200 underline underline-offset-2">Saim</a>{" is a Queen\u2019s University Mechanical Engineering graduate and former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He completed three acquisitions in under two years, including an exit to a NASDAQ-listed company (Asset Entities, $ASST), and is Managing Partner at Iron Key Capital. He has served as CMO at Progress Group Inc. and Squirrel Wallet, and his media platforms have generated 250M+ views. At SA Media, he leads strategy and is the direct senior contact for every engagement."}</>),
     tags: ['Strategy', 'M&A', 'Venture Capital', 'Paid Media', 'AIEO / GEO', 'Fractional CMO'],
     linkedin: 'https://www.linkedin.com/in/saimabbasi/',
     website: 'https://saimabbasi.com/',
@@ -156,7 +154,7 @@ export default function TeamPage() {
               </div>
               <div className="flex flex-col gap-4 font-body text-base text-white/55 leading-relaxed mb-8">
                 <p>
-                  Saim is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds, making the firm structurally different from agencies built by creatives alone.
+                  <a href="https://saimabbasi.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-lime transition-colors duration-200 underline underline-offset-2">Saim</a> is a Mechanical Engineering graduate from Queen&apos;s University and a former XVA, Collateral and Credit Sales Trading Analyst at Scotiabank Capital Markets. He applies the same quantitative, systems-level discipline from institutional finance to every strategy SA Media builds, making the firm structurally different from agencies built by creatives alone.
                 </p>
                 <p>
                   Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
@@ -266,7 +264,7 @@ export default function TeamPage() {
 
                 {/* Bio */}
                 <p className="font-body text-sm text-dark/60 group-hover:text-white/50 transition-colors duration-300 leading-relaxed">
-                  {(member as { bioNode?: React.ReactNode }).bioNode ?? member.bio}
+                  {member.bio}
                 </p>
 
                 {/* Tags */}
