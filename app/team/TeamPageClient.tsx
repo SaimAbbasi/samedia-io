@@ -158,7 +158,7 @@ export default function TeamPage() {
                   Before founding SA Media, Saim completed three company acquisitions in under two years, culminating in an exit to Asset Entities (NASDAQ: <span className="font-mono text-lime text-sm">$ASST</span>) and a subsequent transaction with Strive Asset Management. He is currently Managing Partner at Iron Key Capital, one of the youngest individuals to hold that title globally.
                 </p>
                 <p>
-                  Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and his SA platform has generated over $10M in collective economic value across 1,000+ founders and students mentored.
+                  Saim has served as CMO for Squirrel Wallet and Progress Group Inc., Director of Strategy and Operations at Vosyn AI, and sits on the Board of Advisors at CMPUS. His content platforms have accumulated 250M+ views and the SA ecosystem has generated over $10M in collective economic value across 1,000+ founders and students mentored.
                 </p>
               </div>
             </div>
