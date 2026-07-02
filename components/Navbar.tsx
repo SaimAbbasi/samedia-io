@@ -220,7 +220,7 @@ export default function Navbar() {
                 { label: 'About', href: '/about' },
                 { label: 'Team', href: '/team' },
                 { label: 'Services', href: '/services' },
-                { label: 'Fractional C-Suite', href: '/fractional' },
+                { label: 'C-Suite Services', href: '/fractional' },
                 { label: 'Blog', href: '/blog' },
                 { label: 'Contact', href: '/contact-us' },
               ].map(({ label, href }) => (
