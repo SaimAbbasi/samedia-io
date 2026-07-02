@@ -152,7 +152,7 @@ export default function TeamPage() {
                     href="https://saimabbasi.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-heading text-3xl text-white hover:text-lime transition-colors duration-200 mb-1 block"
+                    className="font-heading text-3xl text-white hover:text-teal transition-colors duration-200 mb-1 block"
                   >
                     Saim Abbasi
                   </a>
